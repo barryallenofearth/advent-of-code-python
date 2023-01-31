@@ -43,9 +43,9 @@ def rotate(current_facing: str, rotation: str):
 
     elif current_facing == DOWN:
         if rotation == ROTATE_RIGHT:
-            return RIGHT
-        elif rotation == ROTATE_LEFT:
             return LEFT
+        elif rotation == ROTATE_LEFT:
+            return RIGHT
 
     elif current_facing == LEFT:
         if rotation == ROTATE_RIGHT:
