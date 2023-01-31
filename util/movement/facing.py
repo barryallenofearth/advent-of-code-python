@@ -14,13 +14,13 @@ Left and Right are handled as expected'''
 
 def move_forward(position: Coordinates, facing: str, steps: int):
     if facing == UP:
-        position.y = position.y - steps
+        return Coordinates(position.x, position.y - steps)
     elif facing == RIGHT:
-        position.x = position.x + steps
+        return Coordinates(position.x + steps, position.y)
     elif facing == DOWN:
-        position.y = position.y + steps
+        return Coordinates(position.x, position.y + steps)
     elif facing == LEFT:
-        position.x = position.x - steps
+        return Coordinates(position.x - steps, position.y)
     else:
         raise ValueError(f"'{facing}' is not a valid facing")
 
