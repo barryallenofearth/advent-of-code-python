@@ -23,7 +23,6 @@ def read_rooms():
             section = int(room[last_dash_index + 1: room.index("[")])
             checksum = room[room.index("[") + 1:room.index("]")]
             all_rooms.append(Room(name, section, checksum))
-            print(all_rooms[-1])
 
     return all_rooms
 
