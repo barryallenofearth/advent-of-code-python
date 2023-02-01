@@ -25,6 +25,19 @@ def move_forward(position: Coordinates, facing: str, steps: int):
         raise ValueError(f"'{facing}' is not a valid facing")
 
 
+def move_backwards(position: Coordinates, facing: str, steps: int):
+    if facing == UP:
+        return Coordinates(position.x, position.y + steps)
+    elif facing == RIGHT:
+        return Coordinates(position.x - steps, position.y)
+    elif facing == DOWN:
+        return Coordinates(position.x, position.y - steps)
+    elif facing == LEFT:
+        return Coordinates(position.x + steps, position.y)
+    else:
+        raise ValueError(f"'{facing}' is not a valid facing")
+
+
 def rotate(current_facing: str, rotation: str):
     if rotation != ROTATE_LEFT and rotation != ROTATE_RIGHT:
         raise ValueError(f"'{rotation}' is not a valid rotation")
