@@ -10,7 +10,8 @@ if not os.path.exists(year):
     for day in range(1, 26):
         os.makedirs(f"aoc_{year}/day{day}")
         os.makedirs(f"aoc_{year}/day{day}/common")
-
+        with open(f"aoc_{year}/day{day}/common/.gitkeep", "w"):
+            print(f"create common folder .gitkeep file")
         with open(f"aoc_{year}/day{day}/riddle.txt", "w"):
             print(f"create package aoc_{year}/day{day}/riddle.txt")
         for part in range(1, 3):

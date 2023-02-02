@@ -1,4 +1,5 @@
 import re
+from util.strings import string_utils
 
 
 class Room:
@@ -31,17 +32,11 @@ def filter_real_rooms(all_rooms: list):
     valid_rooms = []
 
     for room in all_rooms:
-        char_encounter = {}
-        findall = re.findall(string=room.name, pattern=r"\w")
-        name = "".join(findall)
-        for char in name:
-            char_encounter[char] = 0
-            for reference_char in name:
-                if char == reference_char:
-                    char_encounter[char] = char_encounter[char] + 1
+        only_letters = re.findall(string=room.name, pattern=r"\w")
+        name = "".join(only_letters)
 
-        items = [item for item in char_encounter.items()]
-        items.sort(key=lambda x: (-x[1], x[0]))
+        char_encounter = string_utils.count_chars_in_string(name)
+        items = string_utils.sort_counted_chars(char_encounter)
         sorted_list = [entry[0] for entry in items]
         expected_checksum = "".join(sorted_list[:5])
         if expected_checksum == room.checksum:
