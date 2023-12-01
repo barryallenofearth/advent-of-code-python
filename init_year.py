@@ -1,15 +1,17 @@
 import os
+import time
 
 year = input("Please enter the year you want to initialize")
 if not os.path.exists(year):
     print(f"Initialize year {year}")
-    os.makedirs(year)
-    with open(f"aoc_{year}/__init__.py", "w"):
+    os.mkdir(year)
+    time.sleep(3)
+    with open(f"aoc_{year}/__init__.py", "w") as file:
         print("create package init")
 
     for day in range(1, 26):
-        os.makedirs(f"aoc_{year}/day{day}")
-        os.makedirs(f"aoc_{year}/day{day}/common")
+        os.mkdir(f"aoc_{year}/day{day}")
+        os.mkdir(f"aoc_{year}/day{day}/common")
         with open(f"aoc_{year}/day{day}/common/.gitkeep", "w"):
             print(f"create common folder .gitkeep file")
         with open(f"aoc_{year}/day{day}/riddle.txt", "w"):
