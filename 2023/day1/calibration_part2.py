@@ -18,18 +18,17 @@ NUMBER_MAP = {"one": 1,
               "eight": 8,
               "nine": 9}
 
-pattern = r"("
+pattern_or_group = "("
 for key, value in NUMBER_MAP.items():
-    pattern += key + "|"
-pattern += "\d)"
-print(f"assembled pattern '{pattern}'")
+    pattern_or_group += key + "|"
+pattern_or_group += "\d)"
+
+pattern = r"^.*?" + pattern_or_group + ".*$"
+print(f"forward pattern '{pattern}'")
 NUMBER_PATTERN = re.compile(pattern)
 
-pattern = r"^.*("
-for key, value in NUMBER_MAP.items():
-    pattern += key + "|"
-pattern += "\d).*?$"
-print(f"assembled reverse pattern '{pattern}'")
+pattern = r"^.*" + pattern_or_group + ".*?$"
+print(f"reverse pattern '{pattern}'")
 NUMBER_REVERSE_PATTERN = re.compile(pattern + ".*?")
 
 
@@ -42,7 +41,7 @@ def assembled_number(line: str) -> int:
             print(f"{found_string}: {found_string}")
             return int(found_string)
 
-    found_string = NUMBER_PATTERN.search(line).group(1)
+    found_string = NUMBER_PATTERN.match(line).group(1)
     found_reverse_string = NUMBER_REVERSE_PATTERN.match(line).group(1)
     sum = 10 * get_number(found_string) + get_number(found_reverse_string)
     print(f"new number {sum}")
