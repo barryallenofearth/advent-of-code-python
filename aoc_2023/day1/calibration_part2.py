@@ -1,10 +1,10 @@
 import re
 
-BASE_PATH = "2023/day1/"
+BASE_PATH = "aoc_2023/day1/"
 test = False
 path = BASE_PATH
 if test:
-    path += "test_riddle2.txt"
+    path += "test2_riddle.txt"
 else:
     path += "riddle.txt"
 
