@@ -42,7 +42,10 @@ for line in lines:
 
 sum = 0
 for symbol in symbol_coordinates:
+
     for number_with_coordinates in numbers_with_coordinates:
+        if not (symbol.x - 1 <= number_with_coordinates.coordinates[0].x <= symbol.x + 1):
+            continue
         if not number_with_coordinates.processed:
             if coordinates.is_any_coordinate_adjacent(symbol, number_with_coordinates.coordinates, allow_diagonal=True):
                 print(f"{number_with_coordinates.number} is adjacent to symbol")
@@ -50,7 +53,7 @@ for symbol in symbol_coordinates:
                 number_with_coordinates.processed = True
 
 print(f"The total number is {sum}")
-# for number in numbers_with_coordinates:
-#     print(number)
-# for symbol in symbol_coordinates:
-#     print(symbol)
+#for number in numbers_with_coordinates:
+#    print(number)
+#for symbol in symbol_coordinates:
+#    print(symbol)
