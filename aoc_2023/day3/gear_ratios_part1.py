@@ -27,33 +27,39 @@ def generate_dots_of_equal_length(original_string: str):
 
 numbers_with_coordinates = []
 symbol_coordinates = []
-row = 0
+row = 1
 for line in lines:
     all_numbers = NUMBERS_PATTERN.findall(line)
     for number in all_numbers:
-        start_column = line.index(number)
+        start_column = line.index(number) + 1
         numbers_with_coordinates.append(NumberWithCoordinates(number, row, start_column))
-        line.replace(number, generate_dots_of_equal_length(number), 1)
+        line = line.replace(number, generate_dots_of_equal_length(number), 1)
 
     for column in range(len(line)):
         if SYMBOL_PATTERN.match(line[column]):
-            symbol_coordinates.append(coordinates.Coordinates(row, column))
+            symbol_coordinates.append(coordinates.Coordinates(row, column + 1))
     row += 1
 
 sum = 0
-for symbol in symbol_coordinates:
+count = 0
+for number_with_coordinates in numbers_with_coordinates:
+    for symbol in symbol_coordinates:
 
-    for number_with_coordinates in numbers_with_coordinates:
         if not (symbol.x - 1 <= number_with_coordinates.coordinates[0].x <= symbol.x + 1):
             continue
         if not number_with_coordinates.processed:
             if coordinates.is_any_coordinate_adjacent(symbol, number_with_coordinates.coordinates, allow_diagonal=True):
-                print(f"{number_with_coordinates.number} is adjacent to symbol")
+                print(f"{number_with_coordinates} is adjacent to symbol at {symbol}")
                 sum += number_with_coordinates.number
+                count += 1
                 number_with_coordinates.processed = True
 
-print(f"The total number is {sum}")
-#for number in numbers_with_coordinates:
+print(f"The total number is {sum}, having found {count} part numbers.")
+
+# for number in numbers_with_coordinates:
+#     if not number.processed:
+#         print(number)
+# for number in numbers_with_coordinates:
 #    print(number)
-#for symbol in symbol_coordinates:
+# for symbol in symbol_coordinates:
 #    print(symbol)
