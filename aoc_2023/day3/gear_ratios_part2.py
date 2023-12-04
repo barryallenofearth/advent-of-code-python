@@ -1,6 +1,6 @@
 import re
 
-import aoc_2023.util.riddle_reader as riddle_reader
+import util.riddle_reader as riddle_reader
 import util.movement.coordinates as coordinates
 
 NUMBERS_PATTERN = re.compile(r"(\d+)")

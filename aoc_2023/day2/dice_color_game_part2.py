@@ -1,7 +1,7 @@
 import re
 from collections import defaultdict
 
-import aoc_2023.util.riddle_reader as riddle_reader
+import util.riddle_reader as riddle_reader
 
 GAME_ID_PATTERN = re.compile(r"Game (\d+):")
 COLOR_DRAWN_PATTERN = re.compile(r"(\d+) (red|green|blue)")
