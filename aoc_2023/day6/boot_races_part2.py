@@ -4,8 +4,8 @@ import re
 import util.riddle_reader as riddle_reader
 
 
-def get_numbers(line: str) -> list[int]:
-    return [int(number) for number in re.split("\s+", line)[1:]]
+def get_numbers(line: str) -> int:
+    return int(line.replace("Time:", "").replace("Distance:", "").replace(" ", ""))
 
 
 def determine_number_of_winning_possibilities(race_duration: int, max_distance: int) -> int:
@@ -34,14 +34,10 @@ def determine_number_of_winning_possibilities(race_duration: int, max_distance: 
 
 lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 
-times = get_numbers(lines[0])
-distances = get_numbers(lines[1])
+time = get_numbers(lines[0])
+distance = get_numbers(lines[1])
 
-races = {times[index]: distances[index] for index in range(len(times))}
-
-result = 1
-for time, distance in races.items():
-    print(f"race: time={time}, max_distance={distance}")
-    result *= determine_number_of_winning_possibilities(time, distance)
+print(f"race: time={time}, max_distance={distance}")
+result = determine_number_of_winning_possibilities(time, distance)
 
 print(f"The total result is {result}")
