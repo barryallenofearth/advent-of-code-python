@@ -23,11 +23,11 @@ class HandOfCards:
         self.bid = bid
         self.hand = self.__sort_hand(original_hand)
         self.type_value = self.get_type_value()
-        self.card1 = card_value(self.hand[0])
-        self.card2 = card_value(self.hand[1])
-        self.card3 = card_value(self.hand[2])
-        self.card4 = card_value(self.hand[3])
-        self.card5 = card_value(self.hand[4])
+        self.card1 = card_value(original_hand[0])
+        self.card2 = card_value(original_hand[1])
+        self.card3 = card_value(original_hand[2])
+        self.card4 = card_value(original_hand[3])
+        self.card5 = card_value(original_hand[4])
         self.rank = 0
 
     @staticmethod
@@ -52,7 +52,7 @@ class HandOfCards:
             return 0
 
 
-lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
+lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 hands_of_cards = []
 for line in lines:
     split = line.split(" ")
