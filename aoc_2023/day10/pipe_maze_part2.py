@@ -1,4 +1,5 @@
 import math
+from functools import reduce
 
 import util.riddle_reader as riddle_reader
 import util.movement.coordinates as coordinates
@@ -118,6 +119,62 @@ def group_non_boarder_regions(non_boarder_coordinates: list[Coordinates], groups
         group_non_boarder_regions(remaining, groups)
 
 
+def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing: [dict[Coordinates:str]], connected_coordinates: list[Coordinates])->bool:
+    is_right_of_path = None
+    down_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.UP)
+    for position in down_symbols:
+        if connected_coordinates.index(position) < 2:
+            continue
+        for border in region_group:
+            if Coordinates(position.x + 1, position.y) == border:
+                is_right_of_path = True
+                break
+            elif Coordinates(position.x - 1, position.y) == border:
+                is_right_of_path = False
+                break
+
+    if is_right_of_path is None:
+        up_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.UP)
+        for position in up_symbols:
+            if connected_coordinates.index(position) < 2:
+                continue
+            for border in region_group:
+                if Coordinates(position.x - 1, position.y) == border:
+                    is_right_of_path = True
+                    break
+                elif Coordinates(position.x + 1, position.y) == border:
+                    is_right_of_path = False
+                    break
+
+    if is_right_of_path is None:
+        right_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.RIGHT)
+        for position in right_symbols:
+            if connected_coordinates.index(position) < 2:
+                continue
+            for border in region_group:
+                if Coordinates(position.x, position.y - 1) == border:
+                    is_right_of_path = True
+                    break
+                elif Coordinates(position.x, position.y + 1) == border:
+                    is_right_of_path = False
+                    break
+
+    if is_right_of_path is None:
+        left_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.LEFT)
+        for position in left_symbols:
+            if connected_coordinates.index(position) < 2:
+                continue
+            for border in region_group:
+                if Coordinates(position.x, position.y + 1) == border:
+                    is_right_of_path = True
+                    break
+                elif Coordinates(position.x, position.y - 1) == border:
+                    is_right_of_path = False
+                    break
+
+    return is_right_of_path
+
+
 lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 coordinates_with_symbols = coordinates.read_grid(lines, row_start=1, column_start=1)
 starting_position = coordinates.find_symbols_in_grid(coordinates_with_symbols, "S")[0]
@@ -136,26 +193,26 @@ def is_in_contact_with_boarder(empty_coordinates: Coordinates) -> bool:
 
 
 remaining_empty_coordinates = list(all_empty_spaces)
-boarder_regions = list(filter(is_in_contact_with_boarder, all_empty_spaces))
+border_region = list(filter(is_in_contact_with_boarder, all_empty_spaces))
 
 nodes_added_to_boarder_region = True
 previous_node_count = 0
 while nodes_added_to_boarder_region:
 
     for test_coordinate in remaining_empty_coordinates:
-        if test_coordinate not in boarder_regions:
-            if coordinates.is_any_coordinate_adjacent(test_coordinate, boarder_regions, allow_diagonal=False):
-                boarder_regions.append(test_coordinate)
+        if test_coordinate not in border_region:
+            if coordinates.is_any_coordinate_adjacent(test_coordinate, border_region, allow_diagonal=False):
+                border_region.append(test_coordinate)
 
-    for value in boarder_regions:
+    for value in border_region:
         if value in remaining_empty_coordinates:
             remaining_empty_coordinates.remove(value)
 
-    nodes_added_to_boarder_region = previous_node_count != len(boarder_regions)
-    previous_node_count = len(boarder_regions)
+    nodes_added_to_boarder_region = previous_node_count != len(border_region)
+    previous_node_count = len(border_region)
 
-all_non_boarder_regions = [empty_coordinate for empty_coordinate in all_empty_spaces if empty_coordinate not in boarder_regions]
-print(f"Empty spaces in boarder region: {boarder_regions}, #: {len(boarder_regions)}")
+all_non_boarder_regions = [empty_coordinate for empty_coordinate in all_empty_spaces if empty_coordinate not in border_region]
+print(f"Empty spaces in boarder region: {border_region}, #: {len(border_region)}")
 print(f"Empty spaces not in boarder region: {all_non_boarder_regions}, #: {len(all_non_boarder_regions)}")
 
 groups = []
@@ -174,8 +231,8 @@ print(connected_coordinates)
 
 print(f"The path length is {math.ceil(len(connected_coordinates) / 2)}")
 
-for row in range(1, len(lines[0]) + 1):
-    for column in range(1, len(lines) + 1):
+for row in range(1, len(lines[0]) + 2):
+    for column in range(1, len(lines) + 2):
         current_coordinates = Coordinates(column, row)
         if current_coordinates in connected_coordinates:
             print(coordinates_with_facing[current_coordinates], end="")
@@ -183,3 +240,13 @@ for row in range(1, len(lines[0]) + 1):
             print(".", end="")
 
     print()
+
+is_border_right_of_path_up = is_right_of_path_up(border_region, coordinates_with_facing, connected_coordinates)
+inside_groups = []
+for group in groups:
+    is_group_right_of_path_up = is_right_of_path_up(group, coordinates_with_facing, connected_coordinates)
+    if (is_group_right_of_path_up and not is_border_right_of_path_up) or (not is_group_right_of_path_up and is_border_right_of_path_up):
+        inside_groups.append(group)
+
+print(f"{len(inside_groups)} are inside the border")
+print(f"{reduce(lambda count, l: count + len(l), inside_groups, 0)} are inside the border")

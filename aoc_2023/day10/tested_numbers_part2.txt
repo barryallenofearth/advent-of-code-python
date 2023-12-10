@@ -1,7 +1,9 @@
 too high
 497 (all regions without squeezing considered)
 
-
+unknown
+32
+42
 
 ..........
 .>>>>>>>v.
