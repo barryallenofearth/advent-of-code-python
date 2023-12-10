@@ -75,7 +75,7 @@ def update_starting_symbol(coordinates_with_symbols, current_coordinates, curren
 
 lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 coordinates_with_symbols = coordinates.read_grid(lines, row_start=1, column_start=1)
-starting_position = coordinates.find_symbols_in_grid(coordinates_with_symbols, "S")[0][0]
+starting_position = coordinates.find_symbols_in_grid(coordinates_with_symbols, "S")[0]
 
 print(starting_position)
 

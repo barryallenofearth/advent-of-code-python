@@ -1,0 +1,14 @@
+too high
+497 (all regions without squeezing considered)
+
+
+
+..........
+.>>>>>>>v.
+.^v<<<<^v.
+.^v....^v.
+.^v....^v.
+.^>>v>>^v.
+.^..v^..v.
+.^<<<^<<<.
+..........

@@ -57,5 +57,5 @@ def read_grid(lines: list[str], column_start=0, row_start=0) -> dict[Coordinates
     return coordinates_with_symbol
 
 
-def find_symbols_in_grid(coordinates_with_symbol: dict[Coordinates:str], wanted_symbol: str) -> list[tuple[Coordinates: str]]:
-    return [(coordinates, symbol) for coordinates, symbol in coordinates_with_symbol.items() if symbol == wanted_symbol]
+def find_symbols_in_grid(coordinates_with_symbol: dict[Coordinates:str], wanted_symbol: str) -> list[Coordinates]:
+    return [coordinates for coordinates, symbol in coordinates_with_symbol.items() if symbol == wanted_symbol]
