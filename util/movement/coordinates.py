@@ -16,6 +16,9 @@ class Coordinates:
     def __eq__(self, other):
         return type(other) == type(self) and self.x == other.x and self.y == other.y
 
+    def __ne__(self, other):
+        return not self.__eq__(other)
+
     def __hash__(self):
         return hash((self.x, self.y))
 
@@ -40,3 +43,19 @@ def is_any_coordinate_adjacent(source_coordinates: Coordinates, coordinates_to_c
         if is_adjacent_to(source_coordinates, check, allow_diagonal):
             return True
     return False
+
+
+# returns a dictionary with keys of coordinates (row, column) = symbol at corresponding position
+def read_grid(lines: list[str], column_start=0, row_start=0) -> dict[Coordinates:str]:
+    coordinates_with_symbol = {}
+    for column in range(column_start, len(lines) + column_start):
+        line = lines[column - column_start]
+        for row in range(row_start, len(line) + row_start):
+            symbol = line[row - row_start]
+            coordinates_with_symbol[Coordinates(row, column)] = symbol
+
+    return coordinates_with_symbol
+
+
+def find_symbols_in_grid(coordinates_with_symbol: dict[Coordinates:str], wanted_symbol: str) -> list[tuple[Coordinates: str]]:
+    return [(coordinates, symbol) for coordinates, symbol in coordinates_with_symbol.items() if symbol == wanted_symbol]
