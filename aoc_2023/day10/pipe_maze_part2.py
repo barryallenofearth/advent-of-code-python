@@ -125,10 +125,15 @@ def group_non_border_regions(non_border_coordinates: list[Coordinates], groups: 
         group_non_border_regions(remaining, groups)
 
 
-def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing: [dict[Coordinates:str]], connected_coordinates: list[Coordinates]) -> bool:
+def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing: [dict[Coordinates:str]], connected_coordinates: list[Coordinates]) -> tuple[
+    bool, Coordinates, Coordinates, str, Coordinates]:
     is_right_of_path = None
-    down_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.UP)
-    for position in down_symbols:
+    up_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.UP)
+    matching_position = None
+    matching_facing = None
+    border_coordinate = None
+    previous_coordinate = None
+    for position in up_symbols:
         if is_right_of_path is not None:
             break
         if connected_coordinates.index(position) < 2:
@@ -136,14 +141,20 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
         for region_element in region_group:
             if Coordinates(position.x + 1, position.y) == region_element:
                 is_right_of_path = True
+                matching_position = position
+                matching_facing = facing.UP
+                border_coordinate = region_element
                 break
             elif Coordinates(position.x - 1, position.y) == region_element:
                 is_right_of_path = False
+                matching_position = position
+                matching_facing = facing.UP
+                border_coordinate = region_element
                 break
 
     if is_right_of_path is None:
-        up_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.UP)
-        for position in up_symbols:
+        down_symbols = coordinates.find_symbols_in_grid(coordinates_with_facing, facing.DOWN)
+        for position in down_symbols:
             if is_right_of_path is not None:
                 break
             if connected_coordinates.index(position) < 2:
@@ -151,9 +162,15 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             for region_element in region_group:
                 if Coordinates(position.x - 1, position.y) == region_element:
                     is_right_of_path = True
+                    matching_position = position
+                    matching_facing = facing.DOWN
+                    border_coordinate = region_element
                     break
                 elif Coordinates(position.x + 1, position.y) == region_element:
                     is_right_of_path = False
+                    matching_position = position
+                    matching_facing = facing.DOWN
+                    border_coordinate = region_element
                     break
 
     if is_right_of_path is None:
@@ -166,9 +183,15 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             for region_element in region_group:
                 if Coordinates(position.x, position.y + 1) == region_element:
                     is_right_of_path = True
+                    matching_position = position
+                    matching_facing = facing.RIGHT
+                    border_coordinate = region_element
                     break
                 elif Coordinates(position.x, position.y - 1) == region_element:
                     is_right_of_path = False
+                    matching_position = position
+                    matching_facing = facing.RIGHT
+                    border_coordinate = region_element
                     break
 
     if is_right_of_path is None:
@@ -181,9 +204,15 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             for region_element in region_group:
                 if Coordinates(position.x, position.y - 1) == region_element:
                     is_right_of_path = True
+                    matching_position = position
+                    matching_facing = facing.LEFT
+                    border_coordinate = region_element
                     break
                 elif Coordinates(position.x, position.y + 1) == region_element:
                     is_right_of_path = False
+                    matching_position = position
+                    matching_facing = facing.LEFT
+                    border_coordinate = region_element
                     break
 
     if is_right_of_path is None:
@@ -194,10 +223,14 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             index = connected_coordinates.index(position)
             if index < 2:
                 continue
-            previous_symbol = coordinates_with_symbols[connected_coordinates[index - 1]]
             for region_element in region_group:
                 if Coordinates(position.x + 1, position.y) == region_element or Coordinates(position.x, position.y - 1) == region_element:
-                    is_right_of_path = previous_symbol == "|" or previous_symbol == "L" or previous_symbol == "J"
+                    previous_coordinate = connected_coordinates[index - 1]
+                    # is previous coordinate below 7
+                    is_right_of_path = previous_coordinate.x == position.x and previous_coordinate.y - 1 == position.y
+                    matching_position = position
+                    matching_facing = "7"
+                    border_coordinate = region_element
                     break
 
     if is_right_of_path is None:
@@ -208,10 +241,14 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             index = connected_coordinates.index(position)
             if index < 2:
                 continue
-            previous_symbol = coordinates_with_symbols[connected_coordinates[index - 1]]
             for region_element in region_group:
                 if Coordinates(position.x - 1, position.y) == region_element or Coordinates(position.x, position.y - 1) == region_element:
-                    is_right_of_path = previous_symbol == "-" or previous_symbol == "J" or previous_symbol == "7"
+                    previous_coordinate = connected_coordinates[index - 1]
+                    # is previous coordinate right next to F
+                    is_right_of_path = previous_coordinate.x - 1 == position.x and previous_coordinate.y == position.y
+                    matching_position = position
+                    matching_facing = "F"
+                    border_coordinate = region_element
                     break
 
     if is_right_of_path is None:
@@ -222,10 +259,15 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             index = connected_coordinates.index(position)
             if index < 2:
                 continue
-            previous_symbol = coordinates_with_symbols[connected_coordinates[index - 1]]
             for region_element in region_group:
                 if Coordinates(position.x + 1, position.y) == region_element or Coordinates(position.x, position.y + 1) == region_element:
-                    is_right_of_path = previous_symbol == "-" or previous_symbol == "F" or previous_symbol == "L"
+                    previous_coordinate = connected_coordinates[index - 1]
+                    # is previous coordinate left of J
+                    is_right_of_path = previous_coordinate.x + 1 == position.x and previous_coordinate.y == position.y
+
+                    matching_position = position
+                    matching_facing = "J"
+                    border_coordinate = region_element
                     break
 
     if is_right_of_path is None:
@@ -236,13 +278,17 @@ def is_right_of_path_up(region_group: list[Coordinates], coordinates_with_facing
             index = connected_coordinates.index(position)
             if index < 2:
                 continue
-            previous_symbol = coordinates_with_symbols[connected_coordinates[index - 1]]
             for region_element in region_group:
                 if Coordinates(position.x - 1, position.y) == region_element or Coordinates(position.x, position.y + 1) == region_element:
-                    is_right_of_path = previous_symbol == "|" or previous_symbol == "F" or previous_symbol == "7"
+                    previous_coordinate = connected_coordinates[index - 1]
+                    # is previous coordinate above L
+                    is_right_of_path = previous_coordinate.x == position.x and previous_coordinate.y + 1 == position.y
+                    matching_position = position
+                    matching_facing = "L"
+                    border_coordinate = region_element
                     break
 
-    return is_right_of_path
+    return is_right_of_path, matching_position, previous_coordinate, matching_facing, border_coordinate
 
 
 def filter_for_neighbors(group: list[Coordinates], coordinates_with_facings: dict[Coordinates:str], add_neighbors_of_neighbors=True) -> dict[Coordinates:str]:
@@ -351,14 +397,16 @@ groups = []
 group_non_border_regions(all_non_border_regions, groups)
 print(f"{len(groups)} groups of non border contacts could be identified")
 
-is_border_right_of_path_up = is_right_of_path_up(border_region, coordinates_with_facing, connected_coordinates)
+is_border_right_of_path_up, matching_position, previous_coordinate, matching_facing, border_coordinate = is_right_of_path_up(border_region, coordinates_with_facing, connected_coordinates)
 print(f"Border is {'right' if is_border_right_of_path_up else 'left'} of path up")
+print(f"Matching position: {matching_position}='{matching_facing}' (previous coordinate: {previous_coordinate} ) connected to border region {border_coordinate}")
 inside_groups = []
 for group in groups:
     print(f"Testing group {groups.index(group)}/{len(groups)} containing {len(group)} empty spots")
     neighbors_to_group = filter_for_neighbors(group, coordinates_with_facing)
-    is_group_right_of_path_up = is_right_of_path_up(group, neighbors_to_group, connected_coordinates)
+    is_group_right_of_path_up, matching_position, previous_coordinate, matching_facing, border_coordinate = is_right_of_path_up(group, neighbors_to_group, connected_coordinates)
     print(f"Group is {'right' if is_group_right_of_path_up else 'left'} of path up")
+    print(f"Matching position: {matching_position}='{matching_facing}' (previous coordinate: {previous_coordinate} ) connected to border region {border_coordinate}")
     if (is_group_right_of_path_up and not is_border_right_of_path_up) or (not is_group_right_of_path_up and is_border_right_of_path_up):
         inside_groups.append(group)
         print(group)

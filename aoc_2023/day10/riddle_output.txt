@@ -1,0 +1,1653 @@
+C:\Users\Michael\git\advent-of-code-python\venv\Scripts\python.exe C:\Users\Michael\git\advent-of-code-python\aoc_2023\day10\pipe_maze_part2.py 
+starting position: (76, 61)
+The path length is 6909
+Pipe main loop after cleanup
+............................................................................................................................................
+............................................................................................................................................
+............................................................................................................................................
+...................................................................................................F7.......................................
+..............................................F7..........F7.......................................||......F7...............................
+.........................................F7F7.|L7........FJL-7.F7............F-7...................||F7..F-J|...............................
+.......................................F7||||FJFJ........|F-7L7||............L7L7.....F7.......F-7FJ|||F7L-7|...............................
+.................................F7F7.FJLJ||||FJ.........||#L7LJ|.......F-7F7#L7L-7F--J|.......L7|L7||LJL7FJL7..............................
+..............................F-7|||L7L--7||LJL--7.......LJ##|F-JF-7.F7.L7LJL7FJF-JL--7L-7.F7...|L7|||F--JL-7L7.............................
+..............................L7LJLJFJF7#|||F----J.........F7||##L7|.||..L--7|L7L7F7F-JF-JFJL7..L7||LJL---7#|FJ.............................
+.............................F7L--7FJFJ|FJLJ|F7F7#F7....F--JLJL7#FJ|FJL7F7##||FJFJ||L-7L7FJF-J..FJ|L7F----J#|L-7............................
+...........................F-JL---JL7L7LJF--J|||L7||....L7F---7|FJFJL-7LJL7FJ|L7|FJL-7|FJL7|F7F7L7|FJ|F7F-7FJF-JF7..........................
+..........................FJF7F----7L7L-7L-7#|||FJ||.....LJF--J||FJF-7|F--JL7|FJLJF--J||F7|LJLJ|FJLJFJ|||FJ|FJF7||..F7......................
+..........................L-JLJF--7|FJ#FJF-JFJLJL-JL7..F7##L7F7LJL7|FJ|L-7F7||L--7L7F-JLJ||F--7LJF--J#|LJL-J|FJLJ|F7||......................
+...........................F---JF7LJ|F7L7L7#|F7F7F--J..||##FJ|L-7FJ||FJF-J||||#F7L7LJF--7|LJF7L-7|F--7|F7F--JL7F-J|||L-7F7..................
+...........................L-7F-JL7FJ||#L7L-J||||L7F7.FJ|F7L-JF-J|FJ|L7L7FJLJL-J|FJF7L-7LJF-J|#FJLJF-JLJ||F7F7||#FJ||F-J||..................
+......................F-7.F-7LJ#F7||#||F-JF--J||L7||L7|FJ||###L-7||FJFJFJL---7F-J|FJ|F7L-7L-7L-JF7FJF7F7|||LJLJL-JFJ|L7FJL7.................
+.....................FJFJFJFJF--JLJL-J||F7L--7|L7||L7||L7|L-7F-7|||L7L7|#F-7FJL7FJ|#LJL--JF7L-7FJ|L7||||||L--7F---J#|FJ|F-JF7.F7............
+.....................L7L7|FJ#L---7F-7FJLJ|F--JL-JLJ#|LJFJ|F-JL7LJLJFJFJL7|FJL-7LJFJF-7#F7FJL7FJL7L-J||||||F7FJL7F7#FJL7||F7|L-JL7...........
+......................L7|||F7F7F7||#LJF7FJL-7F7F7#F7L-7L7|L7F7L7F--J#L-7||L--7L7FJ#|FJFJ|L7FJL7FJF7#|LJ|||||L-7LJL7L-7LJ||||F---J...........
+.....................F-JLJLJ||||LJL-7#||L-7FJ|LJ|FJL-7L7||FJ|L-JL7F7#F7|||F--J#||#FJL7L7|#||F7|L-JL7|F-J||||F7|F--JF-JF7LJLJL-7#F7..........
+.....................L-----7LJ|L-7F-JFJL--JL7|F-JL7F-J#|LJ|#L---7||L7|LJLJ|F7F-JL7|F-JFJ|FJ|||L7F--J|L7FJ||||LJ|F7FJF-JL------JFJ|..........
+....................F-----7L-7L--JL-7L-7F-7FJ||F-7|L7F7L-7L-7F--J||FJL-7F-J||L--7LJL7#L7|L7LJ|#|L-7#|FJ|FJ||L-7LJ|L7|#F--------JFJ..........
+....................L----7|F7L---7F-JF7LJFJL-J|L7||FJ||#FJF-JL--7||L-7#|L--J|F--JF--JF-JL7L-7L7|F-JFJ|FJ|FJ|F-JF-J#|L-JF7F----7FJ...........
+...............F7.F--7F--JLJL7F7#||#FJ|#FJF---JFJLJL7|L-JFJ#F7F-JLJF-JFJF---JL7F7L7F7L--7|F7|FJ|L-7|FJ|FJL7|L-7L7F-JF--J|L---7|L7...........
+...............||.L-7|L-----7|||FJL7L7|FJFJ#F-7L--7FJL--7L-7||L--7FJF7L7L7#F7#LJ|FJ||F7FJ||LJL7L7FJ||#|L7FJ|F7|FJL-7|#F7L----JL-J...........
+............F7FJL7F-JL7F----J|||L7FJ#||L7L--JFJ#F7|L-7F-JF-J|L7F-J|#||#L7|FJL-7FJL7||||L7|L-7FJFJL-JL7|FJ|FJ|LJ|F7#|L7|L7F---7F7............
+............|LJF-JL--7|L----7LJL7||#FJL-JF---JF-J||F-JL-7|F7L7|L-7L-JL7#|||F--JL-7|||||FJL7#||#L7F-7FJ|L-JL7L-7||L7|FJ|FJ|F--J|L7...........
+............L-7L7#F-7|L-7F-7L7F7LJL7L---7L---7L-7|||F7F7|LJ|FJL7#|F--7|FJ|||F7F--JLJ|||L-7|FJL7FJL7LJ#|F---JF-J|L7LJL7|L-JL---JFJ...........
+...........F-7L7|#L7LJF-JL7L7LJL7F-J#F7FJF---J#FJLJLJ||LJF-JL-7|FJL7#LJL7||LJ|L--7F7LJL7FJ|L7FJ|F-J#F7||F7F7L-7|FJF-7LJF7F7F7F7L7...........
+...........L7L-JL7FJF7L-7#L7L---JL-7FJ|L7L-7#F7L--7F-JL7FJF-7FJ|L7FJF7#FJLJF-J#F7||L---JL7L7|L-JL7F7|LJ|||||F-JLJFJ#L7FJLJLJLJL-J...........
+...........FJF--7|L-J|F-JF7|F----7FJL7|FJF-JFJ|F7FJ|F7FJL7|FJL7L7|L7|L7|F-7L-7FJ||L7F7F7FJFJL7F-7LJLJF-J|||||F---JF7FJL---7#F7F7F7F7........
+.........F7L-JF7||F7FJ|F7|LJ|F---JL7FJ||FJF7L7|||L7||||F-J|L7#|FJL7||FJLJ#L7FJL7||FJ||||L7L7FJ|FJF---JF7|||LJL---7||L7F7F7L-JLJLJLJL-7......
+.........||F7FJLJ|||L7|||L--JL----7|L7LJ|FJ|FJ||L7|LJ|||F7L7L7|L7FJ||L7F7F7||F7|||L7||||FJFJL-JL7L7F-7|LJ||F-----J|L7|||||F--7F7F---7|......
+.......F7|||||F-7|||FJ|||#F7F7F---JL7|F-J|FJL7|L7|L7FJ||||#|FJ|FJL7|L7||||||||||||FJ|||||FJ#F7F7|FJL7|L-7LJL----7FJFJLJLJLJ#FJ|||###LJ......
+......FJLJLJLJL7||||L7||L7|||LJF---7|||F7|L7FJ|FJL7||FJLJL7||FJ|F7|L7|||||LJ||||||L7|||||L7FJLJ|||F7|L7FJF7F-7F7LJFJF7#F---7L-JLJ####F7.....
+......L-7F-7F--J|LJL7||L7|||L--JF--J||||||FJ|FJ|#FJ||L7F--J|||FJ||L7||||||#FJ|LJ||#||||||#|L-7FJ||||L7||FJLJ#LJL--JFJL7|F--J#F--7####||.....
+.......FJL7||F--JF-7LJ|FJLJ|F7F7L--7LJLJ||L7|L7L7L7||FJL7F7|LJL7|L-J||LJ|L7|FJF-JL7|||||L7|F-J|FJ|||FJLJL---7F7#F--JF-J|L--7FJF7|####|L7....
+.......L7FJ||L---J#L7FJL-7FJ|LJL-7#L---7||FJL7L7|FJ|LJ#FJ|LJ#F7||F--JL7FJFJ||#L7F7||||||FJ||#FJ|#LJ||#F7#F-7LJL-JF-7L--JF-7||FJLJ##F7|FJ....
+......F-JL7LJ#F7F7F7||F--JL7L---7L----7|LJL-7|FJ||FJF-7L7L--7|LJ|L-7F7|L7L7||F-J||||||||L7|L7L7|F--J|FJ|FJ#L7F--7L7L---7L7LJ|L-7#F-JLJ|F7...
+......L---JF--JLJLJLJLJF--7L7F7#L---7FJL7F--J||FJ|L7L7L-JF--J|F7L7FJ|LJ#L7||||F-J||LJLJL-J|FJFJ||F7FJL7|L--7LJF7L-JF--7L-JF7|F-J#L7F--J||...
+...........L7F-----7F--JF7L7LJL-----JL--JL7F7|||FJFJ#L7F7L--7|||FJL7L--7FJ|||||F-JL------7|L7L7|LJ||F-JL7F7L-7|L---JF-J#F7||||F7#FJ|F--J|...
+............LJF----J|F--JL-JF----7F7F--7F7||LJLJL-J#F7|||F7FJ||||F7|F-7|L7|LJLJL-7F--7F-7|L7|#LJF7LJL--7LJL--J|F---7L---JLJLJLJL7L7LJF--J...
+...........F--JF--7FJL7F-7F7|F--7LJLJF-J||LJF7F7F--7|LJ|||LJ#LJ|||LJL7|L7||F-----JL7FJL7||FJ|F--JL7#F-7L------JL--7L7F------7F-7L-JF-J......
+.........F7L--7|F-J|F-JL7LJLJL-7L----J#FJ|#FJLJLJF7||F-J||F----J||F7FJ|FJ||L-7F7F7FJL--JLJL7|L7F-7L7|FJF7F--------J#LJ#F7#F7LJ#|F-7|........
+.......F-JL---J||F7|L7F-JF-----JF7F7#F7|FJFJF-7F-J||||F-J|L7F7F-JLJ|L7||#||F-J||||L---7F--7||FJ|#L7LJL-J|L-------------JL-JL--7LJ#|L7.......
+.......L-----7FJ||LJ#LJF7L-7F7F-JLJL-J|||FJFJFJL-7||LJL7FJ#LJ||F7#FJFJ|L7LJL-7|LJ|F--7LJF7|LJL-JF7L7F7F7L---7F7F---7F---7F-7F-J#F-JFJ.......
+......F-7F---J|#||#F---JL7#||||F-7F---J|LJFJ#L-7FJLJ#F-J|F---JLJL7|FJ#L7L7F--J|F-J|F7|F-JLJ#F---JL7LJ||L---7LJLJF-7|L--7||FJL--7L7FJ........
+......L7LJF--7|FJL7L7F--7L-J|LJL7|L7F7#|F-JF7F7LJF7#FJF-JL7F7F-7FJ|L--7|FJ|F-7||F7LJ||L----7L----7L--J|F---JF---JFJL7F7||||F7F7L7LJ.........
+.....F-JF7|F-J||F7L7||F-JF-7|F--JL-J|L-JL--JLJL-7|L7L7|F--J|LJFJ|#|F7FJ|L7||FJ|||L7FJ|F7F7FJF----JF7F7|L-7#FJF---JF7||||LJ||LJL7L-7.........
+.....L--J|||F7||||FJLJL--J#LJL------JF---------7LJFJ#LJL--7L7#|FJFJ|LJ#L-JLJL-J|L7||#|||||L7|F7F7FJLJLJF7L7|FJF7F7||LJLJF7|L--7|F-J.........
+.........LJ||LJ||LJF7#F---7#F7F---7F7L-------7FJF7|F--7F--JFJFJ|#L7L---7F------JFJLJFJ||||FJLJLJLJF7F7FJL-J|L-JLJLJL7F7FJ||F7FJ|L7..........
+...........LJF7LJ#FJL7L--7L-JLJF-7LJL--------JL-J|LJF-JL7F7L7L7L-7|F---JL7F-7F7FJ#F-JFJ||||F---7F-JLJLJF---JF----7F7||||FJLJLJ#L-J..........
+............FJL--7L-7|F-7L----7|FJF7F--------7F-7|F7|F7#||L-J#L7FJLJF7#F7|L7LJ|L-7L-7|FJ|LJL--7|L7F7F--J#F-7L---7LJ|||LJL7#F7F7F-7..........
+...........FJF7F7L7FJ||FJF----J||FJ||F-------J|FJLJLJ|L7||F7#F-J|F--JL7|LJFJF-JF-JF-J|L7L7#F7FJL7||LJF7F-J#L----JF7LJ|F-7L-JLJLJFJ..........
+...........L-J||L7|L7||L-JF-7F7|LJ#LJL-7#F7F7#||#F7#FJFJ|||L-JF7LJF7F7|L-7|#L-7L-7L-7|#|FJFJ|L-7|LJF7||L------7F7|L7FJL7L---7F--J...........
+..............LJFJL-J|L---J#LJLJF------JFJLJL-JL7||FJFJFJ||F7FJL7FJLJ||F7LJF7FJF7|F-J|FJ|FJFJF7|L--J|||F7F7F--J|||FJ|F-JF--7LJ..............
+..............F-JF7F7L----7F--7#L-------JF---7F-J|LJFJ#L-J||||F-JL-7FJLJL7FJLJFJ||L-7|L7|L7L-J|L---7LJLJLJ|L--7|||L-JL7#|F-J#F7.............
+..............L7FJLJL---7FJL-7|F7F7F--7F7L--7|L--JF-JF7F7#LJ||L7F7FJL7F--JL7F7L7|L7#LJ#LJ#L--7L7#F7L7F7F-7L---J|LJF7F7L-JL--7|L-7...........
+...............LJF------JL-7FJ||LJLJF7LJ|F7FJ|F7F7L--JLJL--7LJFJ|LJF-JL---7||L7||FJF7F7F7F7F7L7L-JL7|||L7L----7|F-J|||F-----J|F-J...........
+...............F7L----7F7F7||FJL----JL-7||LJ#||LJ|F7F--7F--JF7L7L-7L7F7F7FJ||#||||FJLJLJLJLJL-JF7F7|LJL-JF----J|L-7LJLJF7#F7FJL7F7.F7.......
+..............FJL-----J|LJ|LJL---------J|L--7LJF7||LJF7LJF7#||#L7FJ#||||||FJL7LJ|||F7F7F---7F7FJLJ||F-7F7L-----JF7L----JL7|||F7LJ|FJ|.......
+..............|F-7F----JF7L------7F--7F7L--7|F-J||L7FJL7#|L-JL7#LJ#FJ||||||F7|##||LJ||||F--J|LJF7#||L7LJ|F7F7F7FJ|F-7F7F7LJ|||L--J|FJ.......
+.............FJ|FJ|F----JL-7F7#F7LJF7LJL-7#LJ|F-JL7LJF7L-JF7F7L7###L7|LJLJLJ||F-J|F-J|LJL7F7|F-JL-JL-JF7LJ||||||#LJ#LJ||L7FJ||F---J|........
+.............L7|L7|L------7LJL-JL--J|F--7L---JL-7#L7FJ|F7FJ||L-J###FJL-7####|||F-JL--J###LJLJL7F-7F7F7|L-7LJLJ|L--7F-7||FJL-JLJF-7FJ........
+..............LJ.LJF7F7F7#L--------7LJF7L----7F7L7#||#LJ||#LJ######L7F-J####LJLJ######F--7F--7LJFJ|LJLJF-JF7F7L--7LJFJ||L7F-7F7L7LJF7.......
+..................FJLJ||L----------JF7|L----7||L-JFJL--7||##########LJ################L-7|L7FJF7L-JF7F7L--JLJL7F7L--JFJ|FJL7LJL7L--JL7......
+.............F--7FJF-7LJF-7F-7F-7F--JLJF7F--JLJ#F7L7F--JLJF7#####################F-7F7#FJL-JL-JL-7FJLJL----7F7LJL---7L7||F7L--7L---7FJ......
+.............L-7LJFJ#L7FJFJ|#LJ#LJ#F---J||#F---7|L7LJ#F7F7|L7####################L7LJL7L--------7|L----7F-7||L7F----J#LJ||L7F-J#F7#LJ.......
+..............FJF-JF--JL7L-JF-----7L--7#LJFJF-7LJFJF7FJLJLJFJ#####################L7F7L---------J|#F7F7||FJLJFJL-------7|L7|L---JL---7......
+..............L-JF7|F-7FJF7#L----7|F-7L7F7L7L7|F-J#|||F----J#######################||L----------7L-JLJ|LJ|F7#L---------JL-JL7F7F7F7F7L-7....
+..............F--J|LJ#||FJL----7FJLJ#L7LJL-JFJLJF-7|||L---7########################LJ#F--7F----7L----7L--J|L7F-7#F--7#F7F--7||||||LJ|F-J....
+..............L--7|#F-J|L-----7|L----7|F7F--J#F7L7LJLJF---J#####################F----7L-7|L-7F7L7F--7L----JFJ|FJFJF-JFJ||F-JLJLJ||..LJ......
+............F--7FJ|FJF-JF7#F7FJL-----JLJ|L--7FJ|#L7F--J#F7######################L---7|F7|L7#LJL7|L-7|F7F---JFJL-JFJF7L7LJL-----7LJ..........
+............L-7|L7|L-JF-JL-JLJF7F--7F-7#L---J|FJF7|L---7|L-7###################F-7F-J||||FJF-7FJ|F-J|||L----JF7F-JFJL7|F7F7F7F7L-7..........
+............F-JL-JL7F7L-------JLJF7LJFJF---7FJ|#|||F--7LJF-J###################L7|L-7LJ|||#L7|L7LJF7LJL-----7|||F7L-7|||LJLJLJL7FJ..........
+............L--7F-7LJL7#F7#F7F7F7|L--JFJF7FJ|FJFJ||L-7L-7L7F7##################FJL7#L-7LJL7FJL-JF-JL7F-----7||||||F7|LJL------7||...........
+..........F7#F7||#L7F7L-JL-JLJLJLJF--7|FJLJFJL7L7||F7L-7L7LJL7##############F-7L-7|F-7L--7LJF7F7L7F-J|F----J|||LJLJLJF--7F7F--JLJ...........
+..........||FJLJL7FJ|L---7F7F-7F-7|F-J|L--7|F7L-JLJ||F-J#|F-7|##############L7|F-J|L7L---JF7||||FJL--JL----7LJL-7F---JF7LJLJF7F7............
+..........||L----JL-JF7F-J|LJ#LJ#LJL--JF--JLJL7F7F7||L-7FJL7LJ############F7FJ|L7FJ#L-----J||LJLJF7F---7#F-JF-7FJ|F7F-JL7F7FJ|||F7..........
+..........|L7F-7F----JLJF7|F-7#F-------JF7F7F7||LJLJL--JL--J#############FJ|L7|FJL-7F------JL7F--JLJF-7L7L-7|FJL7||||F-7LJ|L7|||||..........
+........F-JFJ|FJL7F-----JLJL7L-JF---7F7#||||||||F7#F7F-----7F7####F7###F-JFJFJ||F--JL--7F-7F-JL----7|#L7L--J||F7LJ|||L7L7FJFJLJLJL--7.......
+.......FJF7|FJL7FJ|F-------7L7F-JF--J|L7|||||LJLJL-J||F-7F-J|L7#F-J|###L-7|#L7LJL7#F7F7LJFJ|F---7F-J|F-JF---JLJ|F7|||FJ#|L7|F7F7F-7FJ.......
+.......L-J|LJF-J|FJL7F7F7F7L7LJF7L---JFJ|||||F7F-7F7LJL7|L7FJFJ#L-7|F7F7FJL7#L-7FJFJ||L7FJFJL-7FJL-7|L--JF7F7F7LJLJLJL-7L-J||LJ||FJL7.......
+..........|F7L-7LJF7||||LJL7L--JL----7L-JLJLJ||L7|||F--JL-JL7L7F-7|LJLJ||F7|F7FJL7|FJL7|L7|F7FJL7F7LJF---JLJLJ|F7F7F7F7L---JL-7||L-7L-7.....
+..........LJL7FJF-J|LJLJF-7L7F-7F---7L7F7F--7||FJ|||L-7F7F7#L7LJFJL-7F-JLJ|LJ|L-7|||F7||#LJ|||F7LJL7#L-------7LJ||||||L----7F7|||..L--J.....
+............FJL-JF7L7#F7L7|#LJ#||F--J#LJ|L-7|||L7LJL--J|LJ|F-JF-JF7#||F7F7L-7L7#|||||||L-7FJ|LJL7F7L-7F-----7|F7LJ|||L----7LJ||LJ...........
+............L7F7FJL7L-J|FJL----J|L---7F7L--JLJL7|F---7FJF-JL7FJF7||FJ|||||F7L7|FJLJLJLJF7|L7|#F-J||F7LJF---7|||L-7LJL7F7F-JF7LJ.............
+.............||LJF-JF-7LJF---7F7|F--7||L----7F7LJL7F-JL7L7#FJL7||||L7|||||||FJ|L-7F--7FJLJFJL7L--JLJ|F7|F--J|||F-J#F7LJ||F-JL---7...........
+..........F--JL-7L-7|#L--JF--J||||F7LJ|F----J|L--7|L--7L7L7|F-J||||#||||||||L7L7FJL-7||#F7|F7L----7FJ|LJL7F7LJ||#F7||F7|LJF----7|...........
+.........FJF---7|F-J|F-7F7|F7FJLJLJL--JL----7L-7FJ|F-7|#L7|||F7|||L7|LJ|||||#|FJL7F7|||FJ|LJL---7FJL-JF-7LJL-7|L-JLJLJ|L-7L---7LJ..F7.......
+.........L-J.F7LJL--JL7LJ|LJLJ#F-----7F--7F-JF7||#|L7LJF7|||||||||FJ|F-J|LJL-JL7#||LJLJ|FJF-----JL7F7#L7L----J|F---7F7L-7L--7FJF7..|L7......
+.............|L7F7F---JF7L-7F-7|F--7FJL-7|L7#|||L7L7L7FJLJ||||LJ|||FJL-7|F7F7F7|FJL7##FJ|FJF-----7|||F7L------JL--7LJ|F7L--7LJ#||F7|FJ......
+.............L7LJLJF---JL-7|L7|LJF-JL---J|FJFJ||FJ#|FJL--7|||L-7|||L7F-JLJLJLJ|||F7L7FJFJL7|F---7||||||F----7F-7F-JF7LJL7F7L7F7|LJLJL7......
+...........F-7L----JF---7FJL-J|F7L-----7FJL7L7|||F-JL7F7FJ|||F7|||L-J|F-7F7F7FJ|||L-J|FJF7LJL--7LJLJLJ|L---7LJFJL--JL--7||L7LJLJF7F7FJ......
+...........L7|F--7F7L--7||F--7LJ|F7F---J|F7|FJ|||L--7|||L7LJ||LJ||F7FJL7LJ|||L7||L7F7||FJL7F7F-JF----7L----JF7L----7F--J||#L-7F-JLJLJ.......
+........F7.FJ||F7LJ|#F-J|LJF7L-7LJLJF7F7LJLJL7LJ|F--J||L7L7FJ|F-J||LJF7|F7LJ|FJLJFJ|||||F-J|LJF-JF--7|F7F---J|F---7|L--7|L7F-JL-7...........
+......F7||FJFJLJL-7L7L-7|F7|L--JF7F-JLJL--7F-JF-JL7F7||FJ#||FJL7FJL7FJ|LJL-7|L-7FJ#|||LJ|F7L-7L7#L-7LJ|||F7F7LJF7FJ|F--JL-J|F7F-J...........
+.....FJLJLJFJ#F-7#L7L7#||||L-7F7|LJF----7FJL-7|F-7LJ|LJL7FJ||F7|L7FJ|FJF7F7|L--JL-7|||F-J||F7L-JF7#L-7|LJ|LJL--JLJ#LJ#F---7||||F7...........
+.....L--7F7L--JFJF-JFJFJLJL7FJ|LJF-JF-7#LJF--J||FJF7L7F-JL7|||LJ#|L7||#||||L7F-7F7||LJL-7|LJL7F-JL-7FJ|F-JF7#F7F7F7#F7|F--J|||LJL7..........
+........LJ|F7F7L7L-7L7L---7|L-JF7L--JFJF7#L--7||L7||FJL-7#|||L-7FJFJ|L7|||L7LJFJ|LJL-7F7||F-7|L7F7FJL-JL-7|L7|LJLJL7|LJL-7#LJ|F-7L7.........
+..........||LJL7L7FJFJF---JL---J|F---JFJL7F7FJ|L7|||L7F-JFJ||F7||FJ#L7||||FJF7L7|#F7FJ|LJ|L7LJ#LJ||F--7F-J|FJ|F7F-7LJF---JF7#|L7L-J.........
+.........FJL--7L7|L7L-JF7F-7F--7||F--7|F-J|LJFJ#|||L-J|F7|FJLJ||||F7FJ||LJL7||FJL7||L7L-7|FJF7F7#||L7FJL--JL-J||L7|F7L7F7#||#L-J............
+.........L7F--JFJ|#L---J|L7||F-J|LJF7|||F7L-7|F7||L--7LJ|||F7FJ||||||FJL-7FJ|||F7||L7|F-J|L7||||FJ|FJL--7F----JL-JLJL7|||FJ|F7F7............
+..........||F7#L7|F7F---JFJLJL-7L--JLJ||||F7||||||F7#|F-J|||||FJ||||||F7#||#||||LJL7|||F7|FJ||||L7|L-7F-JL----------7|LJLJFJ|LJL--7.........
+..........LJ||F-JLJLJF7F7|F----JF7F7F7|||||||||||||L7|L-7|||||L7||||||||FJ|FJ||L7F7||||||||FJ|||FJL7FJL-7F--7F------JL--7FJFJF----J.........
+............||L--7F7FJLJLJL7F7F7|||||||||||LJ||||LJ#|L7FJ|||||FJ|LJ||LJ|L7LJFJ|#LJ||||LJLJ||#|||L7FJ|F--JL-7|L------7F-7|L7L7|#F7...........
+........F-7FJL---J|LJF7F7F7LJLJLJ||||LJ||LJ#FJ|LJ#F-JFJL7|||LJL7L-7||F-JFJF7L7|F--J||L---7||FJ||FJL7||F-7F-JL7F--7F-J|FJL-JFJL-J|...........
+........L7LJF--7F7|F-JLJLJL7F----J||L-7||#F7L7L7F-JF-JF7|||L7F-JF7|LJ|F7L7||FJ||F-7||F-7FJ||L7|||F-J|||FJL--7|L-7LJF7||F7F-JF7F7L7..........
+.........|F7|F-J|||L7F----7|L----7|L--J||FJ|FJFJ|F7L7FJLJ|L-J|F7||L7FJ|L7LJ|L7|||FJ||L7|L7||FJ|LJL7FJ||L7F--JL--J#FJLJLJLJF-J||L7L7.........
+.........LJLJL-7|LJ#LJF7#FJL-7F--JL--7#LJL7LJFJ#|||FJL7F7L-7FJ|LJ|FJL7|FJF7L7LJ|||FJ|FJL-JLJL7L-7FJL7|L7|L-----7F-JF--7F-7L-7LJ.|FJ.........
+............F--J|F--7FJL-JF-7|L---7F7L-7F-JF-J#FJ||L-7|||F7|L7L-7|L-7||L7||FJF-J||L7|L----7F7|F-JL7FJL-JL--7F-7LJF-JF7LJFJF7L7..LJ..........
+............L7F7|L-7|L7F-7|FJL----J||F-J|F7L--7L7|L7FJ|||||L7L7FJ|F7|||#||||FJF7||FJL7F--7||LJ|F--JL------7||FJF7L--JL-7|FJ|FJ..............
+...........F-J|LJF-JL-JL7||L7F-7F7FJ|L-7LJL7F7L7|L7||FJ|||L-JFJL7||||||FJ|LJL7||||L-7|L-7LJL-7||F7F7F-7F-7|LJL7||F-7F--J|L7||...............
+...........L--JF7|F7F-7FJ|L7||FJ|||FJF-JF--J|L7|L7|||L7||L--7L7FJ||||LJL7|F--J||||F7||F-JF---J|LJLJ|L7|L7LJF7FJ||L7LJF-7L7|LJ...............
+.........F-----J|LJLJ#LJFJFJLJL7|LJL7L-7L-7FJFJ|#|||L7|||F7FJ#|L7LJLJ#F7LJL--7|||LJLJ|L-7L---7|F---JFJ|FJF-J||FJL7L--JFJ.LJ.................
+.........|F---7FJF7F--7#L7|#F--JL7F7|F-J#FJL7L7L7||L7||||||L-7L-J#F---JL-----J||L---7|F7|F---J||F7F7|#LJ#|F-JLJ##L7F--J.....................
+.........||F--JL-JLJF7L--JL7L-7F7LJ|LJF--JF7|FJFJ||FJ|||||L7FJ#F--JF7F7F-7F-7FJL----J||LJ|F7F7|||||||F--7|L----7F-J|F7F7.F7.................
+.........LJ|F-7F-7F-JL7F7F-JF7||L7FJF-JF7FJ||L7|#LJL7||||L7||#FJF7FJLJ||FJ|FJL------7LJF-J|||LJ||LJ|LJF-J|F--7FJ|F7LJ||L-J|.................
+...........LJFJ|FJ|F--J|||F-JLJL7||#|F7||L7||FJL--7#LJ||L7||L7L-J||#F7LJL7|L7F7F7F-7L-7L7FJLJF-JL7FJF7L-7|L7FJL7|||F7LJF7FJ.................
+............FJFJL-JL-7FJLJL7F--7|||FJ|||L7|||L7F--JF7#||FJ|L7L--7|L-J|F--JL7|||||L7|F-JFJL-7#|F7FJL7|L-7LJFJL7FJ||||L7FJ||..................
+............L7|F----7LJ#F--JL-7||||L7||L7LJ||FJL---JL7||L7L7|F-7|L-7FJL---7||||||FJ|L-7L7F7L7LJ|L-7||F-JF7L7FJ|#||LJFJ|.||..................
+............FJ|L-7F7L---JF7F7FJ||||FJ||FJF-J|L7F-7F-7|LJ#|FJ|L7|L-7LJF7F--J|||||||#|F-J#|||FJF-JF7||||F-JL-JL-J#LJ.FJFJ.LJ..................
+............L7|.FJ|L7F7F-JLJ|L7LJ||L7|||#|F7|FJL7|L7LJF--JL7L-J|F7|F-JLJF-7|||LJ|L7|L--7|||L7L7FJ|||||L---7#F---7..L-J......................
+.............LJ.L-JFJ|||#F7FJFJF-JL7LJ|L7||||L7FJ|FJF7L---7|F7#LJ||L7F--J#|||L7#|FJ|F7FJ|||FJFJL7||LJ|F7F7L7|F--J...........................
+...................L7|||FJLJFJ#L-7FJF-JFJLJLJ#|L7|L7|L7#F-JLJL--7LJ#||#F--J|L7L7|L7||LJ#||LJ#L7FJ||F-J|||L7LJL--7...........................
+....................||||L--7L-7F-JL7L-7L-7F---JFJ|FJL7L-JF7F-7F-JF--JL7|F7FJ#|FJ|FJ|L--7LJF---J|FJ||F7||L7L7F7F7|...........................
+....................LJLJ#F-JF7|L7F7L-7|F7|L7F7FJFJL-7L7F7||L7|L-7|F-7FJLJ|L7FJL7LJ#L7F7L-7L7F-7|L7||||||FJ#||||LJ...........................
+...................F-----JF7|||FJ||F7|||LJFJ||L7L7F7|#|||||FJL--J||FJL--7|FJL7FJF-7FJ||F-J#|L7||FJ|||LJ||F7LJ|L-7...........................
+...................L--7F-7||||||FJLJ||||F7L7|L7|#|||L7||LJ|L----7LJL7F7FJLJF-JL-JFJL7|||#F-JFJ||L7||L7#|LJL-7L-7L7..........................
+......................|L7LJ||LJ|L-7#||LJ||FJL7|L7|||FJLJF-JF7F--J#F7||LJ##FJF7F7FJ##||||FJF7|FJ|#|||FJFJF-7FJ..|FJ..........................
+......................|FJ..||F-JF7L7LJ..|LJF7||FJLJLJ...L-7||L--7FJLJ|####L7||||L-7#LJLJL7|LJL7L7|||L7L7|.LJ...LJ...........................
+......................LJ...||L-7||FJ....L-7|||||..........||L7F7|L7F7L7F7##||||L-7L7.....LJ...L7||||FJ.||...................................
+...........................LJ.FJ|||....F--J|LJ||.........FJL7||LJFJ|L7LJL7FJ||L7.L-J...........||||||..LJ...................................
+..............................L7|LJ....L--7L-7LJ.........L7FJLJ.FJFJ#|F--JL7|L7|...............LJLJ||.......................................
+...............................LJ.......F-JF-J............LJ....L7|.FJL---7LJ.LJ...................LJ.......................................
+........................................L7FJ.....................LJ.L-7F--J.................................................................
+.........................................LJ...........................||....................................................................
+......................................................................||....................................................................
+......................................................................LJ....................................................................
+
+Facings
+............................................................................................................................................
+............................................................................................................................................
+............................................................................................................................................
+...................................................................................................F7.......................................
+..............................................F7..........F7.......................................^v......F7...............................
+.........................................F7F7.^L7........FJL>7.F7............F>7...................^vF7..F>Jv...............................
+.......................................F7^v^vFJFJ........^F<7L7^v............L7L7.....F7.......F>7FJv^vF7L<7v...............................
+.................................F7F7.FJLJv^v^FJ.........^v#L7LJv.......F>7F7#L7L>7F>>Jv.......L7vL7v^LJL7FJL7..............................
+..............................F>7^v^L7L<<7v^LJL>>7.......LJ##^F<JF>7.F7.L7LJL7FJF<JL<<7L>7.F7...^L7^v^F<<JL<7L7.............................
+..............................L7LJLJFJF7#^v^F<<<<J.........F7^v##L7v.^v..L<<7vL7L7F7F>JF<JFJL7..L7v^LJL>>>7#^FJ.............................
+.............................F7L<<7FJFJvFJLJvF7F7#F7....F>>JLJL7#FJvFJL7F7##^vFJFJ^vL<7L7FJF<J..FJvL7F<<<<J#^L>7............................
+...........................F>JL>>>JL7L7LJF<<J^v^L7^v....L7F<<<7vFJFJL<7LJL7FJvL7vFJL>7^FJL7vF7F7L7vFJvF7F>7FJF<JF7..........................
+..........................FJF7F<<<<7L7L<7L>7#^v^FJ^v.....LJF>>Jv^FJF>7^F<<JL7vFJLJF<<J^vF7^LJLJvFJLJFJ^v^FJ^FJF7^v..F7......................
+..........................L<JLJF>>7^FJ#FJF<JFJLJL>JL7..F7##L7F7LJL7^FJ^L>7F7^vL<<7L7F>JLJv^F<<7LJF<<J#^LJL>JvFJLJvF7^v......................
+...........................F>>>JF7LJvF7L7L7#^F7F7F<<J..^v##FJvL<7FJ^vFJF<J^v^v#F7L7LJF<<7vLJF7L<7vF>>7^F7F<<JL7F<J^v^L>7F7..................
+...........................L<7F<JL7FJ^v#L7L>Jv^v^L7F7.FJvF7L<JF>JvFJvL7L7FJLJL>JvFJF7L>7LJF>Jv#FJLJF<JLJ^vF7F7^v#FJv^F<J^v..................
+......................F>7.F>7LJ#F7^v#^vF>JF<<J^vL7v^L7^FJ^v###L<7v^FJFJFJL<<<7F<J^FJ^F7L>7L<7L>JF7FJF7F7^v^LJLJL>JFJ^L7FJL7.................
+.....................FJFJFJFJF>>JLJL>Jv^F7L>>7^L7^vL7v^L7^L>7F>7^v^L7L7v#F>7FJL7FJv#LJL<<JF7L<7FJ^L7^v^v^vL<<7F<<<J#^FJ^F<JF7.F7............
+.....................L7L7^FJ#L<<<7F<7FJLJ^F<<JL<JLJ#^LJFJ^F<JL7LJLJFJFJL7^FJL<7LJFJF>7#F7FJL7FJL7L<J^v^v^vF7FJL7F7#FJL7^vF7^L>JL7...........
+......................L7v^vF7F7F7^v#LJF7FJL>7F7F7#F7L<7L7^L7F7L7F<<J#L<7v^L>>7L7FJ#^FJFJvL7FJL7FJF7#^LJv^v^vL<7LJL7L<7LJv^v^F<<<J...........
+.....................F>JLJLJv^v^LJL>7#^vL<7FJ^LJvFJL>7L7v^FJ^L>JL7F7#F7^v^F<<J#^v#FJL7L7v#^vF7^L>JL7^F<J^v^vF7^F<<JF>JF7LJLJL>7#F7..........
+.....................L<<<<<7LJvL<7F<JFJL>>JL7^F<JL7F<J#^LJv#L<<<7v^L7^LJLJvF7F>JL7^F<JFJvFJv^vL7F<<J^L7FJv^v^LJvF7FJF<JL<<<<<<JFJv..........
+....................F>>>>>7L<7L>>JL>7L<7F<7FJ^vF>7^L7F7L<7L>7F>>Jv^FJL<7F<J^vL<<7LJL7#L7vL7LJv#^L>7#^FJ^FJ^vL<7LJvL7v#F>>>>>>>>JFJ..........
+....................L<<<<7vF7L<<<7F<JF7LJFJL>JvL7v^FJ^v#FJF<JL<<7v^L>7#^L>>JvF>>JF<<JF>JL7L<7L7^F<JFJvFJvFJvF>JF<J#^L>JF7F<<<<7FJ...........
+...............F7.F>>7F>>JLJL7F7#^v#FJv#FJF<<<JFJLJL7^L>JFJ#F7F>JLJF<JFJF<<<JL7F7L7F7L<<7vF7^FJ^L>7^FJ^FJL7vL<7L7F>JF<<J^L>>>7^L7...........
+...............^v.L<7vL<<<<<7v^vFJL7L7vFJFJ#F>7L<<7FJL<<7L>7^vL<<7FJF7L7L7#F7#LJ^FJ^vF7FJv^LJL7L7FJ^v#^L7FJvF7^FJL<7v#F7L<<<<JL<J...........
+............F7FJL7F>JL7F>>>>Jv^vL7FJ#^vL7L>>JFJ#F7^L>7F>JF<J^L7F>Jv#^v#L7vFJL>7FJL7^v^vL7vL<7FJFJL>JL7^FJ^FJ^LJvF7#^L7^L7F>>>7F7............
+............^LJF<JL<<7vL<<<<7LJL7^v#FJL>JF<<<JF>Jv^F<JL<7vF7L7vL<7L>JL7#^v^F<<JL<7v^v^vFJL7#^v#L7F<7FJ^L>JL7L<7v^L7^FJ^FJ^F<<J^L7...........
+............L<7L7#F>7^L>7F>7L7F7LJL7L<<<7L>>>7L<7v^vF7F7^LJvFJL7#^F<<7vFJv^vF7F>>JLJv^vL<7vFJL7FJL7LJ#^F<<<JF>JvL7LJL7^L>JL>>>JFJ...........
+...........F>7L7v#L7LJF<JL7L7LJL7F<J#F7FJF<<<J#FJLJLJv^LJF<JL<7vFJL7#LJL7v^LJvL<<7F7LJL7FJvL7FJ^F<J#F7^vF7F7L<7vFJF<7LJF7F7F7F7L7...........
+...........L7L>JL7FJF7L>7#L7L>>>JL>7FJvL7L>7#F7L<<7F<JL7FJF>7FJvL7FJF7#FJLJF<J#F7^vL<<<JL7L7^L>JL7F7^LJv^v^vF>JLJFJ#L7FJLJLJLJL<J...........
+...........FJF<<7vL<J^F<JF7^F<<<<7FJL7vFJF<JFJvF7FJvF7FJL7^FJL7L7^L7^L7^F<7L>7FJv^L7F7F7FJFJL7F<7LJLJF<J^v^v^F<<<JF7FJL>>>7#F7F7F7F7........
+.........F7L<JF7^vF7FJvF7^LJvF>>>JL7FJv^FJF7L7v^vL7v^v^F<J^L7#^FJL7v^FJLJ#L7FJL7v^FJ^v^vL7L7FJvFJF<<<JF7^v^LJL>>>7^vL7F7F7L>JLJLJLJL>7......
+.........^vF7FJLJv^vL7v^vL<<JL<<<<7vL7LJvFJvFJv^L7^LJv^vF7L7L7^L7FJv^L7F7F7^vF7^v^L7^v^vFJFJL<JL7L7F>7^LJv^F<<<<<J^L7^v^v^F<<7F7F<<<7v......
+.......F7^v^v^F<7v^vFJv^v#F7F7F>>>JL7^F<J^FJL7vL7vL7FJ^v^v#^FJ^FJL7vL7v^v^v^v^v^v^FJ^v^v^FJ#F7F7^FJL7vL<7LJL>>>>7FJFJLJLJLJ#FJv^v###LJ......
+......FJLJLJLJL7^v^vL7v^L7^v^LJF<<<7v^vF7^L7FJvFJL7^vFJLJL7^vFJvF7^L7^v^v^LJv^v^v^L7^v^v^L7FJLJv^vF7^L7FJF7F<7F7LJFJF7#F>>>7L<JLJ####F7.....
+......L<7F<7F<<J^LJL7^vL7v^vL<<JF>>Jv^v^v^FJ^FJ^#FJ^vL7F<<J^v^FJ^vL7v^v^v^#FJ^LJv^#v^v^v^#vL<7FJ^v^vL7v^FJLJ#LJL<<JFJL7^F<<J#F>>7####^v.....
+.......FJL7^vF>>JF<7LJvFJLJvF7F7L<<7LJLJv^L7^L7L7L7^vFJL7F7^LJL7^L>Jv^LJvL7vFJF<JL7v^v^vL7vF>JvFJv^vFJLJL>>>7F7#F>>JF<J^L>>7FJF7v####^L7....
+.......L7FJ^vL<<<J#L7FJL<7FJ^LJL>7#L<<<7v^FJL7L7^FJ^LJ#FJ^LJ#F7v^F<<JL7FJFJv^#L7F7^v^v^vFJv^#FJ^#LJv^#F7#F<7LJL>JF<7L>>JF<7v^FJLJ##F7^FJ....
+......F>JL7LJ#F7F7F7^vF>>JL7L<<<7L>>>>7^LJL>7^FJ^vFJF<7L7L<<7vLJ^L>7F7^L7L7v^F<J^v^v^v^vL7vL7L7^F<<J^FJ^FJ#L7F<<7L7L<<<7L7LJ^L>7#F>JLJvF7...
+......L<<<JF>>JLJLJLJLJF<<7L7F7#L<<<7FJL7F<<J^vFJvL7L7L<JF>>JvF7L7FJ^LJ#L7^v^vF>Jv^LJLJL>JvFJFJ^vF7FJL7^L>>7LJF7L<JF>>7L<JF7^F<J#L7F<<J^v...
+...........L7F<<<<<7F<<JF7L7LJL>>>>>JL>>JL7F7^v^FJFJ#L7F7L<<7v^vFJL7L<<7FJ^v^v^F<JL<<<<<<7vL7L7^LJv^F<JL7F7L>7^L>>>JF<J#F7^v^vF7#FJvF>>Jv...
+............LJF>>>>JvF>>JL>JF<<<<7F7F<<7F7v^LJLJL>J#F7v^vF7FJv^v^F7vF>7^L7^LJLJL>7F>>7F>7^L7^#LJF7LJL>>7LJL<<J^F<<<7L>>>JLJLJLJL7L7LJF<<J...
+...........F>>JF<<7FJL7F<7F7vF>>7LJLJF>Jv^LJF7F7F<<7vLJ^v^LJ#LJv^vLJL7vL7v^F<<<<<JL7FJL7v^FJ^F<<JL7#F<7L>>>>>>JL>>7L7F<<<<<<7F<7L>JF<J......
+.........F7L<<7vF>JvF>JL7LJLJL<7L>>>>J#FJ^#FJLJLJF7^vF>Jv^F<<<<J^vF7FJvFJv^L>7F7F7FJL>>JLJL7^L7F>7L7vFJF7F<<<<<<<<J#LJ#F7#F7LJ#^F<7v........
+.......F>JL>>>Jv^F7vL7F<JF>>>>>JF7F7#F7vFJFJF>7F>Jv^v^F<J^L7F7F>JLJvL7v^#v^F<J^v^vL<<<7F<<7v^FJ^#L7LJL<J^L>>>>>>>>>>>>>JL>JL>>7LJ#^L7.......
+.......L<<<<<7FJ^vLJ#LJF7L<7F7F<JLJL<J^v^FJFJFJL<7v^LJL7FJ#LJv^F7#FJFJvL7LJL>7^LJvF>>7LJF7^LJL>JF7L7F7F7L<<<7F7F<<<7F<<<7F<7F<J#F>JFJ.......
+......F>7F>>>Jv#^v#F>>>JL7#^v^vF>7F>>>JvLJFJ#L>7FJLJ#F<J^F<<<JLJL7vFJ#L7L7F<<J^F<J^F7vF>JLJ#F<<<JL7LJv^L>>>7LJLJF>7^L>>7^vFJL>>7L7FJ........
+......L7LJF<<7vFJL7L7F<<7L>JvLJL7vL7F7#vF>JF7F7LJF7#FJF>JL7F7F>7FJvL<<7vFJvF>7^vF7LJ^vL<<<<7L>>>>7L<<J^F<<<JF>>>JFJL7F7v^v^F7F7L7LJ.........
+.....F>JF7vF>Jv^F7L7^vF>JF<7vF>>JL>JvL<JL<<JLJL<7vL7L7^F<<J^LJFJ^#vF7FJvL7v^FJ^v^L7FJvF7F7FJF<<<<JF7F7^L>7#FJF<<<JF7^v^vLJ^vLJL7L>7.........
+.....L<<J^v^F7v^v^FJLJL<<J#LJL<<<<<<JF>>>>>>>>>7LJFJ#LJL>>7L7#vFJFJ^LJ#L>JLJL>JvL7v^#v^v^vL7vF7F7FJLJLJF7L7^FJF7F7^vLJLJF7^L>>7^F<J.........
+.........LJ^vLJ^vLJF7#F>>>7#F7F>>>7F7L<<<<<<<7FJF7^F<<7F<<JFJFJ^#L7L<<<7F<<<<<<JFJLJFJ^v^vFJLJLJLJF7F7FJL<J^L>JLJLJL7F7FJv^F7FJ^L7..........
+...........LJF7LJ#FJL7L<<7L>JLJF<7LJL>>>>>>>>JL>JvLJF>JL7F7L7L7L<7vF>>>JL7F>7F7FJ#F<JFJv^v^F<<<7F<JLJLJF>>>JF<<<<7F7v^v^FJLJLJ#L<J..........
+............FJL>>7L<7vF>7L<<<<7vFJF7F<<<<<<<<7F<7vF7^F7#v^L>J#L7FJLJF7#F7vL7LJvL<7L>7^FJ^LJL>>7^L7F7F>>J#F<7L>>>7LJ^v^LJL7#F7F7F>7..........
+...........FJF7F7L7FJv^FJF>>>>Jv^FJ^vF>>>>>>>JvFJLJLJvL7v^F7#F<J^F<<JL7vLJFJF<JF>JF<J^L7L7#F7FJL7v^LJF7F<J#L<<<<JF7LJ^F<7L>JLJLJFJ..........
+...........L<J^vL7vL7v^L>JF<7F7vLJ#LJL<7#F7F7#v^#F7#FJFJv^vL<JF7LJF7F7^L>7^#L>7L<7L>7^#vFJFJ^L>7^LJF7v^L>>>>>>7F7^L7FJL7L<<<7F<<J...........
+..............LJFJL>JvL<<<J#LJLJF>>>>>>JFJLJL<JL7v^FJFJFJ^vF7FJL7FJLJv^F7LJF7FJF7^F<J^FJ^FJFJF7vL<<J^v^F7F7F<<J^v^FJ^F<JF>>7LJ..............
+..............F>JF7F7L>>>>7F>>7#L<<<<<<<JF>>>7F>JvLJFJ#L>Jv^v^F<JL<7FJLJL7FJLJFJv^L>7^L7^L7L<J^L>>>7LJLJLJ^L>>7^v^L>JL7#^F<J#F7.............
+..............L7FJLJL<<<7FJL<7vF7F7F>>7F7L<<7vL<<JF>JF7F7#LJv^L7F7FJL7F>>JL#F7L7vL7#LJ#LJ#L>>7L7#F7L7F7F>7L<<<J^LJF7F7L>JL>>7^L>7...........
+...............LJF>>>>>>JL>7FJv^LJLJF7LJvF7FJvF7F7L<<JLJL<<7LJFJ^LJF<JL<<<7#^L7^vFJF7F7F7F7F7L7L<JL7v^vL7L>>>>7^F<J^v^F<<<<<J^F<J...........
+...............F7L<<<<7F7F7v^FJL<<<<JL<7v^LJ#v^LJvF7F>>7F>>JF7L7L<7L7F7F7FJv^#v^v^FJLJLJLJLJL<JF7F7^LJL>JF<<<<J^L>7LJLJF7#F7FJL7F7.F7.......
+..............FJL>>>>>JvLJ^LJL>>>>>>>>>JvL<<7LJF7v^LJF7LJF7#v^#L7FJ#v^v^v^FJL7LJv^vF7F7F>>>7F7FJLJv^F<7F7L>>>>>JF7L>>>>JL7^v^F7LJvFJv.......
+..............^F<7F<<<<JF7L<<<<<<7F<<7F7L>>7^F<J^vL7FJL7#vL<JL7#LJ#FJ^v^v^vF7^##v^LJv^v^F<<J^LJF7#v^L7LJ^F7F7F7FJ^F<7F7F7LJv^vL<<J^FJ.......
+.............FJvFJvF>>>>JL>7F7#F7LJF7LJL<7#LJvF>JL7LJF7L<JF7F7L7###L7^LJLJLJv^F<J^F<J^LJL7F7^F<JL<JL<JF7LJ^v^v^v#LJ#LJ^vL7FJ^vF>>>Jv........
+.............L7vL7vL<<<<<<7LJL>JL>>JvF>>7L<<<JL<7#L7FJvF7FJv^L>J###FJL<7####v^vF>JL>>J###LJLJL7F>7F7F7^L>7LJLJ^L>>7F>7^vFJL>JLJF<7FJ........
+..............LJ.LJF7F7F7#L<<<<<<<<7LJF7L>>>>7F7L7#v^#LJv^#LJ######L7F>J####LJLJ######F<<7F<<7LJFJ^LJLJF<JF7F7L<<7LJFJ^vL7F<7F7L7LJF7.......
+..................FJLJv^L>>>>>>>>>>JF7vL<<<<7v^L>JFJL<<7v^##########LJ################L>7^L7FJF7L>JF7F7L>>JLJL7F7L<<JFJvFJL7LJL7L>>JL7......
+.............F>>7FJF<7LJF<7F<7F<7F<<JLJF7F>>JLJ#F7L7F>>JLJF7#####################F<7F7#FJL<JL<JL<7FJLJL<<<<7F7LJL>>>7L7v^F7L>>7L<<<7FJ......
+.............L<7LJFJ#L7FJFJv#LJ#LJ#F>>>Jv^#F<<<7vL7LJ#F7F7vL7####################L7LJL7L>>>>>>>>7^L>>>>7F>7^vL7F<<<<J#LJ^vL7F<J#F7#LJ.......
+..............FJF<JF>>JL7L<JF>>>>>7L<<7#LJFJF>7LJFJF7FJLJLJFJ#####################L7F7L<<<<<<<<<J^#F7F7v^FJLJFJL>>>>>>>7^L7^L>>>JL>>>7......
+..............L<JF7^F<7FJF7#L<<<<7vF>7L7F7L7L7vF>J#v^vF>>>>J#######################v^L>>>>>>>>>>7L<JLJ^LJvF7#L<<<<<<<<<JL<JL7F7F7F7F7L>7....
+..............F>>JvLJ#^vFJL>>>>7FJLJ#L7LJL<JFJLJF<7v^vL<<<7########################LJ#F<<7F<<<<7L>>>>7L<<J^L7F>7#F>>7#F7F>>7^v^v^vLJ^F<J....
+..............L<<7v#F>JvL<<<<<7vL<<<<7vF7F>>J#F7L7LJLJF>>>J#####################F<<<<7L>7^L>7F7L7F<<7L>>>>JFJ^FJFJF<JFJv^F<JLJLJ^v..LJ......
+............F>>7FJvFJF<JF7#F7FJL>>>>>JLJvL<<7FJ^#L7F>>J#F7######################L>>>7^F7vL7#LJL7^L>7^F7F<<<JFJL>JFJF7L7LJL>>>>>7LJ..........
+............L<7vL7vL<JF>JL>JLJF7F<<7F<7#L>>>JvFJF7vL<<<7vL<7###################F<7F<J^v^vFJF<7FJ^F<J^v^L>>>>JF7F<JFJL7^F7F7F7F7L>7..........
+............F>JL>JL7F7L<<<<<<<JLJF7LJFJF<<<7FJ^#v^vF>>7LJF>J###################L7^L>7LJ^v^#L7^L7LJF7LJL<<<<<7v^vF7L<7v^vLJLJLJL7FJ..........
+............L<<7F<7LJL7#F7#F7F7F7^L>>JFJF7FJvFJFJ^vL<7L>7L7F7##################FJL7#L>7LJL7FJL<JF>JL7F>>>>>7^v^v^vF7^LJL>>>>>>7^v...........
+..........F7#F7^v#L7F7L>JL>JLJLJLJF<<7vFJLJFJL7L7^vF7L<7L7LJL7##############F<7L>7^F<7L>>7LJF7F7L7F<J^F<<<<J^v^LJLJLJF<<7F7F<<JLJ...........
+..........^vFJLJL7FJvL<<<7F7F<7F<7vF>JvL<<7vF7L<JLJ^vF>J#vF>7^##############L7^F<J^L7L<<<JF7^v^vFJL>>JL>>>>7LJL<7F<<<JF7LJLJF7F7............
+..........^vL<<<<JL<JF7F>JvLJ#LJ#LJL<<JF>>JLJL7F7F7^vL<7FJL7LJ############F7FJ^L7FJ#L>>>>>Jv^LJLJF7F<<<7#F<JF>7FJvF7F>JL7F7FJv^vF7..........
+..........^L7F>7F>>>>JLJF7vF>7#F>>>>>>>JF7F7F7v^LJLJL>>JL>>J#############FJ^L7^FJL<7F<<<<<<JL7F<<JLJF>7L7L>7^FJL7v^v^F<7LJvL7v^v^v..........
+........F>JFJ^FJL7F<<<<<JLJL7L>JF<<<7F7#v^v^v^v^F7#F7F<<<<<7F7####F7###F<JFJFJ^vF>>JL>>7F>7F>JL>>>>7^#L7L<<J^vF7LJ^v^L7L7FJFJLJLJL>>7.......
+.......FJF7vFJL7FJvF>>>>>>>7L7F<JF>>JvL7v^v^vLJLJL<J^vF>7F>JvL7#F<J^###L>7^#L7LJL7#F7F7LJFJ^F<<<7F<J^F<JF>>>JLJvF7^v^FJ#^L7^F7F7F<7FJ.......
+.......L<J^LJF<J^FJL7F7F7F7L7LJF7L<<<JFJv^v^vF7F>7F7LJL7vL7FJFJ#L>7^F7F7FJL7#L>7FJFJ^vL7FJFJL>7FJL>7^L>>JF7F7F7LJLJLJL>7L<J^vLJ^vFJL7.......
+..........^F7L>7LJF7^v^vLJL7L>>JL>>>>7L<JLJLJ^vL7v^vF>>JL>JL7L7F<7vLJLJ^vF7^F7FJL7vFJL7^L7^F7FJL7F7LJF<<<JLJLJ^F7F7F7F7L>>>JL>7^vL<7L>7.....
+..........LJL7FJF>JvLJLJF>7L7F<7F<<<7L7F7F>>7^vFJv^vL<7F7F7#L7LJFJL>7F>JLJvLJ^L>7^v^F7v^#LJv^vF7LJL7#L>>>>>>>7LJ^v^v^vL<<<<7F7v^v..L<<J.....
+............FJL>JF7L7#F7L7v#LJ#^vF>>J#LJvL<7v^vL7LJL>>JvLJ^F<JF>JF7#v^F7F7L>7L7#v^v^v^vL<7FJ^LJL7F7L<7F<<<<<7vF7LJ^v^L>>>>7LJ^vLJ...........
+............L7F7FJL7L>JvFJL>>>>JvL<<<7F7L>>JLJL7^F<<<7FJF>JL7FJF7v^FJ^v^v^F7L7^FJLJLJLJF7^L7^#F<J^vF7LJF>>>7^v^L>7LJL7F7F<JF7LJ.............
+.............^vLJF>JF<7LJF<<<7F7vF>>7^vL<<<<7F7LJL7F>JL7L7#FJL7v^v^L7^v^v^v^FJ^L>7F>>7FJLJFJL7L>>JLJvF7^F<<J^v^F<J#F7LJ^vF>JL>>>7...........
+..........F>>JL>7L<7v#L<<JF>>Jv^v^F7LJvF>>>>JvL<<7vL<<7L7L7vF>Jv^v^#v^v^v^v^L7L7FJL<7v^#F7vF7L<<<<7FJ^LJL7F7LJ^v#F7^vF7^LJF<<<<7v...........
+.........FJF<<<7vF>JvF>7F7^F7FJLJLJL<<JL<<<<7L>7FJvF>7^#L7^v^F7v^vL7vLJ^v^v^#vFJL7F7^v^FJ^LJL>>>7FJL>JF<7LJL>7^L>JLJLJvL<7L>>>7LJ..F7.......
+.........L<J.F7LJL<<JL7LJvLJLJ#F>>>>>7F>>7F>JF7v^#vL7LJF7v^v^v^v^vFJvF>JvLJL<JL7#v^LJLJvFJF<<<<<JL7F7#L7L<<<<J^F<<<7F7L>7L<<7FJF7..^L7......
+.............^L7F7F>>>JF7L>7F>7^F<<7FJL<7vL7#v^vL7L7L7FJLJ^v^vLJ^v^FJL<7vF7F7F7^FJL7##FJ^FJF>>>>>7^v^F7L>>>>>>JL>>7LJ^F7L>>7LJ#^vF7^FJ......
+.............L7LJLJF<<<JL<7vL7vLJF>JL>>>JvFJFJ^vFJ#vFJL>>7^v^L>7^v^L7F>JLJLJLJv^vF7L7FJFJL7^F<<<7v^v^v^F<<<<7F<7F<JF7LJL7F7L7F7^LJLJL7......
+...........F>7L<<<<JF>>>7FJL>JvF7L<<<<<7FJL7L7^v^F<JL7F7FJ^v^F7v^vL<J^F<7F7F7FJ^v^L>JvFJF7LJL>>7LJLJLJ^L>>>7LJFJL>>JL>>7^vL7LJLJF7F7FJ......
+...........L7vF>>7F7L<<7v^F<<7LJvF7F>>>JvF7^FJ^v^L>>7^v^L7LJ^vLJ^vF7FJL7LJ^v^L7^vL7F7v^FJL7F7F<JF>>>>7L<<<<JF7L<<<<7F<<J^v#L<7F<JLJLJ.......
+........F7.FJv^F7LJv#F>JvLJF7L<7LJLJF7F7LJLJL7LJ^F<<J^vL7L7FJvF>Jv^LJF7vF7LJ^FJLJFJv^v^vF>JvLJF>JF<<7vF7F>>>JvF>>>7^L>>7^L7F>JL>7...........
+......F7^vFJFJLJL<7L7L<7vF7^L>>JF7F<JLJL<<7F<JF>JL7F7^vFJ#v^FJL7FJL7FJ^LJL>7^L>7FJ#v^vLJ^F7L>7L7#L>7LJ^v^F7F7LJF7FJ^F<<JL<J^F7F<J...........
+.....FJLJLJFJ#F>7#L7L7#^v^vL<7F7vLJF>>>>7FJL>7^F<7LJvLJL7FJ^vF7^L7FJvFJF7F7vL<<JL<7v^vF>Jv^F7L>JF7#L>7^LJvLJL<<JLJ#LJ#F>>>7^v^vF7...........
+.....L<<7F7L>>JFJF>JFJFJLJL7FJvLJF>JF<7#LJF<<J^vFJF7L7F>JL7^v^LJ#vL7v^#v^v^L7F>7F7^vLJL<7vLJL7F<JL<7FJ^F<JF7#F7F7F7#F7^F<<J^v^LJL7..........
+........LJ^F7F7L7L<7L7L<<<7vL<JF7L<<JFJF7#L>>7^vL7v^FJL<7#v^vL<7FJFJvL7v^vL7LJFJ^LJL>7F7^vF>7^L7F7FJL>JL>7^L7^LJLJL7^LJL>7#LJ^F<7L7.........
+..........^vLJL7L7FJFJF>>>JL>>>JvF>>>JFJL7F7FJ^L7^v^L7F>JFJ^vF7^vFJ#L7^v^vFJF7L7^#F7FJ^LJvL7LJ#LJv^F<<7F<J^FJ^F7F<7LJF<<<JF7#^L7L<J.........
+.........FJL>>7L7vL7L>JF7F<7F<<7v^F<<7vF>JvLJFJ#v^vL<J^F7vFJLJv^v^F7FJ^vLJL7v^FJL7v^L7L<7vFJF7F7#v^L7FJL>>JL>Jv^L7^F7L7F7#^v#L<J............
+.........L7F<<JFJv#L<<<J^L7^vF>JvLJF7^v^F7L>7^F7v^L>>7LJ^v^F7FJ^v^v^vFJL>7FJv^vF7^vL7vF>JvL7v^v^FJ^FJL<<7F<<<<JL<JLJL7v^vFJvF7F7............
+..........^vF7#L7vF7F>>>JFJLJL<7L>>JLJv^v^F7v^v^v^F7#vF>Jv^v^vFJv^v^v^F7#v^#v^v^LJL7^v^F7vFJv^v^L7^L>7F>JL>>>>>>>>>>7^LJLJFJ^LJL>>7.........
+..........LJ^vF>JLJLJF7F7vF>>>>JF7F7F7v^v^v^v^v^v^vL7vL<7v^v^vL7v^v^v^v^FJ^FJ^vL7F7v^v^v^v^FJ^v^FJL7FJL<7F<<7F<<<<<<JL<<7FJFJF<<<<J.........
+............^vL<<7F7FJLJLJL7F7F7v^v^v^v^v^vLJ^v^vLJ#^L7FJv^v^vFJvLJ^vLJ^L7LJFJv#LJ^v^vLJLJ^v#^v^L7FJvF>>JL>7^L>>>>>>7F>7^L7L7v#F7...........
+........F>7FJL>>>JvLJF7F7F7LJLJLJ^v^vLJ^vLJ#FJvLJ#F>JFJL7v^vLJL7L>7^vF>JFJF7L7vF>>Jv^L>>>7^vFJv^FJL7v^F<7F<JL7F<<7F<J^FJL<JFJL>Jv...........
+........L7LJF<<7F7vF>JLJLJL7F>>>>Jv^L>7^v#F7L7L7F>JF<JF7^v^L7F>JF7vLJ^F7L7^vFJv^F<7v^F<7FJ^vL7v^vF>Jv^vFJL>>7^L>7LJF7^vF7F>JF7F7L7..........
+.........^F7vF>Jv^vL7F<<<<7vL<<<<7vL<<J^vFJvFJFJ^F7L7FJLJvL<J^F7v^L7FJvL7LJvL7v^vFJv^L7^L7^vFJvLJL7FJ^vL7F<<JL<<J#FJLJLJLJF<J^vL7L7.........
+.........LJLJL<7vLJ#LJF7#FJL>7F>>JL>>7#LJL7LJFJ#^v^FJL7F7L>7FJvLJ^FJL7vFJF7L7LJ^v^FJ^FJL<JLJL7L>7FJL7^L7^L>>>>>7F>JF<<7F<7L>7LJ.^FJ.........
+............F>>JvF>>7FJL>JF<7vL<<<7F7L>7F>JF<J#FJv^L>7^v^F7vL7L>7^L>7^vL7v^FJF>Jv^L7^L>>>>7F7^F<JL7FJL<JL<<7F<7LJF<JF7LJFJF7L7..LJ..........
+............L7F7vL<7vL7F<7vFJL>>>>Jv^F<J^F7L>>7L7vL7FJ^v^v^L7L7FJ^F7v^v#^v^vFJF7v^FJL7F<<7v^LJvF>>JL>>>>>>7^vFJF7L>>JL>7^FJ^FJ..............
+...........F>JvLJF>JL>JL7^vL7F<7F7FJ^L>7LJL7F7L7^L7^vFJv^vL<JFJL7^v^v^vFJvLJL7v^v^L>7^L>7LJL<7v^F7F7F<7F<7vLJL7v^F<7F<<J^L7^v...............
+...........L<<JF7^F7F<7FJ^L7^vFJv^vFJF<JF>>JvL7vL7v^vL7v^L>>7L7FJ^v^vLJL7vF>>Jv^v^F7v^F<JF>>>JvLJLJ^L7^L7LJF7FJv^L7LJF>7L7vLJ...............
+.........F>>>>>JvLJLJ#LJFJFJLJL7vLJL7L>7L<7FJFJv#^v^L7^v^F7FJ#^L7LJLJ#F7LJL<<7v^vLJLJ^L>7L<<<7vF>>>JFJ^FJF>Jv^FJL7L>>JFJ.LJ.................
+.........^F<<<7FJF7F>>7#L7v#F>>JL7F7^F<J#FJL7L7L7^vL7v^v^v^L>7L<J#F>>>JL>>>>>Jv^L>>>7^F7vF>>>Jv^F7F7v#LJ#^F<JLJ##L7F<<J.....................
+.........^vF>>JL>JLJF7L>>JL7L<7F7LJvLJF>>JF7vFJFJ^vFJv^v^vL7FJ#F>>JF7F7F<7F<7FJL<<<<J^vLJ^F7F7v^v^v^vF>>7^L>>>>7F>JvF7F7.F7.................
+.........LJ^F<7F<7F<JL7F7F<JF7^vL7FJF>JF7FJ^vL7v#LJL7v^v^L7^v#FJF7FJLJ^vFJvFJL>>>>>>7LJF>Jv^vLJ^vLJ^LJF<J^F<<7FJ^F7LJv^L>Jv.................
+...........LJFJvFJvF>>Jv^vF>JLJL7^v#^F7v^L7^vFJL>>7#LJ^vL7v^L7L<J^v#F7LJL7vL7F7F7F<7L>7L7FJLJF>JL7FJF7L>7^L7FJL7^v^F7LJF7FJ.................
+............FJFJL<JL<7FJLJL7F<<7v^vFJv^vL7v^vL7F<<JF7#^vFJvL7L>>7^L>JvF>>JL7^v^v^L7^F<JFJL>7#^F7FJL7vL<7LJFJL7FJ^v^vL7FJ^v..................
+............L7vF>>>>7LJ#F>>JL>7^v^vL7v^L7LJ^vFJL>>>JL7^vL7L7^F<7vL<7FJL<<<7v^v^v^FJ^L>7L7F7L7LJ^L>7^vF>JF7L7FJv#^vLJFJv.^v..................
+............FJvL<7F7L>>>JF7F7FJ^v^vFJv^FJF>JvL7F<7F<7vLJ#^FJ^L7^L>7LJF7F>>Jv^v^v^v#^F<J#^v^FJF>JF7v^v^F<JL<JL<J#LJ.FJFJ.LJ..................
+............L7v.FJvL7F7F<JLJ^L7LJ^vL7v^v#^F7vFJL7^L7LJF>>JL7L<J^F7vF>JLJF<7v^vLJ^L7^L>>7^v^L7L7FJ^v^v^L>>>7#F>>>7..L<J......................
+.............LJ.L<JFJv^v#F7FJFJF>JL7LJ^L7^v^vL7FJ^FJF7L<<<7vF7#LJ^vL7F<<J#^v^L7#^FJ^F7FJ^v^FJFJL7^vLJ^F7F7L7^F<<J...........................
+...................L7v^vFJLJFJ#L<7FJF>JFJLJLJ#^L7^L7^L7#F>JLJL>>7LJ#^v#F>>JvL7L7^L7^vLJ#^vLJ#L7FJ^vF>Jv^vL7LJL>>7...........................
+....................^v^vL<<7L>7F>JL7L<7L>7F>>>JFJ^FJL7L>JF7F<7F<JF>>JL7^F7FJ#^FJ^FJ^L>>7LJF>>>JvFJv^F7v^L7L7F7F7v...........................
+....................LJLJ#F>JF7vL7F7L>7^F7vL7F7FJFJL>7L7F7v^L7^L>7^F<7FJLJ^L7FJL7LJ#L7F7L>7L7F<7vL7v^v^v^FJ#^v^vLJ...........................
+...................F>>>>>JF7v^vFJv^F7v^vLJFJv^L7L7F7v#^v^v^FJL<<J^vFJL>>7^FJL7FJF>7FJv^F<J#^L7^vFJv^vLJ^vF7LJ^L>7...........................
+...................L<<7F<7v^v^v^FJLJ^v^vF7L7vL7v#^v^L7^vLJ^L>>>>7LJL7F7FJLJF>JL>JFJL7v^v#F>JFJ^vL7v^L7#^LJL>7L<7L7..........................
+......................^L7LJ^vLJ^L>7#^vLJ^vFJL7^L7^v^FJLJF>JF7F<<J#F7^vLJ##FJF7F7FJ##^v^vFJF7vFJv#^v^FJFJF<7FJ..^FJ..........................
+......................^FJ..^vF>JF7L7LJ..^LJF7v^FJLJLJ...L<7v^L>>7FJLJv####L7v^v^L>7#LJLJL7vLJL7L7^v^L7L7v.LJ...LJ...........................
+......................LJ...^vL<7v^FJ....L<7v^v^v..........^vL7F7vL7F7L7F7##^v^vL<7L7.....LJ...L7v^v^FJ.^v...................................
+...........................LJ.FJv^v....F>>JvLJ^v.........FJL7^vLJFJvL7LJL7FJv^L7.L<J...........^v^v^v..LJ...................................
+..............................L7vLJ....L<<7L>7LJ.........L7FJLJ.FJFJ#^F<<JL7vL7v...............LJLJ^v.......................................
+...............................LJ.......F>JF<J............LJ....L7v.FJL>>>7LJ.LJ...................LJ.......................................
+........................................L7FJ.....................LJ.L<7F<<J.................................................................
+.........................................LJ...........................^v....................................................................
+......................................................................^v....................................................................
+......................................................................LJ....................................................................
+Empty spaces in border region: [(1, 1), (2, 1), (3, 1), (4, 1), (5, 1), (6, 1), (7, 1), (8, 1), (9, 1), (10, 1), (11, 1), (12, 1), (13, 1), (14, 1), (15, 1), (16, 1), (17, 1), (18, 1), (19, 1), (20, 1), (21, 1), (22, 1), (23, 1), (24, 1), (25, 1), (26, 1), (27, 1), (28, 1), (29, 1), (30, 1), (31, 1), (32, 1), (33, 1), (34, 1), (35, 1), (36, 1), (37, 1), (38, 1), (39, 1), (40, 1), (41, 1), (42, 1), (43, 1), (44, 1), (45, 1), (46, 1), (47, 1), (48, 1), (49, 1), (50, 1), (51, 1), (52, 1), (53, 1), (54, 1), (55, 1), (56, 1), (57, 1), (58, 1), (59, 1), (60, 1), (61, 1), (62, 1), (63, 1), (64, 1), (65, 1), (66, 1), (67, 1), (68, 1), (69, 1), (70, 1), (71, 1), (72, 1), (73, 1), (74, 1), (75, 1), (76, 1), (77, 1), (78, 1), (79, 1), (80, 1), (81, 1), (82, 1), (83, 1), (84, 1), (85, 1), (86, 1), (87, 1), (88, 1), (89, 1), (90, 1), (91, 1), (92, 1), (93, 1), (94, 1), (95, 1), (96, 1), (97, 1), (98, 1), (99, 1), (100, 1), (101, 1), (102, 1), (103, 1), (104, 1), (105, 1), (106, 1), (107, 1), (108, 1), (109, 1), (110, 1), (111, 1), (112, 1), (113, 1), (114, 1), (115, 1), (116, 1), (117, 1), (118, 1), (119, 1), (120, 1), (121, 1), (122, 1), (123, 1), (124, 1), (125, 1), (126, 1), (127, 1), (128, 1), (129, 1), (130, 1), (131, 1), (132, 1), (133, 1), (134, 1), (135, 1), (136, 1), (137, 1), (138, 1), (139, 1), (140, 1), (1, 2), (140, 2), (1, 3), (140, 3), (1, 4), (140, 4), (1, 5), (140, 5), (1, 6), (140, 6), (1, 7), (140, 7), (1, 8), (140, 8), (1, 9), (140, 9), (1, 10), (140, 10), (1, 11), (140, 11), (1, 12), (140, 12), (1, 13), (140, 13), (1, 14), (140, 14), (1, 15), (140, 15), (1, 16), (140, 16), (1, 17), (140, 17), (1, 18), (140, 18), (1, 19), (140, 19), (1, 20), (140, 20), (1, 21), (140, 21), (1, 22), (140, 22), (1, 23), (140, 23), (1, 24), (140, 24), (1, 25), (140, 25), (1, 26), (140, 26), (1, 27), (140, 27), (1, 28), (140, 28), (1, 29), (140, 29), (1, 30), (140, 30), (1, 31), (140, 31), (1, 32), (140, 32), (1, 33), (140, 33), (1, 34), (140, 34), (1, 35), (140, 35), (1, 36), (140, 36), (1, 37), (140, 37), (1, 38), (140, 38), (1, 39), (140, 39), (1, 40), (140, 40), (1, 41), (140, 41), (1, 42), (140, 42), (1, 43), (140, 43), (1, 44), (140, 44), (1, 45), (140, 45), (1, 46), (140, 46), (1, 47), (140, 47), (1, 48), (140, 48), (1, 49), (140, 49), (1, 50), (140, 50), (1, 51), (140, 51), (1, 52), (140, 52), (1, 53), (140, 53), (1, 54), (140, 54), (1, 55), (140, 55), (1, 56), (140, 56), (1, 57), (140, 57), (1, 58), (140, 58), (1, 59), (140, 59), (1, 60), (140, 60), (1, 61), (140, 61), (1, 62), (140, 62), (1, 63), (140, 63), (1, 64), (140, 64), (1, 65), (140, 65), (1, 66), (140, 66), (1, 67), (140, 67), (1, 68), (140, 68), (1, 69), (140, 69), (1, 70), (140, 70), (1, 71), (140, 71), (1, 72), (140, 72), (1, 73), (140, 73), (1, 74), (140, 74), (1, 75), (140, 75), (1, 76), (140, 76), (1, 77), (140, 77), (1, 78), (140, 78), (1, 79), (140, 79), (1, 80), (140, 80), (1, 81), (140, 81), (1, 82), (140, 82), (1, 83), (140, 83), (1, 84), (140, 84), (1, 85), (140, 85), (1, 86), (140, 86), (1, 87), (140, 87), (1, 88), (140, 88), (1, 89), (140, 89), (1, 90), (140, 90), (1, 91), (140, 91), (1, 92), (140, 92), (1, 93), (140, 93), (1, 94), (140, 94), (1, 95), (140, 95), (1, 96), (140, 96), (1, 97), (140, 97), (1, 98), (140, 98), (1, 99), (140, 99), (1, 100), (140, 100), (1, 101), (140, 101), (1, 102), (140, 102), (1, 103), (140, 103), (1, 104), (140, 104), (1, 105), (140, 105), (1, 106), (140, 106), (1, 107), (140, 107), (1, 108), (140, 108), (1, 109), (140, 109), (1, 110), (140, 110), (1, 111), (140, 111), (1, 112), (140, 112), (1, 113), (140, 113), (1, 114), (140, 114), (1, 115), (140, 115), (1, 116), (140, 116), (1, 117), (140, 117), (1, 118), (140, 118), (1, 119), (140, 119), (1, 120), (140, 120), (1, 121), (140, 121), (1, 122), (140, 122), (1, 123), (140, 123), (1, 124), (140, 124), (1, 125), (140, 125), (1, 126), (140, 126), (1, 127), (140, 127), (1, 128), (140, 128), (1, 129), (140, 129), (1, 130), (140, 130), (1, 131), (140, 131), (1, 132), (140, 132), (1, 133), (140, 133), (1, 134), (140, 134), (1, 135), (140, 135), (1, 136), (140, 136), (1, 137), (140, 137), (1, 138), (140, 138), (1, 139), (140, 139), (1, 140), (2, 140), (3, 140), (4, 140), (5, 140), (6, 140), (7, 140), (8, 140), (9, 140), (10, 140), (11, 140), (12, 140), (13, 140), (14, 140), (15, 140), (16, 140), (17, 140), (18, 140), (19, 140), (20, 140), (21, 140), (22, 140), (23, 140), (24, 140), (25, 140), (26, 140), (27, 140), (28, 140), (29, 140), (30, 140), (31, 140), (32, 140), (33, 140), (34, 140), (35, 140), (36, 140), (37, 140), (38, 140), (39, 140), (40, 140), (41, 140), (42, 140), (43, 140), (44, 140), (45, 140), (46, 140), (47, 140), (48, 140), (49, 140), (50, 140), (51, 140), (52, 140), (53, 140), (54, 140), (55, 140), (56, 140), (57, 140), (58, 140), (59, 140), (60, 140), (61, 140), (62, 140), (63, 140), (64, 140), (65, 140), (66, 140), (67, 140), (68, 140), (69, 140), (70, 140), (73, 140), (74, 140), (75, 140), (76, 140), (77, 140), (78, 140), (79, 140), (80, 140), (81, 140), (82, 140), (83, 140), (84, 140), (85, 140), (86, 140), (87, 140), (88, 140), (89, 140), (90, 140), (91, 140), (92, 140), (93, 140), (94, 140), (95, 140), (96, 140), (97, 140), (98, 140), (99, 140), (100, 140), (101, 140), (102, 140), (103, 140), (104, 140), (105, 140), (106, 140), (107, 140), (108, 140), (109, 140), (110, 140), (111, 140), (112, 140), (113, 140), (114, 140), (115, 140), (116, 140), (117, 140), (118, 140), (119, 140), (120, 140), (121, 140), (122, 140), (123, 140), (124, 140), (125, 140), (126, 140), (127, 140), (128, 140), (129, 140), (130, 140), (131, 140), (132, 140), (133, 140), (134, 140), (135, 140), (136, 140), (137, 140), (138, 140), (139, 140), (140, 140), (2, 2), (3, 2), (4, 2), (5, 2), (6, 2), (7, 2), (8, 2), (9, 2), (10, 2), (11, 2), (12, 2), (13, 2), (14, 2), (15, 2), (16, 2), (17, 2), (18, 2), (19, 2), (20, 2), (21, 2), (22, 2), (23, 2), (24, 2), (25, 2), (26, 2), (27, 2), (28, 2), (29, 2), (30, 2), (31, 2), (32, 2), (33, 2), (34, 2), (35, 2), (36, 2), (37, 2), (38, 2), (39, 2), (40, 2), (41, 2), (42, 2), (43, 2), (44, 2), (45, 2), (46, 2), (47, 2), (48, 2), (49, 2), (50, 2), (51, 2), (52, 2), (53, 2), (54, 2), (55, 2), (56, 2), (57, 2), (58, 2), (59, 2), (60, 2), (61, 2), (62, 2), (63, 2), (64, 2), (65, 2), (66, 2), (67, 2), (68, 2), (69, 2), (70, 2), (71, 2), (72, 2), (73, 2), (74, 2), (75, 2), (76, 2), (77, 2), (78, 2), (79, 2), (80, 2), (81, 2), (82, 2), (83, 2), (84, 2), (85, 2), (86, 2), (87, 2), (88, 2), (89, 2), (90, 2), (91, 2), (92, 2), (93, 2), (94, 2), (95, 2), (96, 2), (97, 2), (98, 2), (99, 2), (100, 2), (101, 2), (102, 2), (103, 2), (104, 2), (105, 2), (106, 2), (107, 2), (108, 2), (109, 2), (110, 2), (111, 2), (112, 2), (113, 2), (114, 2), (115, 2), (116, 2), (117, 2), (118, 2), (119, 2), (120, 2), (121, 2), (122, 2), (123, 2), (124, 2), (125, 2), (126, 2), (127, 2), (128, 2), (129, 2), (130, 2), (131, 2), (132, 2), (133, 2), (134, 2), (135, 2), (136, 2), (137, 2), (138, 2), (139, 2), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3), (11, 3), (12, 3), (13, 3), (14, 3), (15, 3), (16, 3), (17, 3), (18, 3), (19, 3), (20, 3), (21, 3), (22, 3), (23, 3), (24, 3), (25, 3), (26, 3), (27, 3), (28, 3), (29, 3), (30, 3), (31, 3), (32, 3), (33, 3), (34, 3), (35, 3), (36, 3), (37, 3), (38, 3), (39, 3), (40, 3), (41, 3), (42, 3), (43, 3), (44, 3), (45, 3), (46, 3), (47, 3), (48, 3), (49, 3), (50, 3), (51, 3), (52, 3), (53, 3), (54, 3), (55, 3), (56, 3), (57, 3), (58, 3), (59, 3), (60, 3), (61, 3), (62, 3), (63, 3), (64, 3), (65, 3), (66, 3), (67, 3), (68, 3), (69, 3), (70, 3), (71, 3), (72, 3), (73, 3), (74, 3), (75, 3), (76, 3), (77, 3), (78, 3), (79, 3), (80, 3), (81, 3), (82, 3), (83, 3), (84, 3), (85, 3), (86, 3), (87, 3), (88, 3), (89, 3), (90, 3), (91, 3), (92, 3), (93, 3), (94, 3), (95, 3), (96, 3), (97, 3), (98, 3), (99, 3), (100, 3), (101, 3), (102, 3), (103, 3), (104, 3), (105, 3), (106, 3), (107, 3), (108, 3), (109, 3), (110, 3), (111, 3), (112, 3), (113, 3), (114, 3), (115, 3), (116, 3), (117, 3), (118, 3), (119, 3), (120, 3), (121, 3), (122, 3), (123, 3), (124, 3), (125, 3), (126, 3), (127, 3), (128, 3), (129, 3), (130, 3), (131, 3), (132, 3), (133, 3), (134, 3), (135, 3), (136, 3), (137, 3), (138, 3), (139, 3), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4), (7, 4), (8, 4), (9, 4), (10, 4), (11, 4), (12, 4), (13, 4), (14, 4), (15, 4), (16, 4), (17, 4), (18, 4), (19, 4), (20, 4), (21, 4), (22, 4), (23, 4), (24, 4), (25, 4), (26, 4), (27, 4), (28, 4), (29, 4), (30, 4), (31, 4), (32, 4), (33, 4), (34, 4), (35, 4), (36, 4), (37, 4), (38, 4), (39, 4), (40, 4), (41, 4), (42, 4), (43, 4), (44, 4), (45, 4), (46, 4), (47, 4), (48, 4), (49, 4), (50, 4), (51, 4), (52, 4), (53, 4), (54, 4), (55, 4), (56, 4), (57, 4), (58, 4), (59, 4), (60, 4), (61, 4), (62, 4), (63, 4), (64, 4), (65, 4), (66, 4), (67, 4), (68, 4), (69, 4), (70, 4), (71, 4), (72, 4), (73, 4), (74, 4), (75, 4), (76, 4), (77, 4), (78, 4), (79, 4), (80, 4), (81, 4), (82, 4), (83, 4), (84, 4), (85, 4), (86, 4), (87, 4), (88, 4), (89, 4), (90, 4), (91, 4), (92, 4), (93, 4), (94, 4), (95, 4), (96, 4), (97, 4), (98, 4), (99, 4), (102, 4), (103, 4), (104, 4), (105, 4), (106, 4), (107, 4), (108, 4), (109, 4), (110, 4), (111, 4), (112, 4), (113, 4), (114, 4), (115, 4), (116, 4), (117, 4), (118, 4), (119, 4), (120, 4), (121, 4), (122, 4), (123, 4), (124, 4), (125, 4), (126, 4), (127, 4), (128, 4), (129, 4), (130, 4), (131, 4), (132, 4), (133, 4), (134, 4), (135, 4), (136, 4), (137, 4), (138, 4), (139, 4), (2, 5), (3, 5), (4, 5), (5, 5), (6, 5), (7, 5), (8, 5), (9, 5), (10, 5), (11, 5), (12, 5), (13, 5), (14, 5), (15, 5), (16, 5), (17, 5), (18, 5), (19, 5), (20, 5), (21, 5), (22, 5), (23, 5), (24, 5), (25, 5), (26, 5), (27, 5), (28, 5), (29, 5), (30, 5), (31, 5), (32, 5), (33, 5), (34, 5), (35, 5), (36, 5), (37, 5), (38, 5), (39, 5), (40, 5), (41, 5), (42, 5), (43, 5), (44, 5), (45, 5), (46, 5), (49, 5), (50, 5), (51, 5), (52, 5), (53, 5), (54, 5), (55, 5), (56, 5), (57, 5), (58, 5), (61, 5), (62, 5), (63, 5), (64, 5), (65, 5), (66, 5), (67, 5), (68, 5), (69, 5), (70, 5), (71, 5), (72, 5), (73, 5), (74, 5), (75, 5), (76, 5), (77, 5), (78, 5), (79, 5), (80, 5), (81, 5), (82, 5), (83, 5), (84, 5), (85, 5), (86, 5), (87, 5), (88, 5), (89, 5), (90, 5), (91, 5), (92, 5), (93, 5), (94, 5), (95, 5), (96, 5), (97, 5), (98, 5), (99, 5), (102, 5), (103, 5), (104, 5), (105, 5), (106, 5), (107, 5), (110, 5), (111, 5), (112, 5), (113, 5), (114, 5), (115, 5), (116, 5), (117, 5), (118, 5), (119, 5), (120, 5), (121, 5), (122, 5), (123, 5), (124, 5), (125, 5), (126, 5), (127, 5), (128, 5), (129, 5), (130, 5), (131, 5), (132, 5), (133, 5), (134, 5), (135, 5), (136, 5), (137, 5), (138, 5), (139, 5), (2, 6), (3, 6), (4, 6), (5, 6), (6, 6), (7, 6), (8, 6), (9, 6), (10, 6), (11, 6), (12, 6), (13, 6), (14, 6), (15, 6), (16, 6), (17, 6), (18, 6), (19, 6), (20, 6), (21, 6), (22, 6), (23, 6), (24, 6), (25, 6), (26, 6), (27, 6), (28, 6), (29, 6), (30, 6), (31, 6), (32, 6), (33, 6), (34, 6), (35, 6), (36, 6), (37, 6), (38, 6), (39, 6), (40, 6), (41, 6), (46, 6), (50, 6), (51, 6), (52, 6), (53, 6), (54, 6), (55, 6), (56, 6), (57, 6), (63, 6), (66, 6), (67, 6), (68, 6), (69, 6), (70, 6), (71, 6), (72, 6), (73, 6), (74, 6), (75, 6), (76, 6), (77, 6), (81, 6), (82, 6), (83, 6), (84, 6), (85, 6), (86, 6), (87, 6), (88, 6), (89, 6), (90, 6), (91, 6), (92, 6), (93, 6), (94, 6), (95, 6), (96, 6), (97, 6), (98, 6), (99, 6), (104, 6), (105, 6), (110, 6), (111, 6), (112, 6), (113, 6), (114, 6), (115, 6), (116, 6), (117, 6), (118, 6), (119, 6), (120, 6), (121, 6), (122, 6), (123, 6), (124, 6), (125, 6), (126, 6), (127, 6), (128, 6), (129, 6), (130, 6), (131, 6), (132, 6), (133, 6), (134, 6), (135, 6), (136, 6), (137, 6), (138, 6), (139, 6), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7), (8, 7), (9, 7), (10, 7), (11, 7), (12, 7), (13, 7), (14, 7), (15, 7), (16, 7), (17, 7), (18, 7), (19, 7), (20, 7), (21, 7), (22, 7), (23, 7), (24, 7), (25, 7), (26, 7), (27, 7), (28, 7), (29, 7), (30, 7), (31, 7), (32, 7), (33, 7), (34, 7), (35, 7), (36, 7), (37, 7), (38, 7), (39, 7), (50, 7), (51, 7), (52, 7), (53, 7), (54, 7), (55, 7), (56, 7), (57, 7), (66, 7), (67, 7), (68, 7), (69, 7), (70, 7), (71, 7), (72, 7), (73, 7), (74, 7), (75, 7), (76, 7), (77, 7), (82, 7), (83, 7), (84, 7), (85, 7), (86, 7), (89, 7), (90, 7), (91, 7), (92, 7), (93, 7), (94, 7), (95, 7), (110, 7), (111, 7), (112, 7), (113, 7), (114, 7), (115, 7), (116, 7), (117, 7), (118, 7), (119, 7), (120, 7), (121, 7), (122, 7), (123, 7), (124, 7), (125, 7), (126, 7), (127, 7), (128, 7), (129, 7), (130, 7), (131, 7), (132, 7), (133, 7), (134, 7), (135, 7), (136, 7), (137, 7), (138, 7), (139, 7), (2, 8), (3, 8), (4, 8), (5, 8), (6, 8), (7, 8), (8, 8), (9, 8), (10, 8), (11, 8), (12, 8), (13, 8), (14, 8), (15, 8), (16, 8), (17, 8), (18, 8), (19, 8), (20, 8), (21, 8), (22, 8), (23, 8), (24, 8), (25, 8), (26, 8), (27, 8), (28, 8), (29, 8), (30, 8), (31, 8), (32, 8), (33, 8), (38, 8), (50, 8), (51, 8), (52, 8), (53, 8), (54, 8), (55, 8), (56, 8), (57, 8), (66, 8), (67, 8), (68, 8), (69, 8), (70, 8), (71, 8), (72, 8), (89, 8), (90, 8), (91, 8), (92, 8), (93, 8), (94, 8), (95, 8), (111, 8), (112, 8), (113, 8), (114, 8), (115, 8), (116, 8), (117, 8), (118, 8), (119, 8), (120, 8), (121, 8), (122, 8), (123, 8), (124, 8), (125, 8), (126, 8), (127, 8), (128, 8), (129, 8), (130, 8), (131, 8), (132, 8), (133, 8), (134, 8), (135, 8), (136, 8), (137, 8), (138, 8), (139, 8), (2, 9), (3, 9), (4, 9), (5, 9), (6, 9), (7, 9), (8, 9), (9, 9), (10, 9), (11, 9), (12, 9), (13, 9), (14, 9), (15, 9), (16, 9), (17, 9), (18, 9), (19, 9), (20, 9), (21, 9), (22, 9), (23, 9), (24, 9), (25, 9), (26, 9), (27, 9), (28, 9), (29, 9), (30, 9), (51, 9), (52, 9), (53, 9), (54, 9), (55, 9), (56, 9), (57, 9), (69, 9), (72, 9), (91, 9), (94, 9), (95, 9), (96, 9), (112, 9), (113, 9), (114, 9), (115, 9), (116, 9), (117, 9), (118, 9), (119, 9), (120, 9), (121, 9), (122, 9), (123, 9), (124, 9), (125, 9), (126, 9), (127, 9), (128, 9), (129, 9), (130, 9), (131, 9), (132, 9), (133, 9), (134, 9), (135, 9), (136, 9), (137, 9), (138, 9), (139, 9), (2, 10), (3, 10), (4, 10), (5, 10), (6, 10), (7, 10), (8, 10), (9, 10), (10, 10), (11, 10), (12, 10), (13, 10), (14, 10), (15, 10), (16, 10), (17, 10), (18, 10), (19, 10), (20, 10), (21, 10), (22, 10), (23, 10), (24, 10), (25, 10), (26, 10), (27, 10), (28, 10), (29, 10), (30, 10), (51, 10), (52, 10), (53, 10), (54, 10), (55, 10), (56, 10), (57, 10), (58, 10), (59, 10), (69, 10), (72, 10), (73, 10), (95, 10), (96, 10), (112, 10), (113, 10), (114, 10), (115, 10), (116, 10), (117, 10), (118, 10), (119, 10), (120, 10), (121, 10), (122, 10), (123, 10), (124, 10), (125, 10), (126, 10), (127, 10), (128, 10), (129, 10), (130, 10), (131, 10), (132, 10), (133, 10), (134, 10), (135, 10), (136, 10), (137, 10), (138, 10), (139, 10), (2, 11), (3, 11), (4, 11), (5, 11), (6, 11), (7, 11), (8, 11), (9, 11), (10, 11), (11, 11), (12, 11), (13, 11), (14, 11), (15, 11), (16, 11), (17, 11), (18, 11), (19, 11), (20, 11), (21, 11), (22, 11), (23, 11), (24, 11), (25, 11), (26, 11), (27, 11), (28, 11), (29, 11), (53, 11), (54, 11), (55, 11), (56, 11), (95, 11), (96, 11), (113, 11), (114, 11), (115, 11), (116, 11), (117, 11), (118, 11), (119, 11), (120, 11), (121, 11), (122, 11), (123, 11), (124, 11), (125, 11), (126, 11), (127, 11), (128, 11), (129, 11), (130, 11), (131, 11), (132, 11), (133, 11), (134, 11), (135, 11), (136, 11), (137, 11), (138, 11), (139, 11), (2, 12), (3, 12), (4, 12), (5, 12), (6, 12), (7, 12), (8, 12), (9, 12), (10, 12), (11, 12), (12, 12), (13, 12), (14, 12), (15, 12), (16, 12), (17, 12), (18, 12), (19, 12), (20, 12), (21, 12), (22, 12), (23, 12), (24, 12), (25, 12), (26, 12), (27, 12), (53, 12), (54, 12), (55, 12), (56, 12), (115, 12), (116, 12), (117, 12), (118, 12), (119, 12), (120, 12), (121, 12), (122, 12), (123, 12), (124, 12), (125, 12), (126, 12), (127, 12), (128, 12), (129, 12), (130, 12), (131, 12), (132, 12), (133, 12), (134, 12), (135, 12), (136, 12), (137, 12), (138, 12), (139, 12), (2, 13), (3, 13), (4, 13), (5, 13), (6, 13), (7, 13), (8, 13), (9, 13), (10, 13), (11, 13), (12, 13), (13, 13), (14, 13), (15, 13), (16, 13), (17, 13), (18, 13), (19, 13), (20, 13), (21, 13), (22, 13), (23, 13), (24, 13), (25, 13), (26, 13), (53, 13), (54, 13), (55, 13), (56, 13), (57, 13), (115, 13), (116, 13), (119, 13), (120, 13), (121, 13), (122, 13), (123, 13), (124, 13), (125, 13), (126, 13), (127, 13), (128, 13), (129, 13), (130, 13), (131, 13), (132, 13), (133, 13), (134, 13), (135, 13), (136, 13), (137, 13), (138, 13), (139, 13), (2, 14), (3, 14), (4, 14), (5, 14), (6, 14), (7, 14), (8, 14), (9, 14), (10, 14), (11, 14), (12, 14), (13, 14), (14, 14), (15, 14), (16, 14), (17, 14), (18, 14), (19, 14), (20, 14), (21, 14), (22, 14), (23, 14), (24, 14), (25, 14), (26, 14), (54, 14), (55, 14), (119, 14), (120, 14), (121, 14), (122, 14), (123, 14), (124, 14), (125, 14), (126, 14), (127, 14), (128, 14), (129, 14), (130, 14), (131, 14), (132, 14), (133, 14), (134, 14), (135, 14), (136, 14), (137, 14), (138, 14), (139, 14), (2, 15), (3, 15), (4, 15), (5, 15), (6, 15), (7, 15), (8, 15), (9, 15), (10, 15), (11, 15), (12, 15), (13, 15), (14, 15), (15, 15), (16, 15), (17, 15), (18, 15), (19, 15), (20, 15), (21, 15), (22, 15), (23, 15), (24, 15), (25, 15), (26, 15), (27, 15), (54, 15), (55, 15), (123, 15), (124, 15), (125, 15), (126, 15), (127, 15), (128, 15), (129, 15), (130, 15), (131, 15), (132, 15), (133, 15), (134, 15), (135, 15), (136, 15), (137, 15), (138, 15), (139, 15), (2, 16), (3, 16), (4, 16), (5, 16), (6, 16), (7, 16), (8, 16), (9, 16), (10, 16), (11, 16), (12, 16), (13, 16), (14, 16), (15, 16), (16, 16), (17, 16), (18, 16), (19, 16), (20, 16), (21, 16), (22, 16), (23, 16), (24, 16), (25, 16), (26, 16), (27, 16), (54, 16), (123, 16), (124, 16), (125, 16), (126, 16), (127, 16), (128, 16), (129, 16), (130, 16), (131, 16), (132, 16), (133, 16), (134, 16), (135, 16), (136, 16), (137, 16), (138, 16), (139, 16), (2, 17), (3, 17), (4, 17), (5, 17), (6, 17), (7, 17), (8, 17), (9, 17), (10, 17), (11, 17), (12, 17), (13, 17), (14, 17), (15, 17), (16, 17), (17, 17), (18, 17), (19, 17), (20, 17), (21, 17), (22, 17), (26, 17), (124, 17), (125, 17), (126, 17), (127, 17), (128, 17), (129, 17), (130, 17), (131, 17), (132, 17), (133, 17), (134, 17), (135, 17), (136, 17), (137, 17), (138, 17), (139, 17), (2, 18), (3, 18), (4, 18), (5, 18), (6, 18), (7, 18), (8, 18), (9, 18), (10, 18), (11, 18), (12, 18), (13, 18), (14, 18), (15, 18), (16, 18), (17, 18), (18, 18), (19, 18), (20, 18), (21, 18), (126, 18), (129, 18), (130, 18), (131, 18), (132, 18), (133, 18), (134, 18), (135, 18), (136, 18), (137, 18), (138, 18), (139, 18), (2, 19), (3, 19), (4, 19), (5, 19), (6, 19), (7, 19), (8, 19), (9, 19), (10, 19), (11, 19), (12, 19), (13, 19), (14, 19), (15, 19), (16, 19), (17, 19), (18, 19), (19, 19), (20, 19), (21, 19), (130, 19), (131, 19), (132, 19), (133, 19), (134, 19), (135, 19), (136, 19), (137, 19), (138, 19), (139, 19), (2, 20), (3, 20), (4, 20), (5, 20), (6, 20), (7, 20), (8, 20), (9, 20), (10, 20), (11, 20), (12, 20), (13, 20), (14, 20), (15, 20), (16, 20), (17, 20), (18, 20), (19, 20), (20, 20), (21, 20), (22, 20), (130, 20), (131, 20), (132, 20), (133, 20), (134, 20), (135, 20), (136, 20), (137, 20), (138, 20), (139, 20), (2, 21), (3, 21), (4, 21), (5, 21), (6, 21), (7, 21), (8, 21), (9, 21), (10, 21), (11, 21), (12, 21), (13, 21), (14, 21), (15, 21), (16, 21), (17, 21), (18, 21), (19, 21), (20, 21), (21, 21), (131, 21), (132, 21), (133, 21), (134, 21), (135, 21), (136, 21), (137, 21), (138, 21), (139, 21), (2, 22), (3, 22), (4, 22), (5, 22), (6, 22), (7, 22), (8, 22), (9, 22), (10, 22), (11, 22), (12, 22), (13, 22), (14, 22), (15, 22), (16, 22), (17, 22), (18, 22), (19, 22), (20, 22), (21, 22), (131, 22), (132, 22), (133, 22), (134, 22), (135, 22), (136, 22), (137, 22), (138, 22), (139, 22), (2, 23), (3, 23), (4, 23), (5, 23), (6, 23), (7, 23), (8, 23), (9, 23), (10, 23), (11, 23), (12, 23), (13, 23), (14, 23), (15, 23), (16, 23), (17, 23), (18, 23), (19, 23), (20, 23), (131, 23), (132, 23), (133, 23), (134, 23), (135, 23), (136, 23), (137, 23), (138, 23), (139, 23), (2, 24), (3, 24), (4, 24), (5, 24), (6, 24), (7, 24), (8, 24), (9, 24), (10, 24), (11, 24), (12, 24), (13, 24), (14, 24), (15, 24), (16, 24), (17, 24), (18, 24), (19, 24), (20, 24), (131, 24), (132, 24), (133, 24), (134, 24), (135, 24), (136, 24), (137, 24), (138, 24), (139, 24), (2, 25), (3, 25), (4, 25), (5, 25), (6, 25), (7, 25), (8, 25), (9, 25), (10, 25), (11, 25), (12, 25), (13, 25), (14, 25), (15, 25), (18, 25), (131, 25), (132, 25), (133, 25), (134, 25), (135, 25), (136, 25), (137, 25), (138, 25), (139, 25), (2, 26), (3, 26), (4, 26), (5, 26), (6, 26), (7, 26), (8, 26), (9, 26), (10, 26), (11, 26), (12, 26), (13, 26), (14, 26), (15, 26), (18, 26), (131, 26), (132, 26), (133, 26), (134, 26), (135, 26), (136, 26), (137, 26), (138, 26), (139, 26), (2, 27), (3, 27), (4, 27), (5, 27), (6, 27), (7, 27), (8, 27), (9, 27), (10, 27), (11, 27), (12, 27), (131, 27), (132, 27), (133, 27), (134, 27), (135, 27), (136, 27), (137, 27), (138, 27), (139, 27), (2, 28), (3, 28), (4, 28), (5, 28), (6, 28), (7, 28), (8, 28), (9, 28), (10, 28), (11, 28), (12, 28), (131, 28), (132, 28), (133, 28), (134, 28), (135, 28), (136, 28), (137, 28), (138, 28), (139, 28), (2, 29), (3, 29), (4, 29), (5, 29), (6, 29), (7, 29), (8, 29), (9, 29), (10, 29), (11, 29), (12, 29), (131, 29), (132, 29), (133, 29), (134, 29), (135, 29), (136, 29), (137, 29), (138, 29), (139, 29), (2, 30), (3, 30), (4, 30), (5, 30), (6, 30), (7, 30), (8, 30), (9, 30), (10, 30), (11, 30), (131, 30), (132, 30), (133, 30), (134, 30), (135, 30), (136, 30), (137, 30), (138, 30), (139, 30), (2, 31), (3, 31), (4, 31), (5, 31), (6, 31), (7, 31), (8, 31), (9, 31), (10, 31), (11, 31), (131, 31), (132, 31), (133, 31), (134, 31), (135, 31), (136, 31), (137, 31), (138, 31), (139, 31), (2, 32), (3, 32), (4, 32), (5, 32), (6, 32), (7, 32), (8, 32), (9, 32), (10, 32), (11, 32), (133, 32), (134, 32), (135, 32), (136, 32), (137, 32), (138, 32), (139, 32), (2, 33), (3, 33), (4, 33), (5, 33), (6, 33), (7, 33), (8, 33), (9, 33), (135, 33), (136, 33), (137, 33), (138, 33), (139, 33), (2, 34), (3, 34), (4, 34), (5, 34), (6, 34), (7, 34), (8, 34), (9, 34), (135, 34), (136, 34), (137, 34), (138, 34), (139, 34), (2, 35), (3, 35), (4, 35), (5, 35), (6, 35), (7, 35), (135, 35), (136, 35), (137, 35), (138, 35), (139, 35), (2, 36), (3, 36), (4, 36), (5, 36), (6, 36), (136, 36), (137, 36), (138, 36), (139, 36), (2, 37), (3, 37), (4, 37), (5, 37), (6, 37), (136, 37), (137, 37), (138, 37), (139, 37), (2, 38), (3, 38), (4, 38), (5, 38), (6, 38), (7, 38), (137, 38), (138, 38), (139, 38), (2, 39), (3, 39), (4, 39), (5, 39), (6, 39), (7, 39), (137, 39), (138, 39), (139, 39), (2, 40), (3, 40), (4, 40), (5, 40), (6, 40), (138, 40), (139, 40), (2, 41), (3, 41), (4, 41), (5, 41), (6, 41), (138, 41), (139, 41), (2, 42), (3, 42), (4, 42), (5, 42), (6, 42), (7, 42), (8, 42), (9, 42), (10, 42), (11, 42), (138, 42), (139, 42), (2, 43), (3, 43), (4, 43), (5, 43), (6, 43), (7, 43), (8, 43), (9, 43), (10, 43), (11, 43), (12, 43), (138, 43), (139, 43), (2, 44), (3, 44), (4, 44), (5, 44), (6, 44), (7, 44), (8, 44), (9, 44), (10, 44), (11, 44), (138, 44), (139, 44), (2, 45), (3, 45), (4, 45), (5, 45), (6, 45), (7, 45), (8, 45), (9, 45), (138, 45), (139, 45), (2, 46), (3, 46), (4, 46), (5, 46), (6, 46), (7, 46), (138, 46), (139, 46), (2, 47), (3, 47), (4, 47), (5, 47), (6, 47), (7, 47), (138, 47), (139, 47), (2, 48), (3, 48), (4, 48), (5, 48), (6, 48), (138, 48), (139, 48), (2, 49), (3, 49), (4, 49), (5, 49), (6, 49), (138, 49), (139, 49), (2, 50), (3, 50), (4, 50), (5, 50), (138, 50), (139, 50), (2, 51), (3, 51), (4, 51), (5, 51), (138, 51), (139, 51), (2, 52), (3, 52), (4, 52), (5, 52), (6, 52), (7, 52), (8, 52), (9, 52), (138, 52), (139, 52), (2, 53), (3, 53), (4, 53), (5, 53), (6, 53), (7, 53), (8, 53), (9, 53), (10, 53), (11, 53), (138, 53), (139, 53), (2, 54), (3, 54), (4, 54), (5, 54), (6, 54), (7, 54), (8, 54), (9, 54), (10, 54), (11, 54), (12, 54), (138, 54), (139, 54), (2, 55), (3, 55), (4, 55), (5, 55), (6, 55), (7, 55), (8, 55), (9, 55), (10, 55), (11, 55), (138, 55), (139, 55), (2, 56), (3, 56), (4, 56), (5, 56), (6, 56), (7, 56), (8, 56), (9, 56), (10, 56), (11, 56), (138, 56), (139, 56), (2, 57), (3, 57), (4, 57), (5, 57), (6, 57), (7, 57), (8, 57), (9, 57), (10, 57), (11, 57), (12, 57), (13, 57), (14, 57), (138, 57), (139, 57), (2, 58), (3, 58), (4, 58), (5, 58), (6, 58), (7, 58), (8, 58), (9, 58), (10, 58), (11, 58), (12, 58), (13, 58), (14, 58), (138, 58), (139, 58), (2, 59), (3, 59), (4, 59), (5, 59), (6, 59), (7, 59), (8, 59), (9, 59), (10, 59), (11, 59), (12, 59), (13, 59), (14, 59), (138, 59), (139, 59), (2, 60), (3, 60), (4, 60), (5, 60), (6, 60), (7, 60), (8, 60), (9, 60), (10, 60), (11, 60), (12, 60), (13, 60), (14, 60), (15, 60), (138, 60), (139, 60), (2, 61), (3, 61), (4, 61), (5, 61), (6, 61), (7, 61), (8, 61), (9, 61), (10, 61), (11, 61), (12, 61), (13, 61), (14, 61), (15, 61), (138, 61), (139, 61), (2, 62), (3, 62), (4, 62), (5, 62), (6, 62), (7, 62), (8, 62), (9, 62), (10, 62), (11, 62), (12, 62), (13, 62), (14, 62), (138, 62), (139, 62), (2, 63), (3, 63), (4, 63), (5, 63), (6, 63), (7, 63), (8, 63), (9, 63), (10, 63), (11, 63), (12, 63), (13, 63), (14, 63), (138, 63), (139, 63), (2, 64), (3, 64), (4, 64), (5, 64), (6, 64), (7, 64), (8, 64), (9, 64), (10, 64), (11, 64), (12, 64), (13, 64), (138, 64), (139, 64), (2, 65), (3, 65), (4, 65), (5, 65), (6, 65), (7, 65), (8, 65), (9, 65), (10, 65), (11, 65), (12, 65), (13, 65), (138, 65), (139, 65), (2, 66), (3, 66), (4, 66), (5, 66), (6, 66), (7, 66), (8, 66), (9, 66), (10, 66), (11, 66), (12, 66), (13, 66), (14, 66), (138, 66), (139, 66), (2, 67), (3, 67), (4, 67), (5, 67), (6, 67), (7, 67), (8, 67), (9, 67), (10, 67), (11, 67), (12, 67), (13, 67), (14, 67), (15, 67), (16, 67), (17, 67), (18, 67), (138, 67), (139, 67), (2, 68), (3, 68), (4, 68), (5, 68), (6, 68), (7, 68), (8, 68), (9, 68), (10, 68), (11, 68), (12, 68), (13, 68), (138, 68), (139, 68), (2, 69), (3, 69), (4, 69), (5, 69), (6, 69), (7, 69), (8, 69), (9, 69), (10, 69), (11, 69), (12, 69), (13, 69), (138, 69), (139, 69), (2, 70), (3, 70), (4, 70), (5, 70), (6, 70), (7, 70), (8, 70), (9, 70), (10, 70), (11, 70), (12, 70), (13, 70), (14, 70), (138, 70), (139, 70), (2, 71), (3, 71), (4, 71), (5, 71), (6, 71), (7, 71), (8, 71), (9, 71), (10, 71), (11, 71), (12, 71), (13, 71), (14, 71), (138, 71), (139, 71), (2, 72), (3, 72), (4, 72), (5, 72), (6, 72), (7, 72), (8, 72), (9, 72), (10, 72), (11, 72), (12, 72), (13, 72), (14, 72), (138, 72), (139, 72), (2, 73), (3, 73), (4, 73), (5, 73), (6, 73), (7, 73), (8, 73), (9, 73), (10, 73), (11, 73), (12, 73), (13, 73), (14, 73), (138, 73), (139, 73), (2, 74), (3, 74), (4, 74), (5, 74), (6, 74), (7, 74), (8, 74), (9, 74), (10, 74), (11, 74), (12, 74), (138, 74), (139, 74), (2, 75), (3, 75), (4, 75), (5, 75), (6, 75), (7, 75), (8, 75), (9, 75), (10, 75), (11, 75), (12, 75), (138, 75), (139, 75), (2, 76), (3, 76), (4, 76), (5, 76), (6, 76), (7, 76), (8, 76), (9, 76), (10, 76), (11, 76), (12, 76), (138, 76), (139, 76), (2, 77), (3, 77), (4, 77), (5, 77), (6, 77), (7, 77), (8, 77), (9, 77), (10, 77), (11, 77), (12, 77), (138, 77), (139, 77), (2, 78), (3, 78), (4, 78), (5, 78), (6, 78), (7, 78), (8, 78), (9, 78), (10, 78), (138, 78), (139, 78), (2, 79), (3, 79), (4, 79), (5, 79), (6, 79), (7, 79), (8, 79), (9, 79), (10, 79), (138, 79), (139, 79), (2, 80), (3, 80), (4, 80), (5, 80), (6, 80), (7, 80), (8, 80), (9, 80), (10, 80), (138, 80), (139, 80), (2, 81), (3, 81), (4, 81), (5, 81), (6, 81), (7, 81), (8, 81), (9, 81), (10, 81), (138, 81), (139, 81), (2, 82), (3, 82), (4, 82), (5, 82), (6, 82), (7, 82), (8, 82), (138, 82), (139, 82), (2, 83), (3, 83), (4, 83), (5, 83), (6, 83), (7, 83), (138, 83), (139, 83), (2, 84), (3, 84), (4, 84), (5, 84), (6, 84), (7, 84), (138, 84), (139, 84), (2, 85), (3, 85), (4, 85), (5, 85), (6, 85), (7, 85), (8, 85), (9, 85), (10, 85), (138, 85), (139, 85), (2, 86), (3, 86), (4, 86), (5, 86), (6, 86), (7, 86), (8, 86), (9, 86), (10, 86), (138, 86), (139, 86), (2, 87), (3, 87), (4, 87), (5, 87), (6, 87), (7, 87), (8, 87), (9, 87), (10, 87), (11, 87), (12, 87), (138, 87), (139, 87), (2, 88), (3, 88), (4, 88), (5, 88), (6, 88), (7, 88), (8, 88), (9, 88), (10, 88), (11, 88), (12, 88), (138, 88), (139, 88), (2, 89), (3, 89), (4, 89), (5, 89), (6, 89), (7, 89), (8, 89), (9, 89), (10, 89), (11, 89), (12, 89), (13, 89), (138, 89), (139, 89), (2, 90), (3, 90), (4, 90), (5, 90), (6, 90), (7, 90), (8, 90), (9, 90), (10, 90), (138, 90), (139, 90), (2, 91), (3, 91), (4, 91), (5, 91), (6, 91), (7, 91), (8, 91), (9, 91), (138, 91), (139, 91), (2, 92), (3, 92), (4, 92), (5, 92), (6, 92), (7, 92), (8, 92), (9, 92), (138, 92), (139, 92), (2, 93), (3, 93), (4, 93), (5, 93), (6, 93), (7, 93), (8, 93), (9, 93), (10, 93), (11, 93), (12, 93), (13, 93), (138, 93), (139, 93), (2, 94), (3, 94), (4, 94), (5, 94), (6, 94), (7, 94), (8, 94), (9, 94), (10, 94), (11, 94), (12, 94), (13, 94), (138, 94), (139, 94), (2, 95), (3, 95), (4, 95), (5, 95), (6, 95), (7, 95), (8, 95), (9, 95), (10, 95), (11, 95), (138, 95), (139, 95), (2, 96), (3, 96), (4, 96), (5, 96), (6, 96), (7, 96), (8, 96), (9, 96), (10, 96), (11, 96), (138, 96), (139, 96), (2, 97), (3, 97), (4, 97), (5, 97), (6, 97), (7, 97), (8, 97), (11, 97), (138, 97), (139, 97), (2, 98), (3, 98), (4, 98), (5, 98), (6, 98), (138, 98), (139, 98), (2, 99), (3, 99), (4, 99), (5, 99), (138, 99), (139, 99), (2, 100), (3, 100), (4, 100), (5, 100), (138, 100), (139, 100), (2, 101), (3, 101), (4, 101), (5, 101), (6, 101), (7, 101), (8, 101), (138, 101), (139, 101), (2, 102), (3, 102), (4, 102), (5, 102), (6, 102), (7, 102), (8, 102), (9, 102), (10, 102), (138, 102), (139, 102), (2, 103), (3, 103), (4, 103), (5, 103), (6, 103), (7, 103), (8, 103), (9, 103), (138, 103), (139, 103), (2, 104), (3, 104), (4, 104), (5, 104), (6, 104), (7, 104), (8, 104), (9, 104), (138, 104), (139, 104), (2, 105), (3, 105), (4, 105), (5, 105), (6, 105), (7, 105), (8, 105), (9, 105), (10, 105), (138, 105), (139, 105), (2, 106), (3, 106), (4, 106), (5, 106), (6, 106), (7, 106), (8, 106), (9, 106), (10, 106), (138, 106), (139, 106), (2, 107), (3, 107), (4, 107), (5, 107), (6, 107), (7, 107), (8, 107), (9, 107), (10, 107), (11, 107), (12, 107), (138, 107), (139, 107), (2, 108), (3, 108), (4, 108), (5, 108), (6, 108), (7, 108), (8, 108), (138, 108), (139, 108), (2, 109), (3, 109), (4, 109), (5, 109), (6, 109), (7, 109), (8, 109), (138, 109), (139, 109), (2, 110), (3, 110), (4, 110), (5, 110), (6, 110), (7, 110), (8, 110), (9, 110), (138, 110), (139, 110), (2, 111), (3, 111), (4, 111), (5, 111), (6, 111), (7, 111), (8, 111), (9, 111), (138, 111), (139, 111), (2, 112), (3, 112), (4, 112), (5, 112), (6, 112), (7, 112), (8, 112), (9, 112), (10, 112), (11, 112), (12, 112), (138, 112), (139, 112), (2, 113), (3, 113), (4, 113), (5, 113), (6, 113), (7, 113), (8, 113), (9, 113), (10, 113), (11, 113), (12, 113), (138, 113), (139, 113), (2, 114), (3, 114), (4, 114), (5, 114), (6, 114), (7, 114), (8, 114), (9, 114), (10, 114), (11, 114), (138, 114), (139, 114), (2, 115), (3, 115), (4, 115), (5, 115), (6, 115), (7, 115), (8, 115), (9, 115), (10, 115), (11, 115), (138, 115), (139, 115), (2, 116), (3, 116), (4, 116), (5, 116), (6, 116), (7, 116), (8, 116), (9, 116), (138, 116), (139, 116), (2, 117), (3, 117), (4, 117), (5, 117), (6, 117), (7, 117), (8, 117), (9, 117), (138, 117), (139, 117), (2, 118), (3, 118), (4, 118), (5, 118), (6, 118), (7, 118), (8, 118), (9, 118), (138, 118), (139, 118), (2, 119), (3, 119), (4, 119), (5, 119), (6, 119), (7, 119), (8, 119), (9, 119), (138, 119), (139, 119), (2, 120), (3, 120), (4, 120), (5, 120), (6, 120), (7, 120), (8, 120), (9, 120), (10, 120), (11, 120), (138, 120), (139, 120), (2, 121), (3, 121), (4, 121), (5, 121), (6, 121), (7, 121), (8, 121), (9, 121), (10, 121), (11, 121), (12, 121), (138, 121), (139, 121), (2, 122), (3, 122), (4, 122), (5, 122), (6, 122), (7, 122), (8, 122), (9, 122), (10, 122), (11, 122), (12, 122), (138, 122), (139, 122), (2, 123), (3, 123), (4, 123), (5, 123), (6, 123), (7, 123), (8, 123), (9, 123), (10, 123), (11, 123), (12, 123), (138, 123), (139, 123), (2, 124), (3, 124), (4, 124), (5, 124), (6, 124), (7, 124), (8, 124), (9, 124), (10, 124), (11, 124), (12, 124), (138, 124), (139, 124), (2, 125), (3, 125), (4, 125), (5, 125), (6, 125), (7, 125), (8, 125), (9, 125), (10, 125), (11, 125), (12, 125), (13, 125), (138, 125), (139, 125), (2, 126), (3, 126), (4, 126), (5, 126), (6, 126), (7, 126), (8, 126), (9, 126), (10, 126), (11, 126), (12, 126), (13, 126), (14, 126), (15, 126), (16, 126), (17, 126), (18, 126), (19, 126), (138, 126), (139, 126), (2, 127), (3, 127), (4, 127), (5, 127), (6, 127), (7, 127), (8, 127), (9, 127), (10, 127), (11, 127), (12, 127), (13, 127), (14, 127), (15, 127), (16, 127), (17, 127), (18, 127), (19, 127), (20, 127), (138, 127), (139, 127), (2, 128), (3, 128), (4, 128), (5, 128), (6, 128), (7, 128), (8, 128), (9, 128), (10, 128), (11, 128), (12, 128), (13, 128), (14, 128), (15, 128), (16, 128), (17, 128), (18, 128), (19, 128), (20, 128), (138, 128), (139, 128), (2, 129), (3, 129), (4, 129), (5, 129), (6, 129), (7, 129), (8, 129), (9, 129), (10, 129), (11, 129), (12, 129), (13, 129), (14, 129), (15, 129), (16, 129), (17, 129), (18, 129), (19, 129), (138, 129), (139, 129), (2, 130), (3, 130), (4, 130), (5, 130), (6, 130), (7, 130), (8, 130), (9, 130), (10, 130), (11, 130), (12, 130), (13, 130), (14, 130), (15, 130), (16, 130), (17, 130), (18, 130), (19, 130), (138, 130), (139, 130), (2, 131), (3, 131), (4, 131), (5, 131), (6, 131), (7, 131), (8, 131), (9, 131), (10, 131), (11, 131), (12, 131), (13, 131), (14, 131), (15, 131), (16, 131), (17, 131), (18, 131), (19, 131), (20, 131), (21, 131), (22, 131), (138, 131), (139, 131), (2, 132), (3, 132), (4, 132), (5, 132), (6, 132), (7, 132), (8, 132), (9, 132), (10, 132), (11, 132), (12, 132), (13, 132), (14, 132), (15, 132), (16, 132), (17, 132), (18, 132), (19, 132), (20, 132), (21, 132), (22, 132), (138, 132), (139, 132), (2, 133), (3, 133), (4, 133), (5, 133), (6, 133), (7, 133), (8, 133), (9, 133), (10, 133), (11, 133), (12, 133), (13, 133), (14, 133), (15, 133), (16, 133), (17, 133), (18, 133), (19, 133), (20, 133), (21, 133), (22, 133), (138, 133), (139, 133), (2, 134), (3, 134), (4, 134), (5, 134), (6, 134), (7, 134), (8, 134), (9, 134), (10, 134), (11, 134), (12, 134), (13, 134), (14, 134), (15, 134), (16, 134), (17, 134), (18, 134), (19, 134), (20, 134), (21, 134), (22, 134), (23, 134), (24, 134), (25, 134), (26, 134), (27, 134), (138, 134), (139, 134), (2, 135), (3, 135), (4, 135), (5, 135), (6, 135), (7, 135), (8, 135), (9, 135), (10, 135), (11, 135), (12, 135), (13, 135), (14, 135), (15, 135), (16, 135), (17, 135), (18, 135), (19, 135), (20, 135), (21, 135), (22, 135), (23, 135), (24, 135), (25, 135), (26, 135), (27, 135), (28, 135), (29, 135), (30, 135), (138, 135), (139, 135), (2, 136), (3, 136), (4, 136), (5, 136), (6, 136), (7, 136), (8, 136), (9, 136), (10, 136), (11, 136), (12, 136), (13, 136), (14, 136), (15, 136), (16, 136), (17, 136), (18, 136), (19, 136), (20, 136), (21, 136), (22, 136), (23, 136), (24, 136), (25, 136), (26, 136), (27, 136), (28, 136), (29, 136), (30, 136), (31, 136), (138, 136), (139, 136), (2, 137), (3, 137), (4, 137), (5, 137), (6, 137), (7, 137), (8, 137), (9, 137), (10, 137), (11, 137), (12, 137), (13, 137), (14, 137), (15, 137), (16, 137), (17, 137), (18, 137), (19, 137), (20, 137), (21, 137), (22, 137), (23, 137), (24, 137), (25, 137), (26, 137), (27, 137), (28, 137), (29, 137), (30, 137), (31, 137), (32, 137), (33, 137), (34, 137), (35, 137), (36, 137), (37, 137), (38, 137), (39, 137), (40, 137), (138, 137), (139, 137), (2, 138), (3, 138), (4, 138), (5, 138), (6, 138), (7, 138), (8, 138), (9, 138), (10, 138), (11, 138), (12, 138), (13, 138), (14, 138), (15, 138), (16, 138), (17, 138), (18, 138), (19, 138), (20, 138), (21, 138), (22, 138), (23, 138), (24, 138), (25, 138), (26, 138), (27, 138), (28, 138), (29, 138), (30, 138), (31, 138), (32, 138), (33, 138), (34, 138), (35, 138), (36, 138), (37, 138), (38, 138), (39, 138), (40, 138), (41, 138), (138, 138), (139, 138), (2, 139), (3, 139), (4, 139), (5, 139), (6, 139), (7, 139), (8, 139), (9, 139), (10, 139), (11, 139), (12, 139), (13, 139), (14, 139), (15, 139), (16, 139), (17, 139), (18, 139), (19, 139), (20, 139), (21, 139), (22, 139), (23, 139), (24, 139), (25, 139), (26, 139), (27, 139), (28, 139), (29, 139), (30, 139), (31, 139), (32, 139), (33, 139), (34, 139), (35, 139), (36, 139), (37, 139), (38, 139), (39, 139), (40, 139), (41, 139), (42, 139), (43, 139), (44, 139), (45, 139), (46, 139), (47, 139), (48, 139), (49, 139), (50, 139), (51, 139), (52, 139), (53, 139), (54, 139), (55, 139), (56, 139), (57, 139), (58, 139), (59, 139), (60, 139), (61, 139), (62, 139), (63, 139), (64, 139), (65, 139), (66, 139), (67, 139), (68, 139), (69, 139), (70, 139), (73, 139), (74, 139), (75, 139), (76, 139), (77, 139), (78, 139), (79, 139), (80, 139), (81, 139), (82, 139), (83, 139), (84, 139), (85, 139), (86, 139), (87, 139), (88, 139), (89, 139), (90, 139), (91, 139), (92, 139), (93, 139), (94, 139), (95, 139), (96, 139), (97, 139), (98, 139), (99, 139), (100, 139), (101, 139), (102, 139), (103, 139), (104, 139), (105, 139), (106, 139), (107, 139), (108, 139), (109, 139), (110, 139), (111, 139), (112, 139), (113, 139), (114, 139), (115, 139), (116, 139), (117, 139), (118, 139), (119, 139), (120, 139), (121, 139), (122, 139), (123, 139), (124, 139), (125, 139), (126, 139), (127, 139), (128, 139), (129, 139), (130, 139), (131, 139), (132, 139), (133, 139), (134, 139), (135, 139), (136, 139), (137, 139), (138, 139), (139, 139), (49, 8), (130, 24), (130, 25), (130, 26), (130, 27), (130, 28), (130, 29), (130, 30), (130, 31), (137, 44), (137, 45), (137, 46), (137, 47), (137, 48), (137, 49), (137, 50), (137, 51), (137, 52), (137, 53), (137, 54), (137, 55), (137, 56), (137, 57), (137, 58), (137, 59), (137, 60), (137, 61), (137, 62), (137, 63), (137, 64), (137, 65), (17, 66), (137, 66), (137, 67), (137, 68), (137, 69), (137, 70), (137, 71), (137, 72), (137, 73), (137, 74), (137, 75), (137, 76), (137, 77), (137, 78), (137, 79), (137, 80), (137, 81), (137, 82), (137, 83), (137, 84), (137, 85), (137, 86), (137, 87), (137, 88), (137, 89), (137, 90), (137, 91), (13, 92), (137, 92), (137, 93), (137, 94), (137, 95), (137, 96), (137, 97), (137, 98), (137, 99), (137, 100), (137, 101), (137, 102), (137, 103), (137, 104), (137, 105), (137, 106), (137, 107), (137, 108), (137, 109), (137, 110), (137, 111), (137, 112), (137, 113), (137, 114), (137, 115), (137, 116), (137, 117), (137, 118), (137, 119), (137, 120), (137, 121), (137, 122), (137, 123), (137, 124), (16, 125), (137, 125), (137, 126), (137, 127), (137, 128), (137, 129), (137, 130), (137, 131), (137, 132), (25, 133), (26, 133), (27, 133), (137, 133), (30, 134), (137, 134), (137, 135), (34, 136), (35, 136), (36, 136), (37, 136), (38, 136), (39, 136), (40, 136), (137, 136), (137, 137), (44, 138), (45, 138), (46, 138), (47, 138), (48, 138), (49, 138), (50, 138), (51, 138), (52, 138), (53, 138), (54, 138), (55, 138), (56, 138), (57, 138), (58, 138), (59, 138), (60, 138), (61, 138), (62, 138), (63, 138), (64, 138), (65, 138), (66, 138), (67, 138), (68, 138), (69, 138), (70, 138), (73, 138), (74, 138), (75, 138), (76, 138), (77, 138), (78, 138), (79, 138), (80, 138), (81, 138), (82, 138), (83, 138), (84, 138), (85, 138), (86, 138), (87, 138), (88, 138), (89, 138), (90, 138), (91, 138), (92, 138), (93, 138), (94, 138), (95, 138), (96, 138), (97, 138), (98, 138), (99, 138), (100, 138), (101, 138), (102, 138), (103, 138), (104, 138), (105, 138), (106, 138), (107, 138), (108, 138), (109, 138), (110, 138), (111, 138), (112, 138), (113, 138), (114, 138), (115, 138), (116, 138), (117, 138), (118, 138), (119, 138), (120, 138), (121, 138), (122, 138), (123, 138), (124, 138), (125, 138), (126, 138), (127, 138), (128, 138), (129, 138), (130, 138), (131, 138), (132, 138), (133, 138), (134, 138), (135, 138), (136, 138), (137, 138), (129, 27), (136, 44), (136, 45), (136, 46), (136, 47), (136, 48), (136, 49), (136, 50), (136, 51), (136, 52), (136, 53), (136, 54), (136, 55), (136, 56), (136, 57), (136, 58), (136, 59), (136, 60), (136, 61), (136, 62), (136, 63), (136, 64), (136, 65), (136, 66), (136, 67), (136, 68), (136, 69), (136, 70), (136, 73), (136, 74), (136, 75), (136, 76), (136, 77), (136, 78), (136, 79), (136, 80), (136, 81), (136, 82), (136, 83), (136, 84), (136, 85), (136, 86), (136, 87), (136, 88), (136, 89), (136, 90), (136, 91), (136, 92), (136, 93), (136, 94), (136, 95), (136, 96), (136, 97), (136, 98), (136, 99), (136, 100), (136, 101), (136, 102), (136, 103), (136, 104), (136, 105), (136, 106), (136, 107), (136, 108), (136, 109), (136, 110), (136, 111), (136, 112), (136, 113), (136, 114), (136, 115), (136, 116), (136, 117), (136, 118), (136, 119), (136, 120), (136, 121), (136, 122), (136, 123), (16, 124), (136, 124), (136, 125), (136, 126), (136, 127), (136, 128), (136, 129), (136, 130), (136, 131), (26, 132), (27, 132), (136, 132), (136, 133), (136, 134), (36, 135), (37, 135), (38, 135), (39, 135), (136, 135), (136, 136), (45, 137), (46, 137), (47, 137), (48, 137), (49, 137), (50, 137), (51, 137), (52, 137), (53, 137), (54, 137), (55, 137), (56, 137), (57, 137), (58, 137), (59, 137), (60, 137), (61, 137), (62, 137), (63, 137), (64, 137), (65, 137), (68, 137), (76, 137), (77, 137), (78, 137), (79, 137), (80, 137), (81, 137), (82, 137), (83, 137), (84, 137), (85, 137), (86, 137), (87, 137), (88, 137), (89, 137), (90, 137), (91, 137), (92, 137), (93, 137), (94, 137), (95, 137), (96, 137), (97, 137), (98, 137), (99, 137), (100, 137), (101, 137), (102, 137), (103, 137), (104, 137), (105, 137), (106, 137), (107, 137), (108, 137), (109, 137), (110, 137), (111, 137), (112, 137), (113, 137), (114, 137), (115, 137), (116, 137), (117, 137), (118, 137), (119, 137), (120, 137), (121, 137), (122, 137), (123, 137), (124, 137), (125, 137), (126, 137), (127, 137), (128, 137), (129, 137), (130, 137), (131, 137), (132, 137), (133, 137), (134, 137), (135, 137), (136, 137), (135, 44), (135, 45), (135, 46), (135, 47), (135, 48), (135, 49), (135, 50), (135, 51), (135, 52), (135, 53), (135, 54), (135, 55), (135, 56), (135, 57), (135, 58), (135, 59), (135, 60), (135, 61), (135, 62), (135, 63), (135, 64), (135, 65), (135, 66), (135, 67), (135, 68), (135, 69), (135, 70), (135, 73), (135, 74), (135, 75), (135, 76), (135, 77), (135, 78), (135, 79), (135, 80), (135, 81), (135, 82), (135, 83), (135, 84), (135, 87), (135, 88), (135, 89), (135, 90), (135, 91), (135, 92), (135, 93), (135, 94), (135, 95), (135, 96), (135, 97), (135, 98), (135, 99), (135, 100), (135, 101), (135, 102), (135, 103), (135, 104), (135, 105), (135, 106), (135, 107), (135, 108), (135, 109), (135, 110), (135, 111), (135, 112), (135, 113), (135, 114), (135, 115), (135, 116), (135, 117), (135, 118), (135, 119), (135, 120), (135, 121), (135, 122), (135, 123), (135, 124), (135, 125), (135, 126), (135, 127), (135, 128), (135, 129), (135, 130), (135, 131), (135, 132), (135, 133), (36, 134), (37, 134), (38, 134), (39, 134), (135, 134), (135, 135), (47, 136), (48, 136), (49, 136), (50, 136), (51, 136), (52, 136), (53, 136), (54, 136), (55, 136), (56, 136), (57, 136), (58, 136), (61, 136), (62, 136), (63, 136), (64, 136), (68, 136), (78, 136), (81, 136), (82, 136), (83, 136), (84, 136), (85, 136), (86, 136), (87, 136), (88, 136), (89, 136), (90, 136), (91, 136), (92, 136), (93, 136), (94, 136), (95, 136), (96, 136), (97, 136), (98, 136), (99, 136), (102, 136), (103, 136), (104, 136), (105, 136), (106, 136), (107, 136), (108, 136), (109, 136), (110, 136), (111, 136), (112, 136), (113, 136), (114, 136), (115, 136), (116, 136), (117, 136), (118, 136), (119, 136), (120, 136), (121, 136), (122, 136), (123, 136), (124, 136), (125, 136), (126, 136), (127, 136), (128, 136), (129, 136), (130, 136), (131, 136), (132, 136), (133, 136), (134, 136), (135, 136), (134, 45), (134, 46), (134, 47), (134, 48), (134, 49), (134, 50), (134, 51), (134, 52), (134, 53), (134, 54), (134, 55), (134, 56), (134, 57), (134, 58), (134, 59), (134, 60), (134, 61), (134, 62), (134, 63), (134, 64), (134, 65), (134, 66), (134, 69), (134, 74), (134, 75), (134, 76), (134, 77), (134, 78), (134, 79), (134, 80), (134, 81), (134, 82), (134, 83), (134, 84), (134, 87), (134, 88), (134, 89), (134, 90), (134, 91), (134, 96), (134, 97), (134, 98), (134, 99), (134, 100), (134, 101), (134, 102), (134, 103), (134, 104), (134, 105), (134, 106), (134, 107), (134, 108), (134, 109), (134, 110), (134, 111), (134, 112), (134, 113), (134, 114), (134, 115), (134, 116), (134, 117), (134, 118), (134, 119), (134, 120), (134, 121), (134, 122), (134, 123), (134, 124), (134, 125), (134, 126), (134, 127), (134, 128), (134, 129), (134, 130), (134, 131), (134, 132), (37, 133), (38, 133), (39, 133), (40, 133), (134, 133), (134, 134), (49, 135), (50, 135), (51, 135), (52, 135), (53, 135), (54, 135), (55, 135), (56, 135), (57, 135), (64, 135), (81, 135), (82, 135), (83, 135), (84, 135), (85, 135), (86, 135), (87, 135), (88, 135), (89, 135), (90, 135), (91, 135), (92, 135), (93, 135), (94, 135), (95, 135), (102, 135), (103, 135), (104, 135), (105, 135), (106, 135), (107, 135), (108, 135), (109, 135), (110, 135), (111, 135), (112, 135), (113, 135), (114, 135), (115, 135), (116, 135), (117, 135), (118, 135), (119, 135), (120, 135), (121, 135), (122, 135), (123, 135), (124, 135), (125, 135), (126, 135), (127, 135), (128, 135), (129, 135), (130, 135), (131, 135), (132, 135), (133, 135), (134, 135), (133, 45), (133, 48), (133, 49), (133, 50), (133, 51), (133, 52), (133, 53), (133, 54), (133, 55), (133, 56), (133, 57), (133, 58), (133, 59), (133, 60), (133, 64), (133, 65), (133, 74), (133, 75), (133, 76), (133, 77), (133, 78), (133, 79), (133, 80), (133, 81), (133, 87), (133, 88), (133, 89), (133, 90), (133, 97), (133, 98), (133, 99), (133, 100), (133, 101), (133, 102), (133, 103), (133, 104), (133, 105), (133, 106), (133, 107), (133, 108), (133, 109), (133, 110), (133, 111), (133, 112), (133, 113), (133, 114), (133, 115), (133, 116), (133, 117), (133, 118), (133, 119), (133, 120), (133, 121), (133, 122), (133, 123), (133, 124), (133, 125), (133, 126), (133, 127), (133, 128), (133, 129), (133, 130), (133, 131), (39, 132), (40, 132), (133, 132), (133, 133), (49, 134), (50, 134), (51, 134), (52, 134), (53, 134), (54, 134), (55, 134), (56, 134), (57, 134), (81, 134), (85, 134), (86, 134), (87, 134), (88, 134), (89, 134), (90, 134), (91, 134), (92, 134), (93, 134), (94, 134), (95, 134), (102, 134), (103, 134), (106, 134), (107, 134), (108, 134), (109, 134), (110, 134), (111, 134), (112, 134), (113, 134), (114, 134), (115, 134), (116, 134), (117, 134), (118, 134), (119, 134), (120, 134), (121, 134), (122, 134), (123, 134), (124, 134), (125, 134), (126, 134), (127, 134), (128, 134), (129, 134), (130, 134), (131, 134), (132, 134), (133, 134), (132, 49), (132, 50), (132, 51), (132, 52), (132, 53), (132, 54), (132, 55), (132, 56), (132, 57), (132, 58), (132, 59), (132, 60), (132, 74), (132, 75), (132, 76), (132, 77), (132, 78), (132, 79), (132, 80), (132, 81), (132, 87), (132, 88), (132, 89), (132, 90), (132, 97), (132, 98), (132, 99), (132, 100), (132, 101), (132, 102), (132, 103), (132, 104), (132, 105), (132, 106), (132, 107), (132, 108), (132, 109), (132, 110), (132, 111), (132, 112), (132, 113), (132, 114), (132, 115), (132, 116), (132, 117), (132, 118), (132, 119), (132, 120), (132, 121), (132, 122), (132, 123), (132, 124), (132, 125), (132, 126), (132, 127), (132, 128), (132, 129), (132, 130), (132, 131), (132, 132), (49, 133), (50, 133), (51, 133), (52, 133), (53, 133), (54, 133), (55, 133), (56, 133), (57, 133), (58, 133), (85, 133), (86, 133), (87, 133), (88, 133), (89, 133), (92, 133), (93, 133), (94, 133), (103, 133), (106, 133), (107, 133), (108, 133), (109, 133), (110, 133), (111, 133), (112, 133), (113, 133), (114, 133), (115, 133), (116, 133), (117, 133), (118, 133), (119, 133), (120, 133), (121, 133), (122, 133), (123, 133), (124, 133), (125, 133), (126, 133), (127, 133), (128, 133), (129, 133), (130, 133), (131, 133), (132, 133), (131, 52), (131, 53), (131, 54), (131, 55), (131, 56), (131, 57), (131, 58), (131, 59), (131, 60), (131, 61), (132, 73), (131, 74), (131, 75), (131, 76), (131, 77), (131, 78), (131, 79), (131, 80), (131, 81), (131, 87), (131, 88), (131, 89), (131, 90), (131, 91), (131, 92), (131, 97), (131, 98), (131, 99), (131, 100), (131, 103), (131, 104), (131, 107), (131, 108), (131, 109), (131, 112), (131, 113), (131, 114), (131, 115), (131, 116), (131, 117), (131, 118), (131, 119), (131, 120), (131, 121), (131, 122), (131, 123), (131, 124), (131, 125), (131, 126), (131, 127), (131, 128), (131, 129), (131, 130), (131, 131), (54, 132), (55, 132), (56, 132), (106, 132), (109, 132), (110, 132), (111, 132), (114, 132), (115, 132), (116, 132), (117, 132), (118, 132), (119, 132), (120, 132), (121, 132), (122, 132), (123, 132), (124, 132), (125, 132), (126, 132), (127, 132), (128, 132), (129, 132), (130, 132), (131, 132), (130, 56), (130, 57), (130, 58), (130, 59), (130, 60), (131, 73), (130, 77), (130, 78), (130, 79), (131, 86), (130, 87), (130, 88), (130, 89), (130, 90), (130, 91), (130, 92), (130, 97), (130, 98), (130, 99), (130, 103), (130, 104), (130, 107), (130, 108), (130, 113), (130, 114), (130, 115), (130, 116), (130, 117), (130, 118), (130, 119), (130, 120), (130, 121), (130, 122), (130, 123), (130, 124), (130, 125), (130, 126), (130, 127), (130, 128), (130, 129), (130, 130), (110, 131), (111, 131), (115, 131), (116, 131), (117, 131), (118, 131), (119, 131), (120, 131), (121, 131), (122, 131), (123, 131), (124, 131), (125, 131), (126, 131), (127, 131), (128, 131), (129, 131), (130, 131), (129, 57), (129, 58), (129, 79), (130, 86), (129, 88), (129, 103), (129, 104), (129, 113), (129, 114), (129, 115), (129, 116), (129, 117), (129, 118), (129, 119), (129, 120), (129, 121), (129, 122), (129, 123), (129, 124), (129, 125), (129, 126), (129, 127), (129, 128), (129, 129), (115, 130), (116, 130), (117, 130), (118, 130), (119, 130), (120, 130), (121, 130), (122, 130), (123, 130), (124, 130), (125, 130), (126, 130), (127, 130), (128, 130), (129, 130), (128, 57), (128, 58), (128, 88), (128, 113), (128, 114), (128, 115), (128, 116), (128, 117), (128, 118), (128, 119), (128, 120), (128, 121), (128, 122), (128, 123), (128, 124), (128, 125), (128, 126), (128, 127), (128, 128), (115, 129), (116, 129), (117, 129), (118, 129), (119, 129), (120, 129), (121, 129), (122, 129), (123, 129), (124, 129), (125, 129), (126, 129), (127, 129), (128, 129), (127, 57), (128, 112), (127, 113), (127, 114), (127, 115), (127, 116), (127, 117), (127, 118), (127, 119), (127, 120), (127, 121), (127, 122), (127, 123), (127, 124), (127, 125), (127, 126), (127, 127), (115, 128), (116, 128), (117, 128), (118, 128), (119, 128), (120, 128), (121, 128), (122, 128), (123, 128), (124, 128), (125, 128), (126, 128), (127, 128), (114, 129), (128, 111), (127, 112), (126, 114), (126, 115), (126, 116), (126, 117), (126, 118), (126, 119), (126, 120), (126, 121), (126, 122), (126, 123), (126, 124), (126, 125), (126, 126), (115, 127), (116, 127), (117, 127), (118, 127), (119, 127), (120, 127), (121, 127), (122, 127), (123, 127), (124, 127), (125, 127), (126, 127), (114, 128), (125, 116), (125, 117), (125, 118), (125, 119), (125, 120), (125, 121), (125, 122), (125, 123), (125, 124), (125, 125), (115, 126), (116, 126), (117, 126), (118, 126), (119, 126), (120, 126), (121, 126), (122, 126), (123, 126), (124, 126), (125, 126), (114, 127), (124, 116), (124, 117), (124, 118), (124, 119), (124, 120), (124, 121), (124, 122), (124, 123), (124, 124), (115, 125), (116, 125), (117, 125), (118, 125), (119, 125), (120, 125), (121, 125), (122, 125), (123, 125), (124, 125), (114, 126), (123, 117), (123, 121), (123, 122), (123, 123), (115, 124), (119, 124), (120, 124), (121, 124), (122, 124), (123, 124), (114, 125), (122, 117), (115, 123), (120, 123), (114, 124), (121, 117), (121, 118), (120, 122), (121, 116), (120, 117)], #: 5046
+Empty spaces not in border region: [(60, 8), (78, 8), (60, 9), (61, 9), (41, 10), (64, 10), (65, 10), (108, 10), (50, 11), (65, 11), (75, 11), (76, 11), (108, 11), (45, 13), (39, 14), (58, 14), (59, 14), (102, 14), (44, 15), (58, 15), (59, 15), (79, 15), (40, 16), (95, 16), (113, 16), (32, 17), (37, 17), (60, 17), (61, 17), (62, 17), (73, 18), (84, 18), (116, 18), (29, 19), (52, 19), (87, 19), (115, 19), (36, 20), (50, 20), (69, 20), (83, 20), (100, 20), (38, 21), (69, 21), (79, 21), (82, 21), (90, 21), (128, 21), (55, 22), (60, 22), (86, 23), (95, 23), (100, 23), (118, 23), (56, 24), (71, 24), (115, 24), (33, 25), (36, 25), (40, 25), (60, 25), (44, 26), (75, 26), (78, 26), (102, 26), (118, 26), (37, 27), (48, 27), (68, 27), (71, 27), (115, 27), (36, 28), (72, 28), (92, 28), (95, 28), (18, 29), (65, 29), (102, 29), (18, 30), (37, 30), (47, 30), (69, 30), (100, 30), (26, 31), (45, 31), (71, 31), (79, 31), (116, 31), (124, 32), (62, 33), (74, 33), (26, 35), (59, 35), (92, 35), (124, 35), (130, 35), (131, 35), (132, 35), (119, 36), (130, 36), (131, 36), (132, 36), (133, 36), (49, 37), (75, 37), (83, 37), (90, 37), (109, 37), (125, 37), (130, 37), (131, 37), (132, 37), (133, 37), (112, 38), (130, 38), (131, 38), (132, 38), (133, 38), (19, 39), (35, 39), (55, 39), (61, 39), (78, 39), (93, 39), (97, 39), (102, 39), (105, 39), (130, 39), (131, 39), (14, 40), (107, 40), (129, 40), (32, 41), (72, 41), (129, 41), (53, 42), (120, 42), (129, 42), (52, 43), (94, 43), (61, 44), (100, 44), (39, 45), (43, 45), (116, 45), (119, 45), (122, 45), (127, 45), (37, 46), (73, 46), (97, 46), (130, 46), (21, 47), (59, 47), (66, 47), (128, 47), (16, 48), (19, 48), (27, 48), (45, 48), (53, 48), (70, 48), (92, 48), (39, 49), (52, 49), (66, 50), (107, 50), (27, 51), (53, 51), (62, 51), (71, 51), (85, 51), (22, 52), (28, 52), (65, 52), (18, 53), (82, 53), (127, 53), (56, 54), (62, 54), (71, 54), (105, 54), (123, 54), (61, 55), (91, 55), (107, 55), (35, 56), (41, 56), (46, 56), (49, 56), (52, 56), (76, 56), (87, 56), (28, 57), (32, 58), (55, 58), (120, 58), (125, 58), (58, 59), (84, 59), (87, 59), (90, 59), (97, 59), (45, 61), (78, 61), (122, 61), (60, 62), (63, 62), (68, 62), (57, 63), (64, 63), (67, 63), (79, 63), (80, 63), (98, 63), (31, 64), (43, 64), (65, 64), (66, 64), (67, 64), (113, 64), (116, 64), (50, 65), (65, 65), (66, 65), (67, 65), (73, 65), (74, 65), (75, 65), (76, 65), (87, 65), (88, 65), (89, 65), (26, 66), (51, 66), (54, 66), (59, 66), (62, 66), (63, 66), (64, 66), (65, 66), (66, 66), (67, 66), (73, 66), (74, 66), (75, 66), (76, 66), (81, 66), (82, 66), (83, 66), (84, 66), (85, 66), (86, 66), (59, 67), (60, 67), (61, 67), (62, 67), (63, 67), (64, 67), (65, 67), (66, 67), (67, 67), (68, 67), (71, 67), (72, 67), (73, 67), (74, 67), (75, 67), (76, 67), (77, 67), (78, 67), (79, 67), (80, 67), (81, 67), (82, 67), (83, 67), (84, 67), (85, 67), (86, 67), (48, 68), (61, 68), (62, 68), (63, 68), (64, 68), (65, 68), (66, 68), (67, 68), (68, 68), (69, 68), (70, 68), (71, 68), (72, 68), (73, 68), (74, 68), (75, 68), (76, 68), (77, 68), (78, 68), (79, 68), (80, 68), (81, 68), (87, 68), (21, 69), (29, 69), (32, 69), (35, 69), (43, 69), (54, 69), (62, 69), (63, 69), (64, 69), (65, 69), (66, 69), (67, 69), (68, 69), (69, 69), (70, 69), (71, 69), (72, 69), (73, 69), (74, 69), (75, 69), (76, 69), (77, 69), (78, 69), (79, 69), (80, 69), (81, 69), (118, 69), (128, 69), (131, 69), (40, 70), (62, 70), (63, 70), (64, 70), (65, 70), (66, 70), (67, 70), (68, 70), (69, 70), (70, 70), (71, 70), (72, 70), (73, 70), (74, 70), (75, 70), (76, 70), (77, 70), (78, 70), (79, 70), (80, 70), (81, 70), (82, 70), (99, 70), (28, 71), (51, 71), (61, 71), (62, 71), (63, 71), (64, 71), (65, 71), (66, 71), (67, 71), (68, 71), (69, 71), (70, 71), (71, 71), (72, 71), (73, 71), (74, 71), (75, 71), (76, 71), (77, 71), (78, 71), (79, 71), (80, 71), (81, 71), (82, 71), (83, 71), (109, 71), (22, 72), (37, 72), (60, 72), (61, 72), (62, 72), (63, 72), (64, 72), (65, 72), (66, 72), (67, 72), (68, 72), (69, 72), (70, 72), (71, 72), (72, 72), (73, 72), (74, 72), (75, 72), (76, 72), (77, 72), (78, 72), (79, 72), (80, 72), (81, 72), (82, 72), (83, 72), (86, 72), (113, 72), (118, 72), (20, 73), (46, 73), (60, 73), (61, 73), (62, 73), (63, 73), (64, 73), (65, 73), (66, 73), (67, 73), (68, 73), (69, 73), (70, 73), (71, 73), (72, 73), (73, 73), (74, 73), (75, 73), (76, 73), (77, 73), (78, 73), (79, 73), (80, 73), (27, 74), (49, 74), (56, 74), (59, 74), (60, 74), (61, 74), (62, 74), (63, 74), (64, 74), (65, 74), (66, 74), (67, 74), (68, 74), (69, 74), (70, 74), (71, 74), (72, 74), (73, 74), (74, 74), (75, 74), (76, 74), (77, 74), (78, 74), (79, 74), (80, 74), (92, 74), (40, 75), (61, 75), (62, 75), (63, 75), (64, 75), (65, 75), (66, 75), (67, 75), (68, 75), (69, 75), (70, 75), (71, 75), (72, 75), (73, 75), (74, 75), (75, 75), (76, 75), (77, 75), (78, 75), (79, 75), (48, 76), (61, 76), (62, 76), (63, 76), (64, 76), (65, 76), (66, 76), (67, 76), (68, 76), (69, 76), (70, 76), (71, 76), (72, 76), (73, 76), (74, 76), (75, 76), (76, 76), (77, 76), (78, 76), (79, 76), (91, 76), (24, 77), (27, 77), (62, 77), (63, 77), (64, 77), (65, 77), (66, 77), (67, 77), (68, 77), (69, 77), (70, 77), (71, 77), (72, 77), (73, 77), (74, 77), (75, 77), (76, 77), (77, 77), (78, 77), (79, 77), (84, 77), (13, 78), (18, 78), (63, 78), (64, 78), (65, 78), (66, 78), (67, 78), (68, 78), (69, 78), (70, 78), (71, 78), (72, 78), (73, 78), (74, 78), (75, 78), (76, 78), (57, 79), (63, 79), (64, 79), (65, 79), (66, 79), (67, 79), (68, 79), (69, 79), (70, 79), (71, 79), (72, 79), (73, 79), (74, 79), (75, 79), (76, 79), (30, 80), (33, 80), (63, 80), (64, 80), (65, 80), (66, 80), (67, 80), (68, 80), (69, 80), (70, 80), (71, 80), (72, 80), (73, 80), (74, 80), (84, 80), (105, 80), (31, 81), (61, 81), (62, 81), (63, 81), (64, 81), (65, 81), (66, 81), (67, 81), (68, 81), (69, 81), (70, 81), (71, 81), (72, 81), (73, 81), (40, 82), (51, 82), (63, 82), (64, 82), (65, 82), (66, 82), (69, 82), (70, 82), (71, 82), (102, 82), (64, 83), (69, 83), (70, 83), (71, 83), (76, 83), (83, 83), (120, 83), (64, 84), (77, 84), (60, 86), (89, 86), (101, 86), (22, 87), (28, 87), (31, 87), (38, 87), (68, 87), (80, 87), (94, 88), (59, 89), (115, 89), (22, 90), (68, 90), (88, 90), (113, 90), (56, 91), (77, 91), (31, 92), (50, 92), (81, 92), (102, 92), (45, 93), (85, 93), (86, 93), (127, 93), (51, 94), (123, 96), (21, 97), (58, 98), (83, 98), (97, 98), (14, 99), (18, 99), (23, 99), (99, 99), (115, 99), (118, 99), (40, 100), (65, 100), (71, 100), (109, 100), (116, 100), (42, 101), (58, 101), (123, 101), (68, 102), (82, 102), (95, 102), (125, 102), (48, 103), (97, 103), (122, 103), (125, 103), (19, 104), (15, 105), (53, 105), (73, 105), (76, 105), (52, 107), (80, 107), (93, 107), (127, 107), (44, 108), (50, 108), (42, 109), (114, 110), (20, 111), (25, 111), (39, 111), (48, 111), (47, 112), (72, 113), (22, 116), (49, 116), (62, 116), (70, 116), (24, 117), (28, 117), (41, 117), (66, 117), (102, 117), (105, 117), (112, 117), (113, 117), (63, 118), (49, 119), (62, 119), (36, 120), (52, 120), (68, 120), (54, 121), (93, 121), (24, 122), (112, 122), (57, 123), (83, 123), (88, 123), (112, 123), (41, 124), (108, 124), (25, 125), (63, 125), (74, 125), (80, 125), (31, 126), (46, 126), (56, 126), (68, 126), (71, 126), (88, 126), (93, 126), (77, 127), (25, 128), (83, 128), (107, 128), (54, 129), (91, 129), (49, 130), (89, 130), (103, 130), (36, 131), (66, 131), (73, 131), (74, 131), (83, 131), (84, 131), (97, 131), (71, 132), (72, 132), (73, 132), (74, 132), (84, 132), (74, 133), (75, 133), (69, 135)], #: 736
+363 groups of non border contacts could be identified
+Border is right of path up
+Testing group 0/363 containing 3 empty spots
+Group is left of path up
+Matching position: (62, 9)='^' connected to border region (61, 9)
+[(60, 8), (60, 9), (61, 9)]
+Testing group 1/363 containing 1 empty spots
+Group is left of path up
+Matching position: (78, 9)='7' connected to border region (78, 8)
+[(78, 8)]
+Testing group 2/363 containing 1 empty spots
+Group is left of path up
+Matching position: (42, 10)='^' connected to border region (41, 10)
+[(41, 10)]
+Testing group 3/363 containing 3 empty spots
+Group is left of path up
+Matching position: (63, 10)='v' connected to border region (64, 10)
+[(64, 10), (65, 10), (65, 11)]
+Testing group 4/363 containing 2 empty spots
+Group is left of path up
+Matching position: (109, 10)='^' connected to border region (108, 10)
+[(108, 10), (108, 11)]
+Testing group 5/363 containing 1 empty spots
+Group is left of path up
+Matching position: (50, 12)='7' connected to border region (50, 11)
+[(50, 11)]
+Testing group 6/363 containing 2 empty spots
+Group is left of path up
+Matching position: (77, 11)='^' connected to border region (76, 11)
+[(75, 11), (76, 11)]
+Testing group 7/363 containing 1 empty spots
+Group is left of path up
+Matching position: (46, 13)='^' connected to border region (45, 13)
+[(45, 13)]
+Testing group 8/363 containing 1 empty spots
+Group is left of path up
+Matching position: (39, 15)='7' connected to border region (39, 14)
+[(39, 14)]
+Testing group 9/363 containing 4 empty spots
+Group is left of path up
+Matching position: (57, 15)='v' connected to border region (58, 15)
+[(58, 14), (59, 14), (58, 15), (59, 15)]
+Testing group 10/363 containing 1 empty spots
+Group is left of path up
+Matching position: (103, 14)='^' connected to border region (102, 14)
+[(102, 14)]
+Testing group 11/363 containing 1 empty spots
+Group is left of path up
+Matching position: (45, 15)='^' connected to border region (44, 15)
+[(44, 15)]
+Testing group 12/363 containing 1 empty spots
+Group is left of path up
+Matching position: (78, 15)='v' connected to border region (79, 15)
+[(79, 15)]
+Testing group 13/363 containing 1 empty spots
+Group is left of path up
+Matching position: (39, 16)='v' connected to border region (40, 16)
+[(40, 16)]
+Testing group 14/363 containing 1 empty spots
+Group is left of path up
+Matching position: (94, 16)='v' connected to border region (95, 16)
+[(95, 16)]
+Testing group 15/363 containing 1 empty spots
+Group is left of path up
+Matching position: (112, 16)='v' connected to border region (113, 16)
+[(113, 16)]
+Testing group 16/363 containing 1 empty spots
+Group is left of path up
+Matching position: (32, 18)='>' connected to border region (32, 17)
+[(32, 17)]
+Testing group 17/363 containing 1 empty spots
+Group is left of path up
+Matching position: (38, 17)='^' connected to border region (37, 17)
+[(37, 17)]
+Testing group 18/363 containing 3 empty spots
+Group is left of path up
+Matching position: (59, 17)='v' connected to border region (60, 17)
+[(60, 17), (61, 17), (62, 17)]
+Testing group 19/363 containing 1 empty spots
+Group is left of path up
+Matching position: (72, 18)='v' connected to border region (73, 18)
+[(73, 18)]
+Testing group 20/363 containing 1 empty spots
+Group is left of path up
+Matching position: (83, 18)='v' connected to border region (84, 18)
+[(84, 18)]
+Testing group 21/363 containing 1 empty spots
+Group is left of path up
+Matching position: (117, 18)='^' connected to border region (116, 18)
+[(116, 18)]
+Testing group 22/363 containing 1 empty spots
+Group is left of path up
+Matching position: (29, 20)='7' connected to border region (29, 19)
+[(29, 19)]
+Testing group 23/363 containing 1 empty spots
+Group is left of path up
+Matching position: (53, 19)='^' connected to border region (52, 19)
+[(52, 19)]
+Testing group 24/363 containing 1 empty spots
+Group is left of path up
+Matching position: (86, 19)='7' connected to border region (87, 19)
+[(87, 19)]
+Testing group 25/363 containing 1 empty spots
+Group is left of path up
+Matching position: (115, 20)='7' connected to border region (115, 19)
+[(115, 19)]
+Testing group 26/363 containing 1 empty spots
+Group is left of path up
+Matching position: (35, 20)='v' connected to border region (36, 20)
+[(36, 20)]
+Testing group 27/363 containing 1 empty spots
+Group is left of path up
+Matching position: (49, 20)='7' connected to border region (50, 20)
+[(50, 20)]
+Testing group 28/363 containing 2 empty spots
+Group is left of path up
+Matching position: (69, 22)='7' connected to border region (69, 21)
+[(69, 20), (69, 21)]
+Testing group 29/363 containing 1 empty spots
+Group is left of path up
+Matching position: (84, 20)='^' connected to border region (83, 20)
+[(83, 20)]
+Testing group 30/363 containing 1 empty spots
+Group is left of path up
+Matching position: (101, 20)='^' connected to border region (100, 20)
+[(100, 20)]
+Testing group 31/363 containing 1 empty spots
+Group is left of path up
+Matching position: (39, 21)='^' connected to border region (38, 21)
+[(38, 21)]
+Testing group 32/363 containing 1 empty spots
+Group is left of path up
+Matching position: (80, 21)='^' connected to border region (79, 21)
+[(79, 21)]
+Testing group 33/363 containing 1 empty spots
+Group is left of path up
+Matching position: (81, 21)='v' connected to border region (82, 21)
+[(82, 21)]
+Testing group 34/363 containing 1 empty spots
+Group is left of path up
+Matching position: (91, 21)='^' connected to border region (90, 21)
+[(90, 21)]
+Testing group 35/363 containing 1 empty spots
+Group is left of path up
+Matching position: (128, 20)='<' connected to border region (128, 21)
+[(128, 21)]
+Testing group 36/363 containing 1 empty spots
+Group is left of path up
+Matching position: (56, 22)='^' connected to border region (55, 22)
+[(55, 22)]
+Testing group 37/363 containing 1 empty spots
+Group is left of path up
+Matching position: (59, 22)='v' connected to border region (60, 22)
+[(60, 22)]
+Testing group 38/363 containing 1 empty spots
+Group is left of path up
+Matching position: (85, 23)='7' connected to border region (86, 23)
+[(86, 23)]
+Testing group 39/363 containing 1 empty spots
+Group is left of path up
+Matching position: (96, 23)='^' connected to border region (95, 23)
+[(95, 23)]
+Testing group 40/363 containing 1 empty spots
+Group is left of path up
+Matching position: (101, 23)='^' connected to border region (100, 23)
+[(100, 23)]
+Testing group 41/363 containing 1 empty spots
+Group is left of path up
+Matching position: (117, 23)='v' connected to border region (118, 23)
+[(118, 23)]
+Testing group 42/363 containing 1 empty spots
+Group is left of path up
+Matching position: (55, 24)='v' connected to border region (56, 24)
+[(56, 24)]
+Testing group 43/363 containing 1 empty spots
+Group is left of path up
+Matching position: (72, 24)='^' connected to border region (71, 24)
+[(71, 24)]
+Testing group 44/363 containing 1 empty spots
+Group is left of path up
+Matching position: (116, 24)='^' connected to border region (115, 24)
+[(115, 24)]
+Testing group 45/363 containing 1 empty spots
+Group is left of path up
+Matching position: (34, 25)='^' connected to border region (33, 25)
+[(33, 25)]
+Testing group 46/363 containing 1 empty spots
+Group is left of path up
+Matching position: (35, 25)='v' connected to border region (36, 25)
+[(36, 25)]
+Testing group 47/363 containing 1 empty spots
+Group is left of path up
+Matching position: (39, 25)='v' connected to border region (40, 25)
+[(40, 25)]
+Testing group 48/363 containing 1 empty spots
+Group is left of path up
+Matching position: (60, 24)='<' connected to border region (60, 25)
+[(60, 25)]
+Testing group 49/363 containing 1 empty spots
+Group is left of path up
+Matching position: (44, 27)='>' connected to border region (44, 26)
+[(44, 26)]
+Testing group 50/363 containing 1 empty spots
+Group is left of path up
+Matching position: (75, 25)='<' connected to border region (75, 26)
+[(75, 26)]
+Testing group 51/363 containing 1 empty spots
+Group is left of path up
+Matching position: (78, 27)='>' connected to border region (78, 26)
+[(78, 26)]
+Testing group 52/363 containing 1 empty spots
+Group is left of path up
+Matching position: (103, 26)='^' connected to border region (102, 26)
+[(102, 26)]
+Testing group 53/363 containing 1 empty spots
+Group is left of path up
+Matching position: (117, 26)='v' connected to border region (118, 26)
+[(118, 26)]
+Testing group 54/363 containing 1 empty spots
+Group is left of path up
+Matching position: (38, 27)='^' connected to border region (37, 27)
+[(37, 27)]
+Testing group 55/363 containing 1 empty spots
+Group is left of path up
+Matching position: (48, 28)='>' connected to border region (48, 27)
+[(48, 27)]
+Testing group 56/363 containing 1 empty spots
+Group is left of path up
+Matching position: (69, 27)='^' connected to border region (68, 27)
+[(68, 27)]
+Testing group 57/363 containing 1 empty spots
+Group is left of path up
+Matching position: (70, 27)='v' connected to border region (71, 27)
+[(71, 27)]
+Testing group 58/363 containing 1 empty spots
+Group is left of path up
+Matching position: (116, 27)='^' connected to border region (115, 27)
+[(115, 27)]
+Testing group 59/363 containing 1 empty spots
+Group is left of path up
+Matching position: (35, 28)='v' connected to border region (36, 28)
+[(36, 28)]
+Testing group 60/363 containing 1 empty spots
+Group is left of path up
+Matching position: (73, 28)='^' connected to border region (72, 28)
+[(72, 28)]
+Testing group 61/363 containing 1 empty spots
+Group is left of path up
+Matching position: (93, 28)='^' connected to border region (92, 28)
+[(92, 28)]
+Testing group 62/363 containing 1 empty spots
+Group is left of path up
+Matching position: (94, 28)='v' connected to border region (95, 28)
+[(95, 28)]
+Testing group 63/363 containing 2 empty spots
+Group is left of path up
+Matching position: (17, 30)='v' connected to border region (18, 30)
+[(18, 29), (18, 30)]
+Testing group 64/363 containing 1 empty spots
+Group is left of path up
+Matching position: (66, 29)='^' connected to border region (65, 29)
+[(65, 29)]
+Testing group 65/363 containing 1 empty spots
+Group is left of path up
+Matching position: (103, 29)='^' connected to border region (102, 29)
+[(102, 29)]
+Testing group 66/363 containing 1 empty spots
+Group is left of path up
+Matching position: (37, 31)='F' connected to border region (37, 30)
+[(37, 30)]
+Testing group 67/363 containing 1 empty spots
+Group is left of path up
+Matching position: (47, 31)='7' connected to border region (47, 30)
+[(47, 30)]
+Testing group 68/363 containing 1 empty spots
+Group is left of path up
+Matching position: (69, 29)='<' connected to border region (69, 30)
+[(69, 30)]
+Testing group 69/363 containing 1 empty spots
+Group is left of path up
+Matching position: (100, 31)='7' connected to border region (100, 30)
+[(100, 30)]
+Testing group 70/363 containing 1 empty spots
+Group is left of path up
+Matching position: (25, 31)='7' connected to border region (26, 31)
+[(26, 31)]
+Testing group 71/363 containing 1 empty spots
+Group is left of path up
+Matching position: (45, 30)='<' connected to border region (45, 31)
+[(45, 31)]
+Testing group 72/363 containing 1 empty spots
+Group is left of path up
+Matching position: (71, 32)='7' connected to border region (71, 31)
+[(71, 31)]
+Testing group 73/363 containing 1 empty spots
+Group is left of path up
+Matching position: (79, 32)='F' connected to border region (79, 31)
+[(79, 31)]
+Testing group 74/363 containing 1 empty spots
+Group is left of path up
+Matching position: (116, 30)='<' connected to border region (116, 31)
+[(116, 31)]
+Testing group 75/363 containing 1 empty spots
+Group is left of path up
+Matching position: (124, 33)='>' connected to border region (124, 32)
+[(124, 32)]
+Testing group 76/363 containing 1 empty spots
+Group is left of path up
+Matching position: (63, 33)='^' connected to border region (62, 33)
+[(62, 33)]
+Testing group 77/363 containing 1 empty spots
+Group is left of path up
+Matching position: (74, 32)='<' connected to border region (74, 33)
+[(74, 33)]
+Testing group 78/363 containing 1 empty spots
+Group is left of path up
+Matching position: (25, 35)='v' connected to border region (26, 35)
+[(26, 35)]
+Testing group 79/363 containing 1 empty spots
+Group is left of path up
+Matching position: (60, 35)='^' connected to border region (59, 35)
+[(59, 35)]
+Testing group 80/363 containing 1 empty spots
+Group is left of path up
+Matching position: (92, 36)='F' connected to border region (92, 35)
+[(92, 35)]
+Testing group 81/363 containing 1 empty spots
+Group is left of path up
+Matching position: (124, 34)='<' connected to border region (124, 35)
+[(124, 35)]
+Testing group 82/363 containing 17 empty spots
+Group is left of path up
+Matching position: (134, 37)='^' connected to border region (133, 37)
+[(130, 35), (131, 35), (132, 35), (130, 36), (131, 36), (132, 36), (133, 36), (130, 37), (131, 37), (132, 37), (133, 37), (130, 38), (131, 38), (132, 38), (133, 38), (130, 39), (131, 39)]
+Testing group 83/363 containing 1 empty spots
+Group is left of path up
+Matching position: (119, 37)='7' connected to border region (119, 36)
+[(119, 36)]
+Testing group 84/363 containing 1 empty spots
+Group is right of path up
+Matching position: (48, 37)='^' connected to border region (49, 37)
+Testing group 85/363 containing 1 empty spots
+Group is right of path up
+Matching position: (74, 37)='^' connected to border region (75, 37)
+Testing group 86/363 containing 1 empty spots
+Group is right of path up
+Matching position: (82, 37)='^' connected to border region (83, 37)
+Testing group 87/363 containing 1 empty spots
+Group is right of path up
+Matching position: (89, 37)='^' connected to border region (90, 37)
+Testing group 88/363 containing 1 empty spots
+Group is left of path up
+Matching position: (109, 36)='<' connected to border region (109, 37)
+[(109, 37)]
+Testing group 89/363 containing 1 empty spots
+Group is left of path up
+Matching position: (125, 38)='F' connected to border region (125, 37)
+[(125, 37)]
+Testing group 90/363 containing 1 empty spots
+Group is left of path up
+Matching position: (112, 39)='>' connected to border region (112, 38)
+[(112, 38)]
+Testing group 91/363 containing 1 empty spots
+Group is left of path up
+Matching position: (19, 38)='<' connected to border region (19, 39)
+[(19, 39)]
+Testing group 92/363 containing 1 empty spots
+Group is left of path up
+Matching position: (35, 40)='>' connected to border region (35, 39)
+[(35, 39)]
+Testing group 93/363 containing 1 empty spots
+Group is left of path up
+Matching position: (55, 40)='7' connected to border region (55, 39)
+[(55, 39)]
+Testing group 94/363 containing 1 empty spots
+Group is left of path up
+Matching position: (61, 40)='7' connected to border region (61, 39)
+[(61, 39)]
+Testing group 95/363 containing 1 empty spots
+Group is right of path up
+Matching position: (77, 39)='^' connected to border region (78, 39)
+Testing group 96/363 containing 1 empty spots
+Group is right of path up
+Matching position: (92, 39)='^' connected to border region (93, 39)
+Testing group 97/363 containing 1 empty spots
+Group is right of path up
+Matching position: (96, 39)='^' connected to border region (97, 39)
+Testing group 98/363 containing 1 empty spots
+Group is right of path up
+Matching position: (101, 39)='^' connected to border region (102, 39)
+Testing group 99/363 containing 1 empty spots
+Group is left of path up
+Matching position: (104, 39)='7' connected to border region (105, 39)
+[(105, 39)]
+Testing group 100/363 containing 1 empty spots
+Group is left of path up
+Matching position: (14, 41)='>' connected to border region (14, 40)
+[(14, 40)]
+Testing group 101/363 containing 1 empty spots
+Group is left of path up
+Matching position: (107, 41)='>' connected to border region (107, 40)
+[(107, 40)]
+Testing group 102/363 containing 3 empty spots
+Group is left of path up
+Matching position: (128, 40)='7' connected to border region (129, 40)
+[(129, 40), (129, 41), (129, 42)]
+Testing group 103/363 containing 1 empty spots
+Group is left of path up
+Matching position: (32, 42)='>' connected to border region (32, 41)
+[(32, 41)]
+Testing group 104/363 containing 1 empty spots
+Group is left of path up
+Matching position: (72, 42)='7' connected to border region (72, 41)
+[(72, 41)]
+Testing group 105/363 containing 1 empty spots
+Group is left of path up
+Matching position: (53, 43)='F' connected to border region (53, 42)
+[(53, 42)]
+Testing group 106/363 containing 1 empty spots
+Group is left of path up
+Matching position: (120, 43)='>' connected to border region (120, 42)
+[(120, 42)]
+Testing group 107/363 containing 1 empty spots
+Group is left of path up
+Matching position: (52, 44)='7' connected to border region (52, 43)
+[(52, 43)]
+Testing group 108/363 containing 1 empty spots
+Group is right of path up
+Matching position: (93, 43)='^' connected to border region (94, 43)
+Testing group 109/363 containing 1 empty spots
+Group is right of path up
+Matching position: (61, 45)='<' connected to border region (61, 44)
+Testing group 110/363 containing 1 empty spots
+Group is left of path up
+Matching position: (100, 45)='7' connected to border region (100, 44)
+[(100, 44)]
+Testing group 111/363 containing 1 empty spots
+Group is right of path up
+Matching position: (39, 44)='>' connected to border region (39, 45)
+Testing group 112/363 containing 1 empty spots
+Group is right of path up
+Matching position: (42, 45)='^' connected to border region (43, 45)
+Testing group 113/363 containing 1 empty spots
+Group is left of path up
+Matching position: (116, 46)='>' connected to border region (116, 45)
+[(116, 45)]
+Testing group 114/363 containing 1 empty spots
+Group is left of path up
+Matching position: (119, 46)='>' connected to border region (119, 45)
+[(119, 45)]
+Testing group 115/363 containing 1 empty spots
+Group is left of path up
+Matching position: (122, 46)='>' connected to border region (122, 45)
+[(122, 45)]
+Testing group 116/363 containing 1 empty spots
+Group is left of path up
+Matching position: (128, 45)='^' connected to border region (127, 45)
+[(127, 45)]
+Testing group 117/363 containing 1 empty spots
+Group is right of path up
+Matching position: (37, 45)='>' connected to border region (37, 46)
+Testing group 118/363 containing 1 empty spots
+Group is right of path up
+Matching position: (72, 46)='^' connected to border region (73, 46)
+Testing group 119/363 containing 1 empty spots
+Group is right of path up
+Matching position: (96, 46)='^' connected to border region (97, 46)
+Testing group 120/363 containing 1 empty spots
+Group is left of path up
+Matching position: (131, 46)='^' connected to border region (130, 46)
+[(130, 46)]
+Testing group 121/363 containing 1 empty spots
+Group is left of path up
+Matching position: (21, 48)='>' connected to border region (21, 47)
+[(21, 47)]
+Testing group 122/363 containing 1 empty spots
+Group is right of path up
+Matching position: (59, 48)='<' connected to border region (59, 47)
+Testing group 123/363 containing 1 empty spots
+Group is left of path up
+Matching position: (66, 48)='7' connected to border region (66, 47)
+[(66, 47)]
+Testing group 124/363 containing 1 empty spots
+Group is left of path up
+Matching position: (128, 48)='7' connected to border region (128, 47)
+[(128, 47)]
+Testing group 125/363 containing 1 empty spots
+Group is left of path up
+Matching position: (17, 48)='^' connected to border region (16, 48)
+[(16, 48)]
+Testing group 126/363 containing 1 empty spots
+Group is left of path up
+Matching position: (18, 48)='v' connected to border region (19, 48)
+[(19, 48)]
+Testing group 127/363 containing 1 empty spots
+Group is left of path up
+Matching position: (28, 48)='^' connected to border region (27, 48)
+[(27, 48)]
+Testing group 128/363 containing 1 empty spots
+Group is left of path up
+Matching position: (45, 49)='7' connected to border region (45, 48)
+[(45, 48)]
+Testing group 129/363 containing 1 empty spots
+Group is left of path up
+Matching position: (53, 49)='F' connected to border region (53, 48)
+[(53, 48)]
+Testing group 130/363 containing 1 empty spots
+Group is right of path up
+Matching position: (70, 49)='<' connected to border region (70, 48)
+Testing group 131/363 containing 1 empty spots
+Group is left of path up
+Matching position: (92, 49)='7' connected to border region (92, 48)
+[(92, 48)]
+Testing group 132/363 containing 1 empty spots
+Group is right of path up
+Matching position: (40, 49)='v' connected to border region (39, 49)
+Testing group 133/363 containing 1 empty spots
+Group is left of path up
+Matching position: (52, 50)='7' connected to border region (52, 49)
+[(52, 49)]
+Testing group 134/363 containing 1 empty spots
+Group is right of path up
+Matching position: (65, 50)='^' connected to border region (66, 50)
+Testing group 135/363 containing 1 empty spots
+Group is left of path up
+Matching position: (107, 49)='<' connected to border region (107, 50)
+[(107, 50)]
+Testing group 136/363 containing 1 empty spots
+Group is left of path up
+Matching position: (27, 50)='<' connected to border region (27, 51)
+[(27, 51)]
+Testing group 137/363 containing 1 empty spots
+Group is right of path up
+Matching position: (53, 52)='<' connected to border region (53, 51)
+Testing group 138/363 containing 1 empty spots
+Group is right of path up
+Matching position: (63, 51)='v' connected to border region (62, 51)
+Testing group 139/363 containing 1 empty spots
+Group is right of path up
+Matching position: (71, 52)='<' connected to border region (71, 51)
+Testing group 140/363 containing 1 empty spots
+Group is right of path up
+Matching position: (84, 51)='^' connected to border region (85, 51)
+Testing group 141/363 containing 1 empty spots
+Group is left of path up
+Matching position: (22, 53)='7' connected to border region (22, 52)
+[(22, 52)]
+Testing group 142/363 containing 1 empty spots
+Group is left of path up
+Matching position: (28, 53)='>' connected to border region (28, 52)
+[(28, 52)]
+Testing group 143/363 containing 1 empty spots
+Group is right of path up
+Matching position: (64, 52)='^' connected to border region (65, 52)
+Testing group 144/363 containing 1 empty spots
+Group is left of path up
+Matching position: (18, 54)='7' connected to border region (18, 53)
+[(18, 53)]
+Testing group 145/363 containing 1 empty spots
+Group is left of path up
+Matching position: (82, 54)='7' connected to border region (82, 53)
+[(82, 53)]
+Testing group 146/363 containing 1 empty spots
+Group is left of path up
+Matching position: (127, 54)='7' connected to border region (127, 53)
+[(127, 53)]
+Testing group 147/363 containing 1 empty spots
+Group is right of path up
+Matching position: (57, 54)='v' connected to border region (56, 54)
+Testing group 148/363 containing 1 empty spots
+Group is left of path up
+Matching position: (62, 55)='F' connected to border region (62, 54)
+[(62, 54)]
+Testing group 149/363 containing 1 empty spots
+Group is right of path up
+Matching position: (71, 53)='>' connected to border region (71, 54)
+Testing group 150/363 containing 1 empty spots
+Group is right of path up
+Matching position: (105, 53)='>' connected to border region (105, 54)
+Testing group 151/363 containing 1 empty spots
+Group is left of path up
+Matching position: (123, 55)='>' connected to border region (123, 54)
+[(123, 54)]
+Testing group 152/363 containing 1 empty spots
+Group is right of path up
+Matching position: (61, 56)='<' connected to border region (61, 55)
+Testing group 153/363 containing 1 empty spots
+Group is left of path up
+Matching position: (90, 55)='7' connected to border region (91, 55)
+[(91, 55)]
+Testing group 154/363 containing 1 empty spots
+Group is left of path up
+Matching position: (107, 56)='>' connected to border region (107, 55)
+[(107, 55)]
+Testing group 155/363 containing 1 empty spots
+Group is left of path up
+Matching position: (35, 57)='>' connected to border region (35, 56)
+[(35, 56)]
+Testing group 156/363 containing 1 empty spots
+Group is right of path up
+Matching position: (41, 55)='>' connected to border region (41, 56)
+Testing group 157/363 containing 1 empty spots
+Group is right of path up
+Matching position: (47, 56)='v' connected to border region (46, 56)
+Testing group 158/363 containing 1 empty spots
+Group is right of path up
+Matching position: (48, 56)='^' connected to border region (49, 56)
+Testing group 159/363 containing 1 empty spots
+Group is left of path up
+Matching position: (51, 56)='7' connected to border region (52, 56)
+[(52, 56)]
+Testing group 160/363 containing 1 empty spots
+Group is right of path up
+Matching position: (75, 56)='^' connected to border region (76, 56)
+Testing group 161/363 containing 1 empty spots
+Group is right of path up
+Matching position: (86, 56)='^' connected to border region (87, 56)
+Testing group 162/363 containing 1 empty spots
+Group is left of path up
+Matching position: (28, 56)='<' connected to border region (28, 57)
+[(28, 57)]
+Testing group 163/363 containing 1 empty spots
+Group is left of path up
+Matching position: (31, 58)='7' connected to border region (32, 58)
+[(32, 58)]
+Testing group 164/363 containing 1 empty spots
+Group is left of path up
+Matching position: (55, 59)='7' connected to border region (55, 58)
+[(55, 58)]
+Testing group 165/363 containing 1 empty spots
+Group is left of path up
+Matching position: (121, 58)='^' connected to border region (120, 58)
+[(120, 58)]
+Testing group 166/363 containing 1 empty spots
+Group is left of path up
+Matching position: (125, 59)='7' connected to border region (125, 58)
+[(125, 58)]
+Testing group 167/363 containing 1 empty spots
+Group is right of path up
+Matching position: (58, 60)='<' connected to border region (58, 59)
+Testing group 168/363 containing 1 empty spots
+Group is right of path up
+Matching position: (84, 58)='>' connected to border region (84, 59)
+Testing group 169/363 containing 1 empty spots
+Group is left of path up
+Matching position: (87, 60)='7' connected to border region (87, 59)
+[(87, 59)]
+Testing group 170/363 containing 1 empty spots
+Group is left of path up
+Matching position: (90, 60)='F' connected to border region (90, 59)
+[(90, 59)]
+Testing group 171/363 containing 1 empty spots
+Group is right of path up
+Matching position: (97, 58)='>' connected to border region (97, 59)
+Testing group 172/363 containing 1 empty spots
+Group is right of path up
+Matching position: (46, 61)='v' connected to border region (45, 61)
+Testing group 173/363 containing 1 empty spots
+Group is right of path up
+Matching position: (77, 61)='^' connected to border region (78, 61)
+Testing group 174/363 containing 1 empty spots
+Group is left of path up
+Matching position: (122, 60)='<' connected to border region (122, 61)
+[(122, 61)]
+Testing group 175/363 containing 1 empty spots
+Group is right of path up
+Matching position: (61, 62)='v' connected to border region (60, 62)
+Testing group 176/363 containing 1 empty spots
+Group is right of path up
+Matching position: (62, 62)='^' connected to border region (63, 62)
+Testing group 177/363 containing 1 empty spots
+Group is right of path up
+Matching position: (69, 62)='v' connected to border region (68, 62)
+Testing group 178/363 containing 1 empty spots
+Group is right of path up
+Matching position: (58, 63)='v' connected to border region (57, 63)
+Testing group 179/363 containing 1 empty spots
+Group is left of path up
+Matching position: (64, 64)='7' connected to border region (64, 63)
+[(64, 63)]
+Testing group 180/363 containing 327 empty spots
+Group is right of path up
+Matching position: (68, 83)='^' connected to border region (69, 83)
+Testing group 181/363 containing 2 empty spots
+Group is right of path up
+Matching position: (78, 63)='^' connected to border region (79, 63)
+Testing group 182/363 containing 1 empty spots
+Group is right of path up
+Matching position: (99, 63)='v' connected to border region (98, 63)
+Testing group 183/363 containing 1 empty spots
+Group is left of path up
+Matching position: (31, 65)='>' connected to border region (31, 64)
+[(31, 64)]
+Testing group 184/363 containing 1 empty spots
+Group is right of path up
+Matching position: (43, 63)='>' connected to border region (43, 64)
+Testing group 185/363 containing 1 empty spots
+Group is left of path up
+Matching position: (112, 64)='v' connected to border region (113, 64)
+[(113, 64)]
+Testing group 186/363 containing 1 empty spots
+Group is left of path up
+Matching position: (116, 63)='<' connected to border region (116, 64)
+[(116, 64)]
+Testing group 187/363 containing 1 empty spots
+Group is left of path up
+Matching position: (50, 66)='7' connected to border region (50, 65)
+[(50, 65)]
+Testing group 188/363 containing 3 empty spots
+Group is right of path up
+Matching position: (88, 66)='<' connected to border region (88, 65)
+Testing group 189/363 containing 1 empty spots
+Group is left of path up
+Matching position: (26, 67)='>' connected to border region (26, 66)
+[(26, 66)]
+Testing group 190/363 containing 1 empty spots
+Group is right of path up
+Matching position: (52, 66)='v' connected to border region (51, 66)
+Testing group 191/363 containing 1 empty spots
+Group is right of path up
+Matching position: (53, 66)='^' connected to border region (54, 66)
+Testing group 192/363 containing 1 empty spots
+Group is left of path up
+Matching position: (48, 69)='7' connected to border region (48, 68)
+[(48, 68)]
+Testing group 193/363 containing 1 empty spots
+Group is left of path up
+Matching position: (87, 69)='7' connected to border region (87, 68)
+[(87, 68)]
+Testing group 194/363 containing 1 empty spots
+Group is left of path up
+Matching position: (21, 70)='>' connected to border region (21, 69)
+[(21, 69)]
+Testing group 195/363 containing 1 empty spots
+Group is left of path up
+Matching position: (28, 69)='v' connected to border region (29, 69)
+[(29, 69)]
+Testing group 196/363 containing 1 empty spots
+Group is left of path up
+Matching position: (32, 70)='>' connected to border region (32, 69)
+[(32, 69)]
+Testing group 197/363 containing 1 empty spots
+Group is left of path up
+Matching position: (35, 68)='<' connected to border region (35, 69)
+[(35, 69)]
+Testing group 198/363 containing 1 empty spots
+Group is right of path up
+Matching position: (42, 69)='^' connected to border region (43, 69)
+Testing group 199/363 containing 1 empty spots
+Group is right of path up
+Matching position: (54, 68)='>' connected to border region (54, 69)
+Testing group 200/363 containing 1 empty spots
+Group is left of path up
+Matching position: (118, 70)='>' connected to border region (118, 69)
+[(118, 69)]
+Testing group 201/363 containing 1 empty spots
+Group is left of path up
+Matching position: (128, 70)='>' connected to border region (128, 69)
+[(128, 69)]
+Testing group 202/363 containing 1 empty spots
+Group is left of path up
+Matching position: (131, 70)='>' connected to border region (131, 69)
+[(131, 69)]
+Testing group 203/363 containing 1 empty spots
+Group is left of path up
+Matching position: (40, 71)='7' connected to border region (40, 70)
+[(40, 70)]
+Testing group 204/363 containing 1 empty spots
+Group is right of path up
+Matching position: (98, 70)='^' connected to border region (99, 70)
+Testing group 205/363 containing 1 empty spots
+Group is left of path up
+Matching position: (28, 72)='>' connected to border region (28, 71)
+[(28, 71)]
+Testing group 206/363 containing 1 empty spots
+Group is right of path up
+Matching position: (52, 71)='v' connected to border region (51, 71)
+Testing group 207/363 containing 1 empty spots
+Group is left of path up
+Matching position: (109, 72)='7' connected to border region (109, 71)
+[(109, 71)]
+Testing group 208/363 containing 1 empty spots
+Group is left of path up
+Matching position: (23, 72)='^' connected to border region (22, 72)
+[(22, 72)]
+Testing group 209/363 containing 1 empty spots
+Group is right of path up
+Matching position: (37, 71)='>' connected to border region (37, 72)
+Testing group 210/363 containing 1 empty spots
+Group is left of path up
+Matching position: (86, 73)='7' connected to border region (86, 72)
+[(86, 72)]
+Testing group 211/363 containing 1 empty spots
+Group is left of path up
+Matching position: (113, 71)='<' connected to border region (113, 72)
+[(113, 72)]
+Testing group 212/363 containing 1 empty spots
+Group is left of path up
+Matching position: (118, 71)='<' connected to border region (118, 72)
+[(118, 72)]
+Testing group 213/363 containing 1 empty spots
+Group is left of path up
+Matching position: (19, 73)='v' connected to border region (20, 73)
+[(20, 73)]
+Testing group 214/363 containing 1 empty spots
+Group is left of path up
+Matching position: (46, 74)='F' connected to border region (46, 73)
+[(46, 73)]
+Testing group 215/363 containing 1 empty spots
+Group is left of path up
+Matching position: (27, 75)='>' connected to border region (27, 74)
+[(27, 74)]
+Testing group 216/363 containing 1 empty spots
+Group is right of path up
+Matching position: (48, 74)='^' connected to border region (49, 74)
+Testing group 217/363 containing 1 empty spots
+Group is right of path up
+Matching position: (56, 73)='>' connected to border region (56, 74)
+Testing group 218/363 containing 1 empty spots
+Group is right of path up
+Matching position: (92, 73)='>' connected to border region (92, 74)
+Testing group 219/363 containing 1 empty spots
+Group is left of path up
+Matching position: (39, 75)='7' connected to border region (40, 75)
+[(40, 75)]
+Testing group 220/363 containing 1 empty spots
+Group is right of path up
+Matching position: (47, 76)='^' connected to border region (48, 76)
+Testing group 221/363 containing 1 empty spots
+Group is right of path up
+Matching position: (90, 76)='^' connected to border region (91, 76)
+Testing group 222/363 containing 1 empty spots
+Group is left of path up
+Matching position: (24, 78)='>' connected to border region (24, 77)
+[(24, 77)]
+Testing group 223/363 containing 1 empty spots
+Group is left of path up
+Matching position: (27, 78)='>' connected to border region (27, 77)
+[(27, 77)]
+Testing group 224/363 containing 1 empty spots
+Group is right of path up
+Matching position: (84, 76)='>' connected to border region (84, 77)
+Testing group 225/363 containing 1 empty spots
+Group is left of path up
+Matching position: (12, 78)='7' connected to border region (13, 78)
+[(13, 78)]
+Testing group 226/363 containing 1 empty spots
+Group is left of path up
+Matching position: (17, 78)='v' connected to border region (18, 78)
+[(18, 78)]
+Testing group 227/363 containing 1 empty spots
+Group is right of path up
+Matching position: (58, 79)='v' connected to border region (57, 79)
+Testing group 228/363 containing 1 empty spots
+Group is left of path up
+Matching position: (30, 79)='<' connected to border region (30, 80)
+[(30, 80)]
+Testing group 229/363 containing 1 empty spots
+Group is left of path up
+Matching position: (33, 81)='>' connected to border region (33, 80)
+[(33, 80)]
+Testing group 230/363 containing 1 empty spots
+Group is left of path up
+Matching position: (84, 81)='7' connected to border region (84, 80)
+[(84, 80)]
+Testing group 231/363 containing 1 empty spots
+Group is right of path up
+Matching position: (105, 79)='>' connected to border region (105, 80)
+Testing group 232/363 containing 1 empty spots
+Group is left of path up
+Matching position: (31, 82)='>' connected to border region (31, 81)
+[(31, 81)]
+Testing group 233/363 containing 1 empty spots
+Group is right of path up
+Matching position: (41, 82)='v' connected to border region (40, 82)
+Testing group 234/363 containing 1 empty spots
+Group is right of path up
+Matching position: (51, 83)='<' connected to border region (51, 82)
+Testing group 235/363 containing 1 empty spots
+Group is right of path up
+Matching position: (101, 82)='^' connected to border region (102, 82)
+Testing group 236/363 containing 1 empty spots
+Group is right of path up
+Matching position: (75, 83)='^' connected to border region (76, 83)
+Testing group 237/363 containing 1 empty spots
+Group is right of path up
+Matching position: (83, 82)='>' connected to border region (83, 83)
+Testing group 238/363 containing 1 empty spots
+Group is left of path up
+Matching position: (121, 83)='^' connected to border region (120, 83)
+[(120, 83)]
+Testing group 239/363 containing 1 empty spots
+Group is left of path up
+Matching position: (76, 84)='7' connected to border region (77, 84)
+[(77, 84)]
+Testing group 240/363 containing 1 empty spots
+Group is left of path up
+Matching position: (59, 86)='7' connected to border region (60, 86)
+[(60, 86)]
+Testing group 241/363 containing 1 empty spots
+Group is right of path up
+Matching position: (88, 86)='^' connected to border region (89, 86)
+Testing group 242/363 containing 1 empty spots
+Group is right of path up
+Matching position: (101, 87)='<' connected to border region (101, 86)
+Testing group 243/363 containing 1 empty spots
+Group is left of path up
+Matching position: (22, 88)='>' connected to border region (22, 87)
+[(22, 87)]
+Testing group 244/363 containing 1 empty spots
+Group is left of path up
+Matching position: (27, 87)='v' connected to border region (28, 87)
+[(28, 87)]
+Testing group 245/363 containing 1 empty spots
+Group is left of path up
+Matching position: (32, 87)='^' connected to border region (31, 87)
+[(31, 87)]
+Testing group 246/363 containing 1 empty spots
+Group is left of path up
+Matching position: (38, 88)='7' connected to border region (38, 87)
+[(38, 87)]
+Testing group 247/363 containing 1 empty spots
+Group is right of path up
+Matching position: (69, 87)='v' connected to border region (68, 87)
+Testing group 248/363 containing 1 empty spots
+Group is right of path up
+Matching position: (81, 87)='v' connected to border region (80, 87)
+Testing group 249/363 containing 1 empty spots
+Group is right of path up
+Matching position: (93, 88)='^' connected to border region (94, 88)
+Testing group 250/363 containing 1 empty spots
+Group is left of path up
+Matching position: (59, 90)='7' connected to border region (59, 89)
+[(59, 89)]
+Testing group 251/363 containing 1 empty spots
+Group is left of path up
+Matching position: (115, 90)='7' connected to border region (115, 89)
+[(115, 89)]
+Testing group 252/363 containing 1 empty spots
+Group is left of path up
+Matching position: (21, 90)='v' connected to border region (22, 90)
+[(22, 90)]
+Testing group 253/363 containing 1 empty spots
+Group is right of path up
+Matching position: (67, 90)='^' connected to border region (68, 90)
+Testing group 254/363 containing 1 empty spots
+Group is right of path up
+Matching position: (87, 90)='^' connected to border region (88, 90)
+Testing group 255/363 containing 1 empty spots
+Group is left of path up
+Matching position: (112, 90)='v' connected to border region (113, 90)
+[(113, 90)]
+Testing group 256/363 containing 1 empty spots
+Group is right of path up
+Matching position: (55, 91)='^' connected to border region (56, 91)
+Testing group 257/363 containing 1 empty spots
+Group is right of path up
+Matching position: (76, 91)='^' connected to border region (77, 91)
+Testing group 258/363 containing 1 empty spots
+Group is left of path up
+Matching position: (31, 93)='7' connected to border region (31, 92)
+[(31, 92)]
+Testing group 259/363 containing 1 empty spots
+Group is right of path up
+Matching position: (49, 92)='^' connected to border region (50, 92)
+Testing group 260/363 containing 1 empty spots
+Group is right of path up
+Matching position: (82, 92)='v' connected to border region (81, 92)
+Testing group 261/363 containing 1 empty spots
+Group is left of path up
+Matching position: (101, 92)='7' connected to border region (102, 92)
+[(102, 92)]
+Testing group 262/363 containing 1 empty spots
+Group is right of path up
+Matching position: (46, 93)='v' connected to border region (45, 93)
+Testing group 263/363 containing 2 empty spots
+Group is left of path up
+Matching position: (85, 94)='7' connected to border region (85, 93)
+[(85, 93), (86, 93)]
+Testing group 264/363 containing 1 empty spots
+Group is left of path up
+Matching position: (128, 93)='^' connected to border region (127, 93)
+[(127, 93)]
+Testing group 265/363 containing 1 empty spots
+Group is right of path up
+Matching position: (52, 94)='v' connected to border region (51, 94)
+Testing group 266/363 containing 1 empty spots
+Group is left of path up
+Matching position: (122, 96)='v' connected to border region (123, 96)
+[(123, 96)]
+Testing group 267/363 containing 1 empty spots
+Group is left of path up
+Matching position: (20, 97)='v' connected to border region (21, 97)
+[(21, 97)]
+Testing group 268/363 containing 1 empty spots
+Group is right of path up
+Matching position: (59, 98)='v' connected to border region (58, 98)
+Testing group 269/363 containing 1 empty spots
+Group is right of path up
+Matching position: (84, 98)='v' connected to border region (83, 98)
+Testing group 270/363 containing 1 empty spots
+Group is left of path up
+Matching position: (96, 98)='7' connected to border region (97, 98)
+[(97, 98)]
+Testing group 271/363 containing 1 empty spots
+Group is left of path up
+Matching position: (14, 100)='>' connected to border region (14, 99)
+[(14, 99)]
+Testing group 272/363 containing 1 empty spots
+Group is left of path up
+Matching position: (18, 98)='<' connected to border region (18, 99)
+[(18, 99)]
+Testing group 273/363 containing 1 empty spots
+Group is left of path up
+Matching position: (24, 99)='^' connected to border region (23, 99)
+[(23, 99)]
+Testing group 274/363 containing 1 empty spots
+Group is right of path up
+Matching position: (99, 98)='>' connected to border region (99, 99)
+Testing group 275/363 containing 1 empty spots
+Group is left of path up
+Matching position: (115, 100)='7' connected to border region (115, 99)
+[(115, 99)]
+Testing group 276/363 containing 1 empty spots
+Group is left of path up
+Matching position: (118, 98)='<' connected to border region (118, 99)
+[(118, 99)]
+Testing group 277/363 containing 1 empty spots
+Group is right of path up
+Matching position: (40, 99)='>' connected to border region (40, 100)
+Testing group 278/363 containing 1 empty spots
+Group is right of path up
+Matching position: (66, 100)='v' connected to border region (65, 100)
+Testing group 279/363 containing 1 empty spots
+Group is right of path up
+Matching position: (70, 100)='^' connected to border region (71, 100)
+Testing group 280/363 containing 1 empty spots
+Group is left of path up
+Matching position: (109, 101)='7' connected to border region (109, 100)
+[(109, 100)]
+Testing group 281/363 containing 1 empty spots
+Group is left of path up
+Matching position: (116, 101)='7' connected to border region (116, 100)
+[(116, 100)]
+Testing group 282/363 containing 1 empty spots
+Group is left of path up
+Matching position: (42, 102)='7' connected to border region (42, 101)
+[(42, 101)]
+Testing group 283/363 containing 1 empty spots
+Group is right of path up
+Matching position: (59, 101)='v' connected to border region (58, 101)
+Testing group 284/363 containing 1 empty spots
+Group is left of path up
+Matching position: (122, 101)='7' connected to border region (123, 101)
+[(123, 101)]
+Testing group 285/363 containing 1 empty spots
+Group is left of path up
+Matching position: (68, 103)='7' connected to border region (68, 102)
+[(68, 102)]
+Testing group 286/363 containing 1 empty spots
+Group is right of path up
+Matching position: (81, 102)='^' connected to border region (82, 102)
+Testing group 287/363 containing 1 empty spots
+Group is left of path up
+Matching position: (95, 103)='F' connected to border region (95, 102)
+[(95, 102)]
+Testing group 288/363 containing 2 empty spots
+Group is left of path up
+Matching position: (126, 102)='^' connected to border region (125, 102)
+[(125, 102), (125, 103)]
+Testing group 289/363 containing 1 empty spots
+Group is right of path up
+Matching position: (49, 103)='v' connected to border region (48, 103)
+Testing group 290/363 containing 1 empty spots
+Group is right of path up
+Matching position: (98, 103)='v' connected to border region (97, 103)
+Testing group 291/363 containing 1 empty spots
+Group is left of path up
+Matching position: (123, 103)='^' connected to border region (122, 103)
+[(122, 103)]
+Testing group 292/363 containing 1 empty spots
+Group is left of path up
+Matching position: (18, 104)='v' connected to border region (19, 104)
+[(19, 104)]
+Testing group 293/363 containing 1 empty spots
+Group is left of path up
+Matching position: (14, 105)='7' connected to border region (15, 105)
+[(15, 105)]
+Testing group 294/363 containing 1 empty spots
+Group is right of path up
+Matching position: (54, 105)='v' connected to border region (53, 105)
+Testing group 295/363 containing 1 empty spots
+Group is right of path up
+Matching position: (74, 105)='v' connected to border region (73, 105)
+Testing group 296/363 containing 1 empty spots
+Group is right of path up
+Matching position: (75, 105)='^' connected to border region (76, 105)
+Testing group 297/363 containing 1 empty spots
+Group is left of path up
+Matching position: (53, 107)='^' connected to border region (52, 107)
+[(52, 107)]
+Testing group 298/363 containing 1 empty spots
+Group is left of path up
+Matching position: (79, 107)='v' connected to border region (80, 107)
+[(80, 107)]
+Testing group 299/363 containing 1 empty spots
+Group is left of path up
+Matching position: (94, 107)='^' connected to border region (93, 107)
+[(93, 107)]
+Testing group 300/363 containing 1 empty spots
+Group is left of path up
+Matching position: (126, 107)='v' connected to border region (127, 107)
+[(127, 107)]
+Testing group 301/363 containing 1 empty spots
+Group is left of path up
+Matching position: (44, 109)='7' connected to border region (44, 108)
+[(44, 108)]
+Testing group 302/363 containing 1 empty spots
+Group is left of path up
+Matching position: (50, 109)='>' connected to border region (50, 108)
+[(50, 108)]
+Testing group 303/363 containing 1 empty spots
+Group is left of path up
+Matching position: (41, 109)='v' connected to border region (42, 109)
+[(42, 109)]
+Testing group 304/363 containing 1 empty spots
+Group is left of path up
+Matching position: (114, 111)='>' connected to border region (114, 110)
+[(114, 110)]
+Testing group 305/363 containing 1 empty spots
+Group is left of path up
+Matching position: (20, 112)='>' connected to border region (20, 111)
+[(20, 111)]
+Testing group 306/363 containing 1 empty spots
+Group is left of path up
+Matching position: (25, 112)='>' connected to border region (25, 111)
+[(25, 111)]
+Testing group 307/363 containing 1 empty spots
+Group is left of path up
+Matching position: (39, 112)='>' connected to border region (39, 111)
+[(39, 111)]
+Testing group 308/363 containing 1 empty spots
+Group is left of path up
+Matching position: (49, 111)='^' connected to border region (48, 111)
+[(48, 111)]
+Testing group 309/363 containing 1 empty spots
+Group is left of path up
+Matching position: (47, 113)='7' connected to border region (47, 112)
+[(47, 112)]
+Testing group 310/363 containing 1 empty spots
+Group is left of path up
+Matching position: (73, 113)='^' connected to border region (72, 113)
+[(72, 113)]
+Testing group 311/363 containing 1 empty spots
+Group is left of path up
+Matching position: (22, 117)='>' connected to border region (22, 116)
+[(22, 116)]
+Testing group 312/363 containing 1 empty spots
+Group is left of path up
+Matching position: (50, 116)='^' connected to border region (49, 116)
+[(49, 116)]
+Testing group 313/363 containing 1 empty spots
+Group is left of path up
+Matching position: (63, 116)='^' connected to border region (62, 116)
+[(62, 116)]
+Testing group 314/363 containing 1 empty spots
+Group is left of path up
+Matching position: (70, 117)='>' connected to border region (70, 116)
+[(70, 116)]
+Testing group 315/363 containing 1 empty spots
+Group is left of path up
+Matching position: (24, 118)='>' connected to border region (24, 117)
+[(24, 117)]
+Testing group 316/363 containing 1 empty spots
+Group is left of path up
+Matching position: (27, 117)='v' connected to border region (28, 117)
+[(28, 117)]
+Testing group 317/363 containing 1 empty spots
+Group is left of path up
+Matching position: (41, 118)='>' connected to border region (41, 117)
+[(41, 117)]
+Testing group 318/363 containing 1 empty spots
+Group is left of path up
+Matching position: (66, 118)='>' connected to border region (66, 117)
+[(66, 117)]
+Testing group 319/363 containing 1 empty spots
+Group is left of path up
+Matching position: (101, 117)='v' connected to border region (102, 117)
+[(102, 117)]
+Testing group 320/363 containing 1 empty spots
+Group is left of path up
+Matching position: (106, 117)='^' connected to border region (105, 117)
+[(105, 117)]
+Testing group 321/363 containing 2 empty spots
+Group is left of path up
+Matching position: (112, 118)='7' connected to border region (112, 117)
+[(112, 117), (113, 117)]
+Testing group 322/363 containing 1 empty spots
+Group is left of path up
+Matching position: (63, 119)='F' connected to border region (63, 118)
+[(63, 118)]
+Testing group 323/363 containing 1 empty spots
+Group is left of path up
+Matching position: (48, 119)='v' connected to border region (49, 119)
+[(49, 119)]
+Testing group 324/363 containing 1 empty spots
+Group is left of path up
+Matching position: (61, 119)='v' connected to border region (62, 119)
+[(62, 119)]
+Testing group 325/363 containing 1 empty spots
+Group is left of path up
+Matching position: (37, 120)='^' connected to border region (36, 120)
+[(36, 120)]
+Testing group 326/363 containing 1 empty spots
+Group is left of path up
+Matching position: (51, 120)='7' connected to border region (52, 120)
+[(52, 120)]
+Testing group 327/363 containing 1 empty spots
+Group is left of path up
+Matching position: (67, 120)='v' connected to border region (68, 120)
+[(68, 120)]
+Testing group 328/363 containing 1 empty spots
+Group is left of path up
+Matching position: (55, 121)='^' connected to border region (54, 121)
+[(54, 121)]
+Testing group 329/363 containing 1 empty spots
+Group is left of path up
+Matching position: (94, 121)='^' connected to border region (93, 121)
+[(93, 121)]
+Testing group 330/363 containing 1 empty spots
+Group is left of path up
+Matching position: (24, 123)='>' connected to border region (24, 122)
+[(24, 122)]
+Testing group 331/363 containing 2 empty spots
+Group is left of path up
+Matching position: (113, 122)='^' connected to border region (112, 122)
+[(112, 122), (112, 123)]
+Testing group 332/363 containing 1 empty spots
+Group is left of path up
+Matching position: (58, 123)='^' connected to border region (57, 123)
+[(57, 123)]
+Testing group 333/363 containing 1 empty spots
+Group is left of path up
+Matching position: (84, 123)='^' connected to border region (83, 123)
+[(83, 123)]
+Testing group 334/363 containing 1 empty spots
+Group is left of path up
+Matching position: (89, 123)='^' connected to border region (88, 123)
+[(88, 123)]
+Testing group 335/363 containing 1 empty spots
+Group is left of path up
+Matching position: (42, 124)='^' connected to border region (41, 124)
+[(41, 124)]
+Testing group 336/363 containing 1 empty spots
+Group is left of path up
+Matching position: (108, 125)='7' connected to border region (108, 124)
+[(108, 124)]
+Testing group 337/363 containing 1 empty spots
+Group is left of path up
+Matching position: (24, 125)='v' connected to border region (25, 125)
+[(25, 125)]
+Testing group 338/363 containing 1 empty spots
+Group is left of path up
+Matching position: (63, 126)='>' connected to border region (63, 125)
+[(63, 125)]
+Testing group 339/363 containing 1 empty spots
+Group is left of path up
+Matching position: (75, 125)='^' connected to border region (74, 125)
+[(74, 125)]
+Testing group 340/363 containing 1 empty spots
+Group is left of path up
+Matching position: (81, 125)='^' connected to border region (80, 125)
+[(80, 125)]
+Testing group 341/363 containing 1 empty spots
+Group is left of path up
+Matching position: (31, 127)='7' connected to border region (31, 126)
+[(31, 126)]
+Testing group 342/363 containing 1 empty spots
+Group is left of path up
+Matching position: (47, 126)='^' connected to border region (46, 126)
+[(46, 126)]
+Testing group 343/363 containing 1 empty spots
+Group is left of path up
+Matching position: (56, 127)='>' connected to border region (56, 126)
+[(56, 126)]
+Testing group 344/363 containing 1 empty spots
+Group is left of path up
+Matching position: (69, 126)='^' connected to border region (68, 126)
+[(68, 126)]
+Testing group 345/363 containing 1 empty spots
+Group is left of path up
+Matching position: (70, 126)='v' connected to border region (71, 126)
+[(71, 126)]
+Testing group 346/363 containing 1 empty spots
+Group is left of path up
+Matching position: (89, 126)='^' connected to border region (88, 126)
+[(88, 126)]
+Testing group 347/363 containing 1 empty spots
+Group is left of path up
+Matching position: (93, 127)='>' connected to border region (93, 126)
+[(93, 126)]
+Testing group 348/363 containing 1 empty spots
+Group is left of path up
+Matching position: (78, 127)='^' connected to border region (77, 127)
+[(77, 127)]
+Testing group 349/363 containing 1 empty spots
+Group is left of path up
+Matching position: (25, 129)='>' connected to border region (25, 128)
+[(25, 128)]
+Testing group 350/363 containing 1 empty spots
+Group is left of path up
+Matching position: (83, 129)='7' connected to border region (83, 128)
+[(83, 128)]
+Testing group 351/363 containing 1 empty spots
+Group is left of path up
+Matching position: (108, 128)='^' connected to border region (107, 128)
+[(107, 128)]
+Testing group 352/363 containing 1 empty spots
+Group is left of path up
+Matching position: (55, 129)='^' connected to border region (54, 129)
+[(54, 129)]
+Testing group 353/363 containing 1 empty spots
+Group is left of path up
+Matching position: (92, 129)='^' connected to border region (91, 129)
+[(91, 129)]
+Testing group 354/363 containing 1 empty spots
+Group is left of path up
+Matching position: (50, 130)='^' connected to border region (49, 130)
+[(49, 130)]
+Testing group 355/363 containing 1 empty spots
+Group is left of path up
+Matching position: (88, 130)='v' connected to border region (89, 130)
+[(89, 130)]
+Testing group 356/363 containing 1 empty spots
+Group is left of path up
+Matching position: (104, 130)='^' connected to border region (103, 130)
+[(103, 130)]
+Testing group 357/363 containing 1 empty spots
+Group is left of path up
+Matching position: (37, 131)='^' connected to border region (36, 131)
+[(36, 131)]
+Testing group 358/363 containing 1 empty spots
+Group is left of path up
+Matching position: (66, 132)='F' connected to border region (66, 131)
+[(66, 131)]
+Testing group 359/363 containing 8 empty spots
+Group is left of path up
+Matching position: (76, 133)='^' connected to border region (75, 133)
+[(73, 131), (74, 131), (73, 132), (74, 132), (74, 133), (75, 133), (72, 132), (71, 132)]
+Testing group 360/363 containing 3 empty spots
+Group is left of path up
+Matching position: (85, 131)='^' connected to border region (84, 131)
+[(83, 131), (84, 131), (84, 132)]
+Testing group 361/363 containing 1 empty spots
+Group is left of path up
+Matching position: (98, 131)='^' connected to border region (97, 131)
+[(97, 131)]
+Testing group 362/363 containing 1 empty spots
+Group is left of path up
+Matching position: (70, 135)='^' connected to border region (69, 135)
+[(69, 135)]
+270 groups are inside the border
+314 empty spaces are inside the border
+
+Process finished with exit code 0

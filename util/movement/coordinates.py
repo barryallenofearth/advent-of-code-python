@@ -20,7 +20,7 @@ class Coordinates:
         return not self.__eq__(other)
 
     def __hash__(self):
-        return hash((self.x, self.y))
+        return hash(f"(x={self.x}, y={self.y})")
 
 
 def distance(coordinates1: Coordinates, coordinates2: Coordinates, count_steps=False):
