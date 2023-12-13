@@ -1,8 +1,6 @@
 """
 This method excepts strings and lists of strings and returns a dict of a letters and the number of times they were encountered
 """
-
-
 def count_chars_in_string(char_sequence):
     counted_chars = {}
     for index in range(0, len(char_sequence)):
