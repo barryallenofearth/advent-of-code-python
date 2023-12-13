@@ -59,3 +59,19 @@ def read_grid(lines: list[str], column_start=0, row_start=0) -> dict[Coordinates
 
 def find_symbols_in_grid(coordinates_with_symbol: dict[Coordinates:str], wanted_symbol: str) -> list[Coordinates]:
     return [coordinates for coordinates, symbol in coordinates_with_symbol.items() if symbol == wanted_symbol]
+
+
+# returns a tuple containing 2 coordinates: (x_min, y_min), (x_max, y_max)
+def get_min_max_grid_coordinates(grid: list[Coordinates], x_min=10000000000000000000000000000000000000, y_min=10000000000000000000000000000000000000, x_max=-10000000000000000000000000000000000000,
+                                 y_max=-10000000000000000000000000000000000000) -> tuple[Coordinates, Coordinates]:
+    for position in grid:
+        if position.x < x_min:
+            x_min = position.x
+        if position.x > x_max:
+            x_max = position.x
+        if position.y < y_min:
+            y_min = position.y
+        if position.y > y_max:
+            y_max = position.y
+
+    return Coordinates(x_min, y_min), Coordinates(x_max, y_max)
