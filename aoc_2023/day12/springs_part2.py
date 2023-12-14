@@ -14,7 +14,7 @@ def is_matching_sequence(sequence: str, compiled_pattern, expected_spring_count:
     return compiled_pattern.match(sequence)
 
 
-lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
+lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 
 number_of_configurations = 0
 for index, line in enumerate(lines):
@@ -47,8 +47,8 @@ for index, line in enumerate(lines):
             for symbol in replace_sequence:
                 possible_sequence = possible_sequence.replace("?", symbol, 1)
 
-            minimum_number_of_springs_possible = possible_sequence.count("#") + known_spring_count * 5
-            maximum_number_of_springs_possible = (possible_sequence.count("#") + known_spring_count) * 5 + 4
+            minimum_number_of_springs_possible = possible_sequence.count("#") + 4 * known_spring_count
+            maximum_number_of_springs_possible = possible_sequence.count("#") + 4 * (known_spring_count + question_mark_count) + 4
 
             if (maximum_number_of_springs_possible >= expected_spring_count) and minimum_number_of_springs_possible <= expected_spring_count:
                 possible_sequences.append(possible_sequence)
