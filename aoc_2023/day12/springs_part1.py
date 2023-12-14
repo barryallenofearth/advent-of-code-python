@@ -4,7 +4,7 @@ import re
 import util.riddle_reader as riddle_reader
 from util.strings import string_utils
 
-lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
+lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
 
 number_of_configurations = 0
 for index, line in enumerate(lines):
