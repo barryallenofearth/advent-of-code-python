@@ -75,3 +75,14 @@ def get_min_max_grid_coordinates(grid: list[Coordinates], x_min=1000000000000000
             y_max = position.y
 
     return Coordinates(x_min, y_min), Coordinates(x_max, y_max)
+
+
+def print_grid(grid: dict[Coordinates:str]):
+    min_coordinates, max_coordinates = get_min_max_grid_coordinates(grid)
+
+    for column in range(min_coordinates.y, max_coordinates.y + 1):
+        for row in range(min_coordinates.x, max_coordinates.x + 1):
+            print(grid[Coordinates(row, column)], end="")
+        print()
+
+    print()
