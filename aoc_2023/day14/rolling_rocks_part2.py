@@ -57,19 +57,36 @@ def run_cycle(grid, min_coordinates: Coordinates, max_coordinates: Coordinates):
     roll_rocks(grid, EAST, min_coordinates, max_coordinates)
 
 
-lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
+lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 
 grid = coordinates.read_grid(lines, 1, 1)
 
 min_coordinates, max_coordinates = coordinates.get_min_max_grid_coordinates(grid)
 number_of_cycles = 1000000000
+pattern_to_search = []
+initial_number_of_cycles = 100
 for cycle in range(number_of_cycles):
-    if cycle % (number_of_cycles / 100000) == 0:
-        print(f"{cycle / number_of_cycles * 100}% processed")
+    run_cycle(grid, min_coordinates, max_coordinates)
+    rolling_stones = coordinates.find_symbols_in_grid(grid, "O")
+
+    if pattern_to_search == rolling_stones:
+        break
+    if cycle == initial_number_of_cycles:
+        pattern_to_search += rolling_stones
+
+cycle_length = cycle - initial_number_of_cycles
+print(f"found cycle length of {cycle_length} repetitions.")
+
+remaining_cycles = number_of_cycles - initial_number_of_cycles - cycle_length
+print(f"Total remaining {remaining_cycles} cycles.")
+number_of_steps_after_last_complete_cycle = remaining_cycles % cycle_length - 1
+print(f"Perform remaining {number_of_steps_after_last_complete_cycle} cycles.")
+for cycle in range(number_of_steps_after_last_complete_cycle):
     run_cycle(grid, min_coordinates, max_coordinates)
 
 rolling_stones = coordinates.find_symbols_in_grid(grid, "O")
 total_load = 0
+
 for position in rolling_stones:
     current_load = max_coordinates.y - position.y + 1
     total_load += current_load
