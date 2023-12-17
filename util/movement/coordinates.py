@@ -77,12 +77,24 @@ def get_min_max_grid_coordinates(grid: list[Coordinates], x_min=1000000000000000
     return Coordinates(x_min, y_min), Coordinates(x_max, y_max)
 
 
-def print_grid(grid: dict[Coordinates:str]):
-    min_coordinates, max_coordinates = get_min_max_grid_coordinates(grid)
+def print_grid(grid: dict[Coordinates:str], min_coordinates=None, max_coordinates=None) -> tuple[Coordinates, Coordinates]:
+    if min_coordinates is None or max_coordinates is None:
+        min_coordinates, max_coordinates = get_min_max_grid_coordinates(grid)
 
     for column in range(min_coordinates.y, max_coordinates.y + 1):
         for row in range(min_coordinates.x, max_coordinates.x + 1):
-            print(grid[Coordinates(row, column)], end="")
+            current_coordinates = Coordinates(row, column)
+            if current_coordinates in grid:
+                print(grid[current_coordinates], end=" ")
+            else:
+                print(".", end=" ")
+
         print()
 
     print()
+
+    return min_coordinates, max_coordinates
+
+
+def is_off_grid(position: Coordinates, min_coordinates: Coordinates, max_coordinates: Coordinates):
+    return not (min_coordinates.x <= position.x <= max_coordinates.x and min_coordinates.y <= position.y <= max_coordinates.y)
