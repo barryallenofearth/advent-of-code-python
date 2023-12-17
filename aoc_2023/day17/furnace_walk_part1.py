@@ -44,7 +44,7 @@ def set_further_options(current_path: Path, grid: dict[Coordinates, int], paths_
         if path_to_alter.facing == next_facing:
             path_to_alter.steps_taken_forward += 1
         else:
-            path_to_alter.steps_taken_forward = 0
+            path_to_alter.steps_taken_forward = 1
         path_to_alter.facing = next_facing
         path_to_alter.total_step_count += 1
         path_to_alter.total_heat_consumed += grid[path_to_alter.position]
@@ -88,7 +88,7 @@ def add_if_no_better_value_is_known(paths_to_follow: list[Path], path_to_add: Pa
         return False
 
 
-lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
+lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 grid = coordinates.read_grid(lines, 1, 1)
 for position, value in grid.items():
     grid[position] = int(value)
