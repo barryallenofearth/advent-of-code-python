@@ -10,7 +10,7 @@ from matplotlib.ticker import MaxNLocator
 
 
 def monoExp(x, m, t, b):
-    return m * np.exp(-t * x) + b
+    return m * np.exp(-t * (x - 1)) + b
 
 
 data = pd.DataFrame([], columns=["year", "day", "both_stars", "single_star"])
@@ -54,7 +54,6 @@ for current_year in range(2015, 2024):
     plt.savefig(f'{current_year}_both_stars.png', bbox_inches="tight")
 # print(data)
 print(year_with_half_life)
-pd.options.display.float_format = '{:,.0f}'.format
 year_with_half_life.plot.bar(x="year", y="half_life_time")
 plt.subplots_adjust(bottom=0.2)
 plt.xlabel("Year")
