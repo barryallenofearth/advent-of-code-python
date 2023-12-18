@@ -9,8 +9,8 @@ import scipy.optimize
 from matplotlib.ticker import MaxNLocator
 
 
-def monoExp(x, m, t, b):
-    return m * np.exp(-t * (x - 1)) + b
+def monoExp(x, y_0, t_half: float, offset: float):
+    return y_0 * np.exp(- np.log(2) / t_half * (x - 1)) + offset
 
 
 data = pd.DataFrame([], columns=["year", "day", "both_stars", "single_star"])
@@ -41,15 +41,15 @@ for current_year in range(2015, 2024):
     p0 = (2000, .1, 50)  # start with values near those we expect
     params, cv = scipy.optimize.curve_fit(monoExp, year_frame["day"], year_frame["both_stars"], p0)
 
-    m, t, b = params
-    plt.plot(year_frame["day"], monoExp(year_frame["day"], m, t, b), '--', label="fitted")
+    y_0, t_half, offset = params
+    plt.plot(year_frame["day"], monoExp(year_frame["day"], y_0, t_half, offset), '--', label="fitted")
 
     plt.title(f"Both stars {current_year}")
     plt.xlabel("Day")
     plt.ylabel("#Users solving both parts")
     plt.show()
 
-    current_year_with_halt_time = [current_year, np.log(2) / t]
+    current_year_with_halt_time = [current_year, t_half]
     year_with_half_life.loc[len(year_with_half_life)] = current_year_with_halt_time
     plt.savefig(f'{current_year}_both_stars.png', bbox_inches="tight")
 # print(data)

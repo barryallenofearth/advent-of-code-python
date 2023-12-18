@@ -12,7 +12,7 @@ ROTATE_LEFT = "L"
 Left and Right are handled as expected'''
 
 
-def move_forward(position: Coordinates, facing: str, steps: int):
+def move_forward(position: Coordinates, facing: str, steps=1):
     if facing == UP:
         return Coordinates(position.x, position.y - steps)
     elif facing == RIGHT:
