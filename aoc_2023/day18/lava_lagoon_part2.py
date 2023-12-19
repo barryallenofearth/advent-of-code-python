@@ -70,7 +70,7 @@ def find_inside_corners(corners: list[Coordinates], horizontal_lines: list[tuple
 
     print(inside_corners)
     print(len(outside_corners), len(inside_corners), len(outside_corners) + len(inside_corners) - (len(corners) - 1))
-    print("found all corners" if len(outside_corners) - len(inside_corners) == 4 else "did not find all corners")
+    print("found all corners" if len(outside_corners) - len(inside_corners) == 4 else f"did not find all corners. missing {len(outside_corners) - len(inside_corners) - 4}")
 
 
 facing_grid = {}
