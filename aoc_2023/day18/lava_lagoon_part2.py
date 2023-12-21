@@ -1,5 +1,6 @@
 import math
 import re
+from collections import defaultdict
 
 import util.riddle_reader as riddle_reader
 from util.movement import coordinates
@@ -64,6 +65,7 @@ def get_min_max(corners: list[Coordinates]) -> tuple[Coordinates, Coordinates]:
 
 
 def find_inside_corners(corners: list[Coordinates], horizontal_lines: list[tuple[Coordinates, Coordinates]]) -> list[Coordinates]:
+    print("find inside corners")
     min_coordinates, max_coordinates = get_min_max(corners)
 
     # find top horizontal line and most lost position
@@ -133,6 +135,8 @@ def find_inside_corners(corners: list[Coordinates], horizontal_lines: list[tuple
 def add_inner_corner_to_outer_border_lines(inside_corners: list[Coordinates], outside_horizontal_lines: list[tuple[Coordinates, Coordinates]],
                                            outside_vertical_lines: list[tuple[Coordinates, Coordinates]]) \
         -> tuple[list[tuple[Coordinates, Coordinates]], list[tuple[Coordinates, Coordinates]]]:
+    print("add inner corner lines")
+
     def determine_missing_directions(corner: Coordinates) -> list[str]:
         missing_facings = []
         for line in outside_horizontal_lines:
@@ -205,6 +209,7 @@ def add_inner_corner_to_outer_border_lines(inside_corners: list[Coordinates], ou
 
 def subdivide_lines(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]]) \
         -> tuple[list[tuple[Coordinates, Coordinates]], list[tuple[Coordinates, Coordinates]]]:
+    print("subdivide lines")
     # TODO make sure the no outer points are connected additionally. Just subdivide lines instead of connecting all points
     subdivided_horizontal_lines = []
     subdivided_vertical_lines = []
@@ -316,6 +321,7 @@ def convert_to_lines(rectangles: list[Rectangle]) -> tuple[list[tuple[Coordinate
 
 
 def print_lines(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]], max_coordinates: Coordinates):
+    print("print lines")
     scale_factor = 1000
     scaled_horizontal_lines = [(Coordinates(int(line[0].x / max_coordinates.x * scale_factor), int(line[0].y / max_coordinates.y * scale_factor)),
                                 Coordinates(int(line[1].x / max_coordinates.x * scale_factor), int(line[1].y / max_coordinates.y * scale_factor))) for line in horizontal_lines]
@@ -332,6 +338,7 @@ def print_rectangles(rectangles: list[Rectangle], max_coordinates: Coordinates):
 
 
 def calculate_area(rectangles: list[Rectangle], horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]]) -> int:
+    print("calculate area")
     area = 0
     for rectangle in rectangles:
         # calculate inner area of rectangle
@@ -339,12 +346,18 @@ def calculate_area(rectangles: list[Rectangle], horizontal_lines: list[tuple[Coo
         height = coordinates.distance(rectangle.bottom_left, rectangle.top_left) - 1
         area += length * height
 
-    area += len(fill_grid(horizontal_lines, vertical_lines).keys())
+    all_lines = horizontal_lines + vertical_lines
+    position_with_appearance_more_than_once = defaultdict(lambda: -1)
+    for line in all_lines:
+        area += coordinates.distance(line[0], line[1]) + 1
+        position_with_appearance_more_than_once[line[0]] = position_with_appearance_more_than_once[line[0]] + 1
+        position_with_appearance_more_than_once[line[1]] = position_with_appearance_more_than_once[line[1]] + 1
 
+    area -= sum(position_with_appearance_more_than_once.values())
     return area
 
 
-lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
+lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 position = Coordinates(1, 1)
 corners = [position]
 for line in lines:
@@ -366,8 +379,8 @@ horizontal_lines, vertical_lines = subdivide_lines(horizontal_lines, vertical_li
 rectangles = find_rectangles(horizontal_lines, vertical_lines)
 min_coordinates, max_coordinates = get_min_max(corners)
 # print_rectangles(rectangles, max_coordinates)
-for rectangle in sorted(rectangles, key=lambda rect: (-rect.bottom_left.y, rect.bottom_left.x)):
-    print(rectangle)
+# for rectangle in sorted(rectangles, key=lambda rect: (-rect.bottom_left.y, rect.bottom_left.x)):
+#     print(rectangle)
 
 inside_area = calculate_area(rectangles, horizontal_lines, vertical_lines)
 
