@@ -1,3 +1,4 @@
+import math
 import re
 
 import util.riddle_reader as riddle_reader
@@ -31,10 +32,17 @@ class Rectangle:
 
 
 def sort_tuple(point1: Coordinates, point2: Coordinates) -> tuple[Coordinates, Coordinates]:
-    if point1.x + point1.y > point2.x + point2.y:
-        return point1, point2
-    else:
-        return point2, point1
+    if point1.x == point2.x:
+        # vertical sorted low to high (high y to low y)
+        if point1.y > point2.y:
+            return point1, point2
+        else:
+            return point2, point1
+    elif point1.y == point2.y:
+        if point1.x < point2.x:
+            return point1, point2
+        else:
+            return point2, point1
 
 
 def get_min_max(corners: list[Coordinates]) -> tuple[Coordinates, Coordinates]:
@@ -140,6 +148,7 @@ def add_inner_corner_to_outer_border_lines(inside_corners: list[Coordinates], ou
                 else:
                     missing_facings.append(facing.LEFT)
                 break
+
         for line in outside_vertical_lines:
             if line[0] == corner:
                 if line[1].y > corner.y:
@@ -194,59 +203,43 @@ def add_inner_corner_to_outer_border_lines(inside_corners: list[Coordinates], ou
     return list(added_horizontal_lines), list(added_vertical_lines)
 
 
-def reorganize_lines(original_horizontal_lines: list[tuple[Coordinates, Coordinates]], original_vertical_lines: list[tuple[Coordinates, Coordinates]]) \
+def subdivide_lines(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]]) \
         -> tuple[list[tuple[Coordinates, Coordinates]], list[tuple[Coordinates, Coordinates]]]:
-
     # TODO make sure the no outer points are connected additionally. Just subdivide lines instead of connecting all points
-    all_points = set()
-    for line in original_horizontal_lines + original_vertical_lines:
-        all_points.add(line[0])
-        all_points.add(line[1])
+    subdivided_horizontal_lines = []
+    subdivided_vertical_lines = []
+    for line in horizontal_lines:
+        def is_vertical_line_crossing(vertical_line: tuple[Coordinates, Coordinates]) -> bool:
+            # not <=  since the line is not supposed to be in the end for subdivision
+            return line[0].x < vertical_line[0].x < line[1].x and vertical_line[0].y >= line[0].y >= vertical_line[1].y
 
-    for horizontal_line in original_horizontal_lines:
-        if horizontal_line[0].x < horizontal_line[1].x:
-            left = horizontal_line[0]
-            right = horizontal_line[1]
-        else:
-            left = horizontal_line[1]
-            right = horizontal_line[0]
+        crossing_vertical_lines = sorted(filter(is_vertical_line_crossing, vertical_lines), key=lambda vertical_line: vertical_line[0].x)
+        # no crossing found, just take original value
+        if len(crossing_vertical_lines) == 0:
+            subdivided_horizontal_lines.append(line)
+            continue
+        subdivided_horizontal_lines.append((line[0], Coordinates(crossing_vertical_lines[0][0].x, line[0].y)))
+        for index in range(len(crossing_vertical_lines) - 1):
+            subdivided_horizontal_lines.append((Coordinates(crossing_vertical_lines[index][0].x, line[0].y), Coordinates(crossing_vertical_lines[index + 1][0].x, line[0].y)))
+        subdivided_horizontal_lines.append((Coordinates(crossing_vertical_lines[-1][0].x, line[1].y), line[1]))
 
-        def is_crossing_horizontal_line(vertical_line: tuple[Coordinates, Coordinates]) -> bool:
-            if vertical_line[0].y < vertical_line[1].y:
-                top = vertical_line[0]
-                bottom = vertical_line[1]
-            else:
-                top = vertical_line[1]
-                bottom = vertical_line[0]
+    for line in vertical_lines:
+        def is_horizontal_line_crossing(horizontal_line: tuple[Coordinates, Coordinates]) -> bool:
+            # not <=  since the line is not supposed to be in the end for subdivision
+            return line[0].y > horizontal_line[0].y > line[1].y and horizontal_line[0].x <= line[0].x <= horizontal_line[1].x
 
-            return left.x <= top.x <= right.x and top.y <= left.y <= bottom.y
+        crossing_horizontal_lines = sorted(filter(is_horizontal_line_crossing, horizontal_lines), key=lambda vertical_line: -vertical_line[0].y)
+        if len(crossing_horizontal_lines) == 0:
+            subdivided_vertical_lines.append(line)
+            continue
+        subdivided_vertical_lines.append((line[0], Coordinates(line[0].x, crossing_horizontal_lines[0][0].y)))
+        for index in range(len(crossing_horizontal_lines) - 1):
+            subdivided_vertical_lines.append((Coordinates(line[0].x, crossing_horizontal_lines[index][0].y), Coordinates(line[0].x, crossing_horizontal_lines[index + 1][0].y)))
+        subdivided_vertical_lines.append((Coordinates(line[1].x, crossing_horizontal_lines[-1][0].y), line[1]))
 
-        crossing_vertical_lines = list(filter(is_crossing_horizontal_line, original_vertical_lines))
-        for line in crossing_vertical_lines:
-            position_to_add = Coordinates(line[0].x, horizontal_line[0].y)
-            all_points.add(position_to_add)
-
-    print(f"{len(all_points)} is the total number of points")
-    horizontal_lines = set()
-    vertical_lines = set()
-    for position in all_points:
-        vertical_above = sorted(filter(lambda point: point.x == position.x and point.y < position.y, all_points), key=lambda point: abs(point.y - position.y))
-        if len(vertical_above) > 0:
-            vertical_lines.add(sort_tuple(vertical_above[0], position))
-        vertical_below = sorted(filter(lambda point: point.x == position.x and point.y > position.y, all_points), key=lambda point: abs(point.y - position.y))
-        if len(vertical_below) > 0:
-            vertical_lines.add(sort_tuple(vertical_below[0], position))
-
-        horizontal_left = sorted(filter(lambda point: point.y == position.y and point.x < position.x, all_points), key=lambda point: abs(point.x - position.x))
-        if len(horizontal_left) > 0:
-            horizontal_lines.add(sort_tuple(horizontal_left[0], position))
-        horizontal_right = sorted(filter(lambda point: point.y == position.y and point.x > position.x, all_points), key=lambda point: abs(point.x - position.x))
-        if len(horizontal_right) > 0:
-            horizontal_lines.add(sort_tuple(horizontal_right[0], position))
-
-    print(f"Got a total of {len(horizontal_lines)} horizontal lines after considering inside polygon cuts")
-    print(f"Got a total of  {len(vertical_lines)} vertical lines after considering inside polygon cuts")
-    return list(horizontal_lines), list(vertical_lines)
+    print(f"Separated {len(horizontal_lines)} horizontal lines into {len(subdivided_horizontal_lines)} after considering inside polygon cuts")
+    print(f"Separated {len(vertical_lines)} vertical lines into {len(subdivided_vertical_lines)} after considering inside polygon cuts")
+    return list(subdivided_horizontal_lines), list(subdivided_vertical_lines)
 
 
 def find_rectangles(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]]) -> list[Rectangle]:
@@ -255,42 +248,71 @@ def find_rectangles(horizontal_lines: list[tuple[Coordinates, Coordinates]], ver
     for line in horizontal_lines:
         rectangle = Rectangle()
 
-        if line[0].x < line[1].x:
-            rectangle.bottom_right = line[1]
-            rectangle.bottom_left = line[0]
-        else:
-            rectangle.bottom_right = line[0]
-            rectangle.bottom_left = line[1]
+        rectangle.bottom_left = line[0]
+        rectangle.bottom_right = line[1]
 
         def is_right_line(current_line: tuple[Coordinates, Coordinates]) -> bool:
             return ((current_line[0] == rectangle.bottom_right and rectangle.bottom_right.y > current_line[1].y) or
                     (current_line[1] == rectangle.bottom_right and rectangle.bottom_right.y > current_line[0].y))
 
         right_line_candidate = list(filter(is_right_line, vertical_lines))
-        if len(right_line_candidate) != 1:
+        if len(right_line_candidate) == 0:
             continue
-        if right_line_candidate[0][0].y < right_line_candidate[0][1].y:
-            rectangle.top_right = right_line_candidate[0][0]
-        else:
-            rectangle.top_right = right_line_candidate[0][1]
+        elif len(right_line_candidate) != 1:
+            raise ValueError(f"Multiple Candidates were found as the right line attachted to the bottom right corner {rectangle.bottom_right}:\n{right_line_candidate}")
+
+        rectangle.top_right = right_line_candidate[0][1]
 
         top_line_candidate = list(filter(lambda current_line: ((current_line[0] == rectangle.top_right and current_line[1].x < rectangle.top_right.x)
                                                                or (current_line[1] == rectangle.top_right and current_line[0].x < rectangle.top_right.x)), horizontal_lines))
         if len(top_line_candidate) != 1:
             continue
 
-        if top_line_candidate[0][0].x < top_line_candidate[0][1].x:
-            rectangle.top_left = top_line_candidate[0][0]
-        else:
-            rectangle.top_left = top_line_candidate[0][1]
+        rectangle.top_left = top_line_candidate[0][0]
 
-        left_line_candidate = list(filter(lambda current_line: ((current_line[0] == rectangle.top_left and current_line[1] == rectangle.bottom_left)
-                                                                or (current_line[1] == rectangle.top_left and current_line[0] == rectangle.bottom_left)), vertical_lines))
+        left_line_candidate = list(filter(lambda current_line: current_line[1] == rectangle.top_left and current_line[0] == rectangle.bottom_left, vertical_lines))
         if len(left_line_candidate) == 1:
             rectangles.add(rectangle)
 
     print(f"Found {len(rectangles)} rectangles")
     return list(rectangles)
+
+
+def fill_grid(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]]) -> dict[Coordinates, str]:
+    print("fill grid")
+    grid = {}
+    for line in horizontal_lines:
+        diff = line[0].x - line[1].x
+        if line[0].x < line[1].x:
+            min_x = line[0].x
+        else:
+            min_x = line[1].x
+        for index in range(abs(diff) + 1):
+            grid[Coordinates(min_x + index, line[0].y)] = '#'
+    for line in vertical_lines:
+        diff = line[0].y - line[1].y
+        if line[0].y < line[1].y:
+            min_y = line[0].y
+        else:
+            min_y = line[1].y
+        for index in range(abs(diff) + 1):
+            grid[Coordinates(line[0].x, min_y + index)] = '#'
+
+    return grid
+
+
+def convert_to_lines(rectangles: list[Rectangle]) -> tuple[list[tuple[Coordinates, Coordinates]], list[tuple[Coordinates, Coordinates]]]:
+    print("convert rectangles to lines")
+    horizontal_lines = []
+    vertical_lines = []
+    for rectangle in rectangles:
+        horizontal_lines.append((rectangle.bottom_left, rectangle.bottom_right))
+        horizontal_lines.append((rectangle.top_left, rectangle.top_right))
+
+        vertical_lines.append((rectangle.bottom_left, rectangle.top_left))
+        vertical_lines.append((rectangle.bottom_right, rectangle.top_right))
+
+    return horizontal_lines, vertical_lines
 
 
 def print_lines(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]], max_coordinates: Coordinates):
@@ -300,29 +322,27 @@ def print_lines(horizontal_lines: list[tuple[Coordinates, Coordinates]], vertica
     scaled_vertical_lines = [(Coordinates(int(line[0].x / max_coordinates.x * scale_factor), int(line[0].y / max_coordinates.y * scale_factor)),
                               Coordinates(int(line[1].x / max_coordinates.x * scale_factor), int(line[1].y / max_coordinates.y * scale_factor))) for line in vertical_lines]
 
-    grid = {}
-    for line in scaled_horizontal_lines:
-        diff = line[0].x - line[1].x
-        if line[0].x < line[1].x:
-            min_x = line[0].x
-        else:
-            min_x = line[1].x
-        for index in range(abs(diff) + 1):
-            grid[Coordinates(min_x + index, line[0].y)] = '#'
-    for line in scaled_vertical_lines:
-        diff = line[0].y - line[1].y
-        if line[0].y < line[1].y:
-            min_y = line[0].y
-        else:
-            min_y = line[1].y
-        for index in range(abs(diff) + 1):
-            grid[Coordinates(line[0].x, min_y + index)] = '#'
-
+    grid = fill_grid(scaled_horizontal_lines, scaled_vertical_lines)
     coordinates.print_grid(grid)
 
 
-facing_grid = {}
-color_grid = {}
+def print_rectangles(rectangles: list[Rectangle], max_coordinates: Coordinates):
+    horizontal_lines, vertical_lines = convert_to_lines(rectangles)
+    print_lines(horizontal_lines, vertical_lines, max_coordinates)
+
+
+def calculate_area(rectangles: list[Rectangle], horizontal_lines: list[tuple[Coordinates, Coordinates]], vertical_lines: list[tuple[Coordinates, Coordinates]]) -> int:
+    area = 0
+    for rectangle in rectangles:
+        # calculate inner area of rectangle
+        length = coordinates.distance(rectangle.bottom_left, rectangle.bottom_right) - 1
+        height = coordinates.distance(rectangle.bottom_left, rectangle.top_left) - 1
+        area += length * height
+
+    area += len(fill_grid(horizontal_lines, vertical_lines).keys())
+
+    return area
+
 
 lines = riddle_reader.read_file(riddle_reader.TEST_RIDDLE_FILE)
 position = Coordinates(1, 1)
@@ -333,7 +353,7 @@ for line in lines:
     color = match.group(3)
     direction = color[-1].replace("0", facing.RIGHT).replace("1", facing.DOWN).replace("2", facing.LEFT).replace("3", facing.UP)
     step_count = int(color[1:-1], 16)
-
+    print(direction, step_count)
     position = facing.move_forward(position, direction, step_count)
     corners.append(position)
 
@@ -341,12 +361,19 @@ original_vertical_lines = [(corners[index - 1], corners[index]) for index in ran
 original_horizontal_lines = [(corners[index - 1], corners[index]) for index in range(1, len(corners)) if corners[index - 1].x - corners[index].x != 0]
 inside_corners = find_inside_corners(corners[:-1], original_horizontal_lines)
 horizontal_lines, vertical_lines = add_inner_corner_to_outer_border_lines(inside_corners, original_horizontal_lines, original_vertical_lines)
-print_lines(horizontal_lines, vertical_lines, get_min_max(corners)[1])
-horizontal_lines, vertical_lines = reorganize_lines(horizontal_lines, vertical_lines)
-rectangles = find_rectangles(horizontal_lines, vertical_lines)
-
-# print_lines(original_horizontal_lines, original_vertical_lines, get_min_max(corners)[1])
+horizontal_lines, vertical_lines = subdivide_lines(horizontal_lines, vertical_lines)
 # print_lines(horizontal_lines, vertical_lines, get_min_max(corners)[1])
+rectangles = find_rectangles(horizontal_lines, vertical_lines)
+min_coordinates, max_coordinates = get_min_max(corners)
+# print_rectangles(rectangles, max_coordinates)
+for rectangle in sorted(rectangles, key=lambda rect: (-rect.bottom_left.y, rect.bottom_left.x)):
+    print(rectangle)
 
-inside_count = 0
-print(f"The total number of pool tiles is {len(facing_grid) + inside_count}.")
+inside_area = calculate_area(rectangles, horizontal_lines, vertical_lines)
+
+print()
+expected_example_value = 952408144115
+total_area = math.pow(coordinates.distance(min_coordinates, max_coordinates), 2)
+print(f"The difference to example expected value is {expected_example_value - inside_area} => {(expected_example_value - inside_area) / expected_example_value * 100}%.")
+print(f"The difference to maximum area is {total_area - inside_area} => {(total_area - inside_area) / total_area * 100}%.")
+print(f"The total number of pool tiles is {inside_area}.")
