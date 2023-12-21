@@ -85,9 +85,9 @@ def print_grid(grid: dict[Coordinates:str], min_coordinates=None, max_coordinate
         for row in range(min_coordinates.x, max_coordinates.x + 1):
             current_coordinates = Coordinates(row, column)
             if current_coordinates in grid:
-                print(grid[current_coordinates], end=" ")
+                print(grid[current_coordinates], end="")
             else:
-                print(".", end=" ")
+                print(".", end="")
 
         print()
 
