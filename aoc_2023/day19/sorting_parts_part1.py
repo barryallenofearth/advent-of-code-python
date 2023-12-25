@@ -1,9 +1,6 @@
 import re
 
 import util.riddle_reader as riddle_reader
-from util.movement import coordinates
-from util.movement import facing
-from util.movement.coordinates import Coordinates
 
 lines = riddle_reader.read_file(riddle_reader.RIDDLE_FILE)
 
