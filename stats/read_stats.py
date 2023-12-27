@@ -1,22 +1,23 @@
 import re
 
 import bs4
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import plotly.graph_objs as go
 import requests
 import scipy.optimize
-from matplotlib.ticker import MaxNLocator
 
 
-def monoExp(x, y_0, t_half: float, offset: float):
+def exponential_function(x, y_0, t_half: float, offset: float):
     return y_0 * np.exp(- np.log(2) / t_half * (x - 1)) + offset
 
 
 data = pd.DataFrame([], columns=["year", "day", "both_stars", "single_star"])
 year_with_half_life = pd.DataFrame([], columns=["year", "half_life_time"])
 
-for current_year in range(2015, 2024):
+starting_year = 2015
+latest_year = 2023
+for current_year in range(starting_year, latest_year + 1):
     print(f"parse year {current_year}")
     result = requests.get(f"https://adventofcode.com/{current_year}/stats")
     soup = bs4.BeautifulSoup(result.text, features="html.parser")
@@ -36,26 +37,28 @@ for current_year in range(2015, 2024):
     year_frame = data[data["year"] == current_year]
     year_frame.sort_values("day")
 
-    year_frame.plot.scatter(x="day", y="both_stars")
+    data_bar_chart = go.Bar(x=year_frame["day"], y=year_frame["both_stars"], name="Data", marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
 
-    p0 = (2000, .1, 50)  # start with values near those we expect
-    params, cv = scipy.optimize.curve_fit(monoExp, year_frame["day"], year_frame["both_stars"], p0)
+    p0 = (year_frame["both_stars"].iloc[0], 4, 0)  # start with values near those we expect
+    params, cv = scipy.optimize.curve_fit(exponential_function, year_frame["day"], year_frame["both_stars"], p0)
 
     y_0, t_half, offset = params
-    plt.plot(year_frame["day"], monoExp(year_frame["day"], y_0, t_half, offset), '--', label="fitted")
+    fit_x_values = [x / 100 for x in range(100, 2500)]
+    fit_trace = go.Scatter(x=fit_x_values, y=[exponential_function(x, y_0, t_half, offset) for x in fit_x_values], mode='lines', name='Fit', line_color="#281ed9", line_width=3)
 
-    plt.title(f"Both stars {current_year}")
-    plt.xlabel("Day")
-    plt.ylabel("#Users solving both parts")
-    plt.show()
+    figure = go.Figure(data=[data_bar_chart, fit_trace],
+                       layout={"title": f"Both stars {current_year}", "xaxis": {'title': {'text': "Day"}}, "yaxis": {'title': {'text': "Users solving both parts (#)"}}})
+    figure.add_annotation(text=f'Half life time: {t_half:2.2f} days', align='left', showarrow=False, xref='paper', yref='paper', x=0.5, y=0.8, bordercolor='black', borderwidth=1)
+    figure.write_image(f'{current_year}_both_stars.png')
 
-    current_year_with_halt_time = [current_year, t_half]
-    year_with_half_life.loc[len(year_with_half_life)] = current_year_with_halt_time
-    plt.savefig(f'{current_year}_both_stars.png', bbox_inches="tight")
-# print(data)
+    year_with_half_life.loc[len(year_with_half_life)] = [int(current_year), t_half]
+
+bar_chart = go.Bar(x=year_with_half_life["year"], y=year_with_half_life["half_life_time"], marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
+average_t_half = year_with_half_life["half_life_time"].mean()
+average_trace = go.Scatter(x=[starting_year - 0.5, latest_year + 0.5], y=[average_t_half, average_t_half], mode='lines', name='Fit', line_color="#281ed9", line_width=3)
+print(average_t_half)
+half_life_image = go.Figure(data=[bar_chart, average_trace],
+                            layout={"title": f"Half life time per year", "xaxis": {'title': {'text': "Year"}}, "yaxis": {'title': {'text': "Half life time (day)"}}})
+half_life_image.add_annotation(text=f"&#8709;={average_t_half:2.2f} day", align='left', showarrow=False, xref='paper', yref='paper', x=0.5, y=1.2, bordercolor='black', borderwidth=1)
+half_life_image.write_image(f'comparison.png')
 print(year_with_half_life)
-year_with_half_life.plot.bar(x="year", y="half_life_time")
-plt.subplots_adjust(bottom=0.2)
-plt.xlabel("Year")
-plt.ylabel("Both stars count half life time (d)")
-plt.show()
