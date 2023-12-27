@@ -56,9 +56,7 @@ for current_year in range(starting_year, latest_year + 1):
 bar_chart = go.Bar(x=year_with_half_life["year"], y=year_with_half_life["half_life_time"], marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
 average_t_half = year_with_half_life["half_life_time"].mean()
 average_trace = go.Scatter(x=[starting_year - 0.5, latest_year + 0.5], y=[average_t_half, average_t_half], mode='lines', name='Fit', line_color="#281ed9", line_width=3)
-print(average_t_half)
 half_life_image = go.Figure(data=[bar_chart, average_trace],
                             layout={"title": f"Half life time per year", "xaxis": {'title': {'text': "Year"}}, "yaxis": {'title': {'text': "Half life time (day)"}}})
 half_life_image.add_annotation(text=f"&#8709;={average_t_half:2.2f} day", align='left', showarrow=False, xref='paper', yref='paper', x=0.5, y=1.2, bordercolor='black', borderwidth=1)
-half_life_image.write_image(f'comparison.png')
-print(year_with_half_life)
+half_life_image.write_image(f'comparison_both_stars.png')
