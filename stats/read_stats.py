@@ -14,6 +14,7 @@ def exponential_function(x, y_0, t_half: float, offset: float):
 
 data = pd.DataFrame([], columns=["year", "day", "both_stars", "single_star"])
 year_with_half_life = pd.DataFrame([], columns=["year", "half_life_time"])
+year_with_total_count = pd.DataFrame([], columns=["year", "total_count"])
 
 starting_year = 2015
 latest_year = 2023
@@ -52,6 +53,7 @@ for current_year in range(starting_year, latest_year + 1):
     figure.write_image(f'{current_year}_both_stars.png')
 
     year_with_half_life.loc[len(year_with_half_life)] = [int(current_year), t_half]
+    year_with_total_count.loc[len(year_with_total_count)] = [int(current_year), year_frame["both_stars"].sum()]
 
 bar_chart = go.Bar(x=year_with_half_life["year"], y=year_with_half_life["half_life_time"], name="half life time", marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
 average_t_half = year_with_half_life["half_life_time"].mean()
@@ -60,3 +62,9 @@ half_life_image = go.Figure(data=[bar_chart, average_trace],
                             layout={"title": f"Half life time per year", "xaxis": {'title': {'text': "Year"}}, "yaxis": {'title': {'text': "Half life time (day)"}}})
 half_life_image.add_annotation(text=f"&#8709;={average_t_half:2.2f} day", align='left', showarrow=False, xref='paper', yref='paper', x=0.5, y=1.2, bordercolor='black', borderwidth=1)
 half_life_image.write_image(f'comparison_both_stars.png')
+
+total_count_bar_chart = go.Bar(x=year_with_total_count["year"], y=year_with_total_count["total_count"], name="total solved 2 stars", marker_color="#e39032",
+                               marker_line_color='black', marker_line_width=2, opacity=1)
+total_count_image = go.Figure(data=[total_count_bar_chart],
+                              layout={"title": f"Total 2 star count per year", "xaxis": {'title': {'text': "Year"}}, "yaxis": {'title': {'text': "Total 2 star count"}}})
+total_count_image.write_image(f'both_stars_total_count_per_year.png')
