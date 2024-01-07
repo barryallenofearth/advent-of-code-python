@@ -15,6 +15,8 @@ def exponential_function(x, y_0, t_half: float, offset: float):
 data = pd.DataFrame([], columns=["year", "day", "both_stars", "single_star"])
 year_with_half_life = pd.DataFrame([], columns=["year", "half_life_time"])
 year_with_total_count = pd.DataFrame([], columns=["year", "total_count"])
+year_with_user_day1_count = pd.DataFrame([], columns=["year", "user_day1_count"])
+year_with_user_day25_count = pd.DataFrame([], columns=["year", "user_day25_count"])
 
 starting_year = 2015
 latest_year = 2023
@@ -54,6 +56,9 @@ for current_year in range(starting_year, latest_year + 1):
 
     year_with_half_life.loc[len(year_with_half_life)] = [int(current_year), t_half]
     year_with_total_count.loc[len(year_with_total_count)] = [int(current_year), year_frame["both_stars"].sum()]
+    year_with_user_day1_count.loc[len(year_with_user_day1_count)] = [int(current_year),
+                                                                     year_frame[year_frame["day"] == 1]["single_star"].values[0] + year_frame[year_frame["day"] == 1]["both_stars"].values[0]]
+    year_with_user_day25_count.loc[len(year_with_user_day25_count)] = [int(current_year), year_frame[year_frame["day"] == 25]["both_stars"].values[0]]
 
 bar_chart = go.Bar(x=year_with_half_life["year"], y=year_with_half_life["half_life_time"], name="half life time", marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
 average_t_half = year_with_half_life["half_life_time"].mean()
@@ -68,3 +73,19 @@ total_count_bar_chart = go.Bar(x=year_with_total_count["year"], y=year_with_tota
 total_count_image = go.Figure(data=[total_count_bar_chart],
                               layout={"title": f"Total 2 star count per year", "xaxis": {'title': {'text': "Year"}}, "yaxis": {'title': {'text': "Total 2 star count"}}})
 total_count_image.write_image(f'both_stars_total_count_per_year.png')
+
+day1_count_bar_chart = go.Bar(x=year_with_user_day1_count["year"], y=year_with_user_day1_count["user_day1_count"], name="users solving day 1 part 1", marker_color="#e39032",
+                              marker_line_color='black', marker_line_width=2, opacity=1)
+day1_count_image = go.Figure(data=[day1_count_bar_chart],
+                             layout={"title": f"Users count per year", "xaxis": {'title': {'text': "Year"}}, "yaxis": {'title': {'text': "Users solving day 1 part 1"}}})
+day1_count_image.write_image(f'users_per_year.png')
+
+completing_percentage = pd.DataFrame(
+    {"year": year_with_user_day1_count["year"], "completion_ratio": year_with_user_day25_count["user_day25_count"] / year_with_user_day1_count["user_day1_count"] * 100})
+
+completing_percentage_bar_chart = go.Bar(x=completing_percentage["year"], y=completing_percentage["completion_ratio"], name="users completing all riddles", marker_color="#e39032",
+                                         marker_line_color='black', marker_line_width=2, opacity=1)
+completing_percentage_image = go.Figure(data=[completing_percentage_bar_chart],
+                                        layout={"title": f"Users completing all riddles per year", "xaxis": {'title': {'text': "Year"}},
+                                                "yaxis": {'title': {'text': "Part of users solving all riddles (%)"}}})
+completing_percentage_image.write_image(f'completing_percentage_per_year.png')
