@@ -2,9 +2,9 @@ import os
 import time
 
 year = input("Please enter the year you want to initialize")
-if not os.path.exists(year):
+if not os.path.exists(f"aoc_{year}"):
     print(f"Initialize year {year}")
-    os.mkdir(year)
+    os.mkdir(f"aoc_{year}")
     time.sleep(3)
     with open(f"aoc_{year}/__init__.py", "w") as file:
         print("create package init")
