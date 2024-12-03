@@ -5,7 +5,7 @@ from util.strings import string_utils
 TEST_MODE = False
 file_name = "../"
 if TEST_MODE:
-    file_name += "test_riddle.txt"
+    file_name += "test_riddle_1.txt"
 else:
     file_name += "riddle.txt"
 

@@ -4,7 +4,7 @@ MULTIPLICATION_PATTERN = re.compile(r"(mul\((\d+?),(\d+?)\))")
 
 TEST_MODE = False
 if TEST_MODE:
-    file_name = "../test_riddle.txt"
+    file_name = "../test_riddle_1.txt"
 else:
     file_name = "../riddle.txt"
 

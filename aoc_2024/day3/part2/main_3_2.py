@@ -1,14 +1,14 @@
 import re
 
-MULTIPLICATION_PATTERN = re.compile(r"(mul\((\d+?),(\d+?)\))")
+MULTIPLICATION_PATTERN = re.compile(r"(do\(\)|don't\(\)|mul\((\d+?),(\d+?)\))")
 
-TEST_MODE = True
+TEST_MODE = False
 if TEST_MODE:
-    file_name = "../test_riddle.txt"
+    file_name = "../test_riddle_2.txt"
 else:
     file_name = "../riddle.txt"
 
-multiplication_enable = True
+multiplication_enabled = True
 result = 0
 with open(file_name) as file:
     for line in file:
@@ -18,8 +18,12 @@ with open(file_name) as file:
 
         for finding in all_findings:
             print(finding)
-
-            result += int(finding[1]) * int(finding[2])
+            if finding[0] == "do()":
+                multiplication_enabled = True
+            elif finding[0] == "don't()":
+                multiplication_enabled = False
+            elif multiplication_enabled:
+                result += int(finding[1]) * int(finding[2])
 
 print(f"The result is {result}")
 

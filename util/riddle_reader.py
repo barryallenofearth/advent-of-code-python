@@ -1,5 +1,5 @@
 RIDDLE_FILE = "riddle.txt"
-TEST_RIDDLE_FILE = "test_riddle.txt"
+TEST_RIDDLE_FILE = "test_riddle_1.txt"
 TEST_2_RIDDLE_FILE = "test2_riddle.txt"
 
 
