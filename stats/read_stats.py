@@ -1,3 +1,4 @@
+import datetime
 import re
 
 import bs4
@@ -19,7 +20,7 @@ year_with_user_day1_count = pd.DataFrame([], columns=["year", "user_day1_count"]
 year_with_user_day25_count = pd.DataFrame([], columns=["year", "user_day25_count"])
 
 starting_year = 2015
-latest_year = 2023
+latest_year = datetime.date.today().year
 for current_year in range(starting_year, latest_year + 1):
     print(f"parse year {current_year}")
     result = requests.get(f"https://adventofcode.com/{current_year}/stats")
@@ -42,11 +43,11 @@ for current_year in range(starting_year, latest_year + 1):
 
     data_bar_chart = go.Bar(x=year_frame["day"], y=year_frame["both_stars"], name="Both stars", marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
 
-    p0 = (year_frame["both_stars"].iloc[0], 4, 0)  # start with values near those we expect
-    params, cv = scipy.optimize.curve_fit(exponential_function, year_frame["day"], year_frame["both_stars"], p0)
+    initial_parameters = (year_frame["both_stars"].iloc[0], 4, 0)  # start with values near those we expect
+    params, cv = scipy.optimize.curve_fit(exponential_function, year_frame["day"], year_frame["both_stars"], initial_parameters)
 
     y_0, t_half, offset = params
-    fit_x_values = [x / 100 for x in range(100, 2500)]
+    fit_x_values = [x / 100 for x in range(100, len(year_frame) * 100)]
     fit_trace = go.Scatter(x=fit_x_values, y=[exponential_function(x, y_0, t_half, offset) for x in fit_x_values], mode='lines', name='Fit', line_color="#281ed9", line_width=3)
 
     figure = go.Figure(data=[data_bar_chart, fit_trace],
@@ -58,7 +59,8 @@ for current_year in range(starting_year, latest_year + 1):
     year_with_total_count.loc[len(year_with_total_count)] = [int(current_year), year_frame["both_stars"].sum()]
     year_with_user_day1_count.loc[len(year_with_user_day1_count)] = [int(current_year),
                                                                      year_frame[year_frame["day"] == 1]["single_star"].values[0] + year_frame[year_frame["day"] == 1]["both_stars"].values[0]]
-    year_with_user_day25_count.loc[len(year_with_user_day25_count)] = [int(current_year), year_frame[year_frame["day"] == 25]["both_stars"].values[0]]
+    if len(year_frame) == 25:
+        year_with_user_day25_count.loc[len(year_with_user_day25_count)] = [int(current_year), year_frame[year_frame["day"] == 25]["both_stars"].values[0]]
 
 bar_chart = go.Bar(x=year_with_half_life["year"], y=year_with_half_life["half_life_time"], name="half life time", marker_color="#e39032", marker_line_color='black', marker_line_width=2, opacity=1)
 average_t_half = year_with_half_life["half_life_time"].mean()
