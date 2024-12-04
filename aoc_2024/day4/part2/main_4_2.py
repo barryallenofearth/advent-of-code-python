@@ -10,41 +10,39 @@ else:
 
 
 def count_matching_xmas(x_coordinate: Coordinates, grid: dict[Coordinates:str]) -> bool:
-    def get_left_to_top_right() -> str:
-        letter_coordinates = facing.move_forward(x_coordinate, facing.RIGHT)
-        letter_coordinates = facing.move_forward(letter_coordinates, facing.UP)
-        print(letter_coordinates, grid[letter_coordinates])
+    def move_and_read(facings: tuple) -> str:
+        letter_coordinates = x_coordinate
+        for facing_value in facings:
+            letter_coordinates = facing.move_forward(letter_coordinates, facing_value)
+
         return grid[letter_coordinates]
 
-    def get_left_to_top_left() -> str:
-        letter_coordinates = facing.move_forward(x_coordinate, facing.UP)
-        letter_coordinates = facing.move_forward(letter_coordinates, facing.LEFT)
-        print(letter_coordinates, grid[letter_coordinates])
-        return grid[letter_coordinates]
+    top_left = move_and_read((facing.LEFT, facing.UP))
+    top_right = move_and_read((facing.RIGHT, facing.UP))
+    bottom_left = move_and_read((facing.LEFT, facing.DOWN))
+    bottom_right = move_and_read((facing.RIGHT, facing.DOWN))
 
-    def get_left_to_bottom_left() -> str:
-        letter_coordinates = facing.move_forward(x_coordinate, facing.LEFT)
-        letter_coordinates = facing.move_forward(letter_coordinates, facing.DOWN)
-        print(letter_coordinates, grid[letter_coordinates])
-        return grid[letter_coordinates]
+    if top_left == "M":
+        if top_right == "M":
+            return bottom_left == "S" and bottom_right == "S"
+        elif bottom_left == "M":
+            return top_right == "S" and bottom_right == "S"
+    elif top_right == "M":
+        if top_left == "M":
+            return bottom_left == "S" and bottom_right == "S"
+        elif bottom_right == "M":
+            return top_left == "S" and bottom_left == "S"
+    elif top_left == "S":
+        if top_right == "S":
+            return bottom_left == "M" and bottom_right == "M"
+        elif bottom_left == "S":
+            return top_right == "M" and bottom_right == "M"
+    elif top_right == "S":
+        if top_left == "S":
+            return bottom_left == "M" and bottom_right == "M"
+        elif bottom_right == "S":
+            return top_left == "M" and bottom_left == "M"
 
-    def get_left_to_bottom_right() -> str:
-        letter_coordinates = facing.move_forward(x_coordinate, facing.DOWN)
-        letter_coordinates = facing.move_forward(letter_coordinates, facing.RIGHT)
-        print(letter_coordinates, grid[letter_coordinates])
-        return grid[letter_coordinates]
-
-    neighbour_letters = [get_left_to_top_right(), get_left_to_top_left(), get_left_to_bottom_left(), get_left_to_bottom_right()]
-    m_count = 0
-    s_count = 0
-    for letter in neighbour_letters:
-        if letter == "M":
-            m_count += 1
-        elif letter == "S":
-            s_count += 1
-
-    if m_count == 2 and s_count == 2:
-        return True
 
     return False
 
