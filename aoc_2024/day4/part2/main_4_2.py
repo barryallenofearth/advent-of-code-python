@@ -43,7 +43,6 @@ def count_matching_xmas(x_coordinate: Coordinates, grid: dict[Coordinates:str]) 
         elif bottom_right == "S":
             return top_left == "M" and bottom_left == "M"
 
-
     return False
 
 
