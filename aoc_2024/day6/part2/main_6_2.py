@@ -1,7 +1,10 @@
+import multiprocessing
 from collections import defaultdict
 
 from util.movement import coordinates, facing
 from util.movement.coordinates import Coordinates
+
+from joblib import Parallel, delayed
 
 TEST_MODE = False
 if TEST_MODE:
@@ -35,8 +38,11 @@ while True:
     guard_position = new_position
     visited_spots.add(guard_position)
 
+obstacles_to_check = set()
 
-def is_route_looped(obstacle_position: Coordinates) -> bool:
+
+def is_route_looped(obstacle_position: Coordinates) -> Coordinates:
+    # print(f"Checking route for obstacle {obstacles_to_check.index(obstacle_position)}/{len(obstacles_to_check)}: {obstacle_position}")
     guard_position = initial_guard_postion
     guard_facing = facing.UP
     positions_with_facings = defaultdict(set)
@@ -45,7 +51,7 @@ def is_route_looped(obstacle_position: Coordinates) -> bool:
         new_position = facing.move_forward(guard_position, guard_facing)
 
         if coordinates.is_off_grid(new_position, min_max_coordinates[0], min_max_coordinates[1]):
-            return False
+            return None
 
         if new_position in obstacle_positions or new_position == obstacle_position:
             guard_facing = facing.rotate(guard_facing, facing.ROTATE_RIGHT)
@@ -54,12 +60,9 @@ def is_route_looped(obstacle_position: Coordinates) -> bool:
         guard_position = new_position
         visited_spots.add(guard_position)
         if guard_position in positions_with_facings and guard_facing in positions_with_facings[guard_position]:
-            return True
+            return obstacle_position
 
 
-new_obstacles = set()
-
-obstacles_to_check = set()
 for position, facings in positions_with_facings.items():
     for current_facing in facings:
         new_obstacle = facing.move_forward(position, current_facing)
@@ -68,9 +71,8 @@ for position, facings in positions_with_facings.items():
 
 obstacles_to_check = list(obstacles_to_check)
 print(f"Check {len(obstacles_to_check)} possible obstacles.")
-for obstacle_position in obstacles_to_check:
-    print(f"Checking route for obstacle {obstacles_to_check.index(obstacle_position)}/{len(obstacles_to_check)}: {obstacle_position} => current number of loop paths: {len(new_obstacles)}")
-    if is_route_looped(obstacle_position):
-        new_obstacles.add(obstacle_position)
-
-print(f"There {len(new_obstacles)} positions for a new obstacle, that lead to a guard being stuck in a loop")
+if __name__ == "__main__":
+    pool = multiprocessing.Pool(32)
+    new_obstacles = pool.map(is_route_looped, obstacles_to_check)
+    new_obstacles = set(filter(lambda value: value is not None, new_obstacles))
+    print(f"There {len(new_obstacles)} positions for a new obstacle, that lead to a guard being stuck in a loop")
