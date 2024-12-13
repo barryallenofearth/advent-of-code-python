@@ -4,8 +4,6 @@ from collections import defaultdict
 from util.movement import coordinates, facing
 from util.movement.coordinates import Coordinates
 
-from joblib import Parallel, delayed
-
 TEST_MODE = False
 if TEST_MODE:
     file_name = "../test_riddle.txt"
