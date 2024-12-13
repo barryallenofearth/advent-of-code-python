@@ -39,9 +39,7 @@ def main():
     resorted = "".join(file_allocation)
     print(resorted)
     sorting_complete = re.compile(r"^\d+\.+$")
-    last_unsorted_number = re.compile(r"^[\d.]+\.\d*(\d)\.*$")
     while not sorting_complete.match(resorted):
-        # print(resorted)
         first_free_slot = find_first_free_slot(file_allocation)
 
         last_position_of_last_number = find_last_number(file_allocation)
