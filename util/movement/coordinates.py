@@ -98,3 +98,47 @@ def print_grid(grid: dict[Coordinates:str], min_coordinates=None, max_coordinate
 
 def is_off_grid(position: Coordinates, min_coordinates: Coordinates, max_coordinates: Coordinates):
     return not (min_coordinates.x <= position.x <= max_coordinates.x and min_coordinates.y <= position.y <= max_coordinates.y)
+
+
+def find_neighbors_of_symbol(center_coordinates: Coordinates, wanted_symbol: str, coordinates_with_symbol: dict[Coordinates:str], check_diagonally=False) -> list[Coordinates]:
+    min_max_coordinates = get_min_max_grid_coordinates(coordinates_with_symbol)
+
+    def is_wanted_symbol(to_check: Coordinates) -> bool:
+        return not is_off_grid(to_check, min_max_coordinates[0], min_max_coordinates[1]) and coordinates_with_symbol[to_check] == wanted_symbol
+
+    matching_neighbors = []
+    left = Coordinates(center_coordinates.x - 1, center_coordinates.y)
+    if is_wanted_symbol(left):
+        matching_neighbors.append(left)
+
+    top = Coordinates(center_coordinates.x, center_coordinates.y - 1)
+    if is_wanted_symbol(top):
+        matching_neighbors.append(top)
+
+    right = Coordinates(center_coordinates.x + 1, center_coordinates.y)
+    if is_wanted_symbol(right):
+        matching_neighbors.append(right)
+
+    bottom = Coordinates(center_coordinates.x, center_coordinates.y + 1)
+    if is_wanted_symbol(bottom):
+        matching_neighbors.append(bottom)
+
+    if check_diagonally:
+
+        top_left = Coordinates(center_coordinates.x - 1, center_coordinates.y - 1)
+        if is_wanted_symbol(top_left):
+            matching_neighbors.append(top_left)
+
+        top_right = Coordinates(center_coordinates.x + 1, center_coordinates.y - 1)
+        if is_wanted_symbol(top_right):
+            matching_neighbors.append(top_right)
+
+        bottom_right = Coordinates(center_coordinates.x + 1, center_coordinates.y + 1)
+        if is_wanted_symbol(bottom_right):
+            matching_neighbors.append(bottom_right)
+
+        bottom_left = Coordinates(center_coordinates.x - 1, center_coordinates.y + 1)
+        if is_wanted_symbol(bottom_left):
+            matching_neighbors.append(bottom_left)
+
+    return matching_neighbors
